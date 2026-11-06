@@ -30,8 +30,8 @@ nav{display:flex;gap:28px;font-size:13px;font-weight:700;color:#ddd}nav a{positi
 .frame img{width:100%;height:100%;object-fit:cover;object-position:75% 50%;transform:scale(1.25);will-change:transform}
 .frame:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.9),rgba(11,11,12,.1) 65%)}
 .hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:84px}
-.hero h1{font-size:clamp(64px,11.2vw,176px);max-width:9ch}
-.hero h1 .l{display:block;overflow:hidden;padding-bottom:.04em}.hero h1 .l span{display:block}
+.hero h1{font-size:clamp(56px,min(11.2vw,17.5vh),176px);max-width:9ch}
+.hero h1 .l{display:block;overflow:hidden;padding:.16em 0 .04em;margin-top:-.16em}.hero h1 .l span{display:block}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero p{max-width:430px;color:#d9d9db;line-height:1.7;font-size:16px;margin:26px 0 30px}
 .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
@@ -79,11 +79,15 @@ nav{display:flex;gap:28px;font-size:13px;font-weight:700;color:#ddd}nav a{positi
 .card .n{position:absolute;top:18px;left:22px;font:800 13px var(--disp);letter-spacing:.16em;z-index:2}
 .card .go{position:absolute;top:14px;right:16px;z-index:2;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--ink);font-weight:800;transition:transform .3s}
 .card:hover .go{transform:rotate(45deg)}
-.card.foto{background:#222}.card.foto svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .7s}.card.foto:hover svg{transform:scale(1.07)}
-.card.foto:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,0) 62%)}
-.card.verm{background:var(--red)}.card.verm .big{position:absolute;right:-8px;top:-18px;font:900 190px/1 var(--disp);color:rgba(0,0,0,.16)}
-.card.cont{background:var(--ink2);border:1.5px solid #3a3a3f;transition:transform .4s,background .3s,border-color .3s}.card.cont:hover{background:#1c1012;border-color:var(--red)}
-.card.cont h3{font-size:clamp(40px,4.4vw,62px)}.card.cont p{color:var(--muted)}
+.card:not(.esp){background:#222}
+.card:not(.esp) svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .7s,filter .4s}.card:not(.esp):hover svg{transform:scale(1.07)}
+.card:not(.esp):after{content:'';position:absolute;inset:0;z-index:0;transition:opacity .4s}
+.card.foto:after{background:linear-gradient(0deg,rgba(0,0,0,.88),rgba(0,0,0,0) 62%)}
+.card.verm:after{background:linear-gradient(0deg,rgba(229,35,45,.96),rgba(229,35,45,.5) 62%,rgba(229,35,45,.18))}
+.card.verm .big{position:absolute;right:-8px;top:-18px;z-index:1;font:900 190px/1 var(--disp);color:rgba(255,255,255,.22)}
+.card.cont svg{filter:grayscale(1) brightness(.55)}.card.cont:hover svg{filter:grayscale(.2) brightness(.75)}
+.card.cont:after{background:linear-gradient(0deg,rgba(11,11,12,.92),rgba(11,11,12,.15) 70%);box-shadow:inset 0 0 0 1.5px #3a3a3f;border-radius:20px}.card.cont:hover:after{box-shadow:inset 0 0 0 2px var(--red)}
+.card.cont h3{font-size:clamp(40px,4.4vw,62px)}
 .mod small{display:block;margin-top:34px;color:#7c7c82;font-size:12px}
 
 /* 5 grade (fundo muda) */
@@ -213,7 +217,7 @@ dialog{width:100%;max-width:100%;max-height:92vh;max-height:92dvh;margin:auto 0 
 .equipe{padding:90px 0 70px}.eq-ui{align-items:center}.eq-ctrl button{width:52px;height:52px}.stage{height:440px}.slide{width:62vw;max-width:300px}
 .frame{clip-path:inset(34% 6% 6% 6% round 24px)}.frame:after{background:linear-gradient(180deg,rgba(11,11,12,.6),rgba(11,11,12,.72))}
 .frame img{object-position:70% 50%}
-.hero-in{justify-content:flex-start;padding-top:110px}.hero h1{font-size:clamp(60px,17vw,110px)}.hero p{font-size:14px;margin:16px 0 18px;max-width:340px}
+.hero-in{justify-content:flex-start;padding-top:96px}.hero h1{font-size:clamp(52px,min(17vw,13vh),110px)}.hero p{font-size:14px;margin:16px 0 18px;max-width:340px}
 .story:before{background:linear-gradient(0deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.6) 50%,rgba(11,11,12,.15) 100%)}
 .steps{top:auto;bottom:70px;transform:none}.step{top:auto;bottom:0;transform:none}.step h2{font-size:clamp(52px,16vw,90px)}.step p{font-size:14px}.dots{right:0;top:96px;transform:none;flex-direction:row}
 .mod{padding:90px 0 100px}.mod-head{display:block}.mod-head p{margin-top:16px}.lane{padding-left:18px}
@@ -323,13 +327,13 @@ const lanes=document.getElementById('lanes');
   const a=document.createElement('button');a.type='button';a.className='card '+model;a.dataset.ativ=name;a.setAttribute('aria-label','Ver detalhes de '+name);
   a.addEventListener('click',()=>window.abrirAtividade&&window.abrirAtividade(name));
   const num=String(i+1).padStart(2,'0');
-  if(model==='foto')a.appendChild(sprite(`assets/aulas${Math.floor(i/4)+1}.jpg`,i%4,'Imagem ilustrativa de '+name));
+  a.appendChild(sprite(`assets/aulas${Math.floor(i/4)+1}.jpg`,i%4,'Imagem ilustrativa de '+name));
   if(model==='verm'){const b=document.createElement('span');b.className='big';b.textContent=num;b.setAttribute('aria-hidden','true');a.appendChild(b)}
   a.insertAdjacentHTML('beforeend',`<span class="n">${num}</span><span class="go" aria-hidden="true">↗</span><h3>${name}</h3><p>${desc}</p>`);
   lane.appendChild(a)}
  if(l===0)lane.appendChild(esp('a','','https://wa.me/5541984020845?text='+encodeURIComponent('Olá! Gostaria de agendar uma aula experimental.'),'1ª AULA','<h3>Agende sua <em>aula experimental</em></h3><p>Chame no WhatsApp e escolha a sua.</p>'));
  if(l===2)lane.appendChild(esp('a','','#para-voce','NÃO SABE?','<h3>Escolha pelo <em>objetivo</em></h3><p>Mostramos as aulas indicadas para você.</p>'));
- lanes.appendChild(lane)});
+ const row=document.createElement('div');row.className='lane-row';row.appendChild(lane);lanes.appendChild(row)});
 
 /* ---------- GRADE EDITÁVEL ----------
    Fonte dos dados (em ordem): 1) GRADE_URL = link CSV de uma planilha Google publicada (o dono edita a planilha);
@@ -414,10 +418,11 @@ if(window.gsap&&window.ScrollTrigger&&!reduce){
 
   /* 4 faixas Paaspop: andam em direções/velocidades diferentes */
   gsap.utils.toArray('.lane').forEach((lane,i)=>{
-   /* percorre a faixa INTEIRA: no começo o 1º card aparece por inteiro, no fim o último também */
-   const dir=i===1?-1:1;
+   /* cada faixa FICA FIXA no meio da tela e anda de lado junto com a rolagem (1 pra 1):
+      o usuário vê todos os cards, do primeiro ao último, por inteiro. Depois solta e segue pra próxima faixa. */
+   const row=lane.parentElement,dir=i===1?-1:1;
    const dist=()=>Math.max(0,lane.scrollWidth-innerWidth+32);
-   gsap.fromTo(lane,{x:()=>dir>0?0:-dist()},{x:()=>dir>0?-dist():0,ease:'none',scrollTrigger:{trigger:lane,start:'top 97%',end:['top 24%','top 18%','top 30%'][i],scrub:.5,invalidateOnRefresh:true}});
+   gsap.fromTo(lane,{x:()=>dir>0?0:-dist()},{x:()=>dir>0?-dist():0,ease:'none',scrollTrigger:{trigger:row,start:'center 52%',end:()=>'+='+Math.max(160,Math.round(dist()*(desk?1:.9))),pin:true,pinSpacing:true,anticipatePin:1,scrub:.35,invalidateOnRefresh:true}});
   });
 
   /* 5 fundo muda: preto -> papel */

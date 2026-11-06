@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0b0c"><meta name="description" content="Ponto 1 Academia, Barreirinha, Curitiba. Treino, aulas e acompanhamento próximo para você evoluir no seu ritmo."><title>Ponto 1 Academia | Você em primeiro lugar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0c;--ink2:#151517;--red:#e5232d;--paper:#efece8;--muted:#9a9a9f;--line:#2b2b2f;--disp:'Barlow Condensed','Arial Narrow',Impact,sans-serif;--body:Manrope,system-ui,sans-serif}
+*{box-sizing:border-box}html{background:var(--ink)}html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--ink);color:#fff;font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img,svg{display:block;max-width:100%}button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid #ff7a80;outline-offset:3px}
+.wrap{width:min(1280px,calc(100% - 64px));margin:auto}
+.disp{font-family:var(--disp);text-transform:uppercase;font-weight:900;line-height:.86;letter-spacing:-.02em;margin:0}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--red);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:'>>>';letter-spacing:-.15em;font-family:var(--disp);font-size:18px}
+.btn{display:inline-flex;align-items:center;gap:14px;background:var(--red);color:#fff;padding:18px 26px;font-weight:800;font-size:13px;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;transition:transform .3s cubic-bezier(.2,.8,.2,1),background .2s}
+.btn:hover{transform:translateY(-3px);background:#c91a24}.btn i{font-style:normal;transition:transform .3s}.btn:hover i{transform:translateX(5px)}
+.btn.ghost{background:transparent;border:1.5px solid currentColor}.btn.ghost:hover{background:#fff;color:var(--ink)}.grade .btn.ghost{color:inherit}.grade .btn.ghost:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+/* topo */
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 32px;transition:background .3s,transform .4s}
+header.solid{background:rgba(11,11,12,.82);backdrop-filter:blur(12px)}
+header.hide{transform:translateY(-100%)}
+.logo{display:flex;align-items:center;gap:12px}.logo img{width:54px;height:54px;object-fit:contain}.logo b{font:800 20px/1 var(--disp);letter-spacing:.05em}
+nav{display:flex;gap:30px;font-size:13px;font-weight:700;color:#ddd}nav a{position:relative}nav a:after{content:'';position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}nav a:hover:after{transform:scaleX(1)}
+.menu{display:none;background:none;border:1px solid #666;color:#fff;border-radius:8px;padding:9px 12px}
+
+/* 1 hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;overflow:hidden}
+.frame{position:absolute;inset:0;clip-path:inset(13% 4% 13% 46% round 28px);will-change:clip-path}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:75% 50%;transform:scale(1.25);will-change:transform}
+.frame:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.9),rgba(11,11,12,.1) 65%)}
+.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:40px}
+.hero h1{font-size:clamp(64px,11.2vw,176px);max-width:9ch}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.04em}.hero h1 .l span{display:block}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{max-width:430px;color:#d9d9db;line-height:1.7;font-size:16px;margin:26px 0 30px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.scroll-hint{position:absolute;left:50%;bottom:22px;z-index:3;transform:translateX(-50%);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#bbb;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint:after{content:'';width:1px;height:34px;background:linear-gradient(#fff,transparent);animation:drip 1.8s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.ticker{background:var(--red);overflow:hidden;white-space:nowrap;padding:14px 0;font:800 20px var(--disp);letter-spacing:.1em;text-transform:uppercase}
+.ticker div{display:inline-block;animation:tick 34s linear infinite}@keyframes tick{to{transform:translateX(-50%)}}
+
+/* 2 manifesto */
+.manifesto{padding:20vh 0}
+.manifesto p{font:800 clamp(34px,5.6vw,84px)/1.02 var(--disp);text-transform:uppercase;letter-spacing:-.01em;max-width:18ch;margin:26px 0 0}
+.manifesto .w{opacity:.16;display:inline-block;margin-right:.22em}
+.manifesto .w.r{color:var(--red)}
+
+/* 3 historia */
+.story{position:relative;height:100vh;height:100svh;overflow:hidden;background:#000}
+.story-img{position:absolute;inset:0;overflow:hidden}
+.story-img img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.story:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,11,12,.92) 0%,rgba(11,11,12,.55) 45%,rgba(11,11,12,.1) 100%)}
+.story .wrap{position:relative;z-index:2;height:100%}
+.steps{position:absolute;left:0;top:50%;transform:translateY(-50%);width:min(560px,100%)}
+.step{position:absolute;left:0;top:50%;transform:translateY(-50%);width:100%;opacity:0}
+.step:first-child{opacity:1}
+.step small{display:block;color:var(--red);font:800 15px var(--disp);letter-spacing:.2em;margin-bottom:14px}
+.step h2{font-size:clamp(54px,8.4vw,128px)}
+.step p{color:#d4d4d6;line-height:1.7;font-size:16px;max-width:420px;margin:20px 0 0}
+.dots{position:absolute;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:3}
+.dots i{width:10px;height:10px;border-radius:50%;border:1.5px solid #fff;opacity:.55;transition:.3s}.dots i.on{background:var(--red);border-color:var(--red);opacity:1;transform:scale(1.4)}
+.story-tag{position:absolute;left:0;bottom:28px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#bbb;z-index:3}
+
+/* 4 faixas */
+.mod{padding:130px 0 150px;overflow:hidden}
+.mod-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px}
+.mod h2{font-size:clamp(50px,7vw,104px);margin-top:16px}
+.mod-head p{max-width:360px;color:var(--muted);line-height:1.7;font-size:14px;margin:0}
+.lanes{display:flex;flex-direction:column;gap:16px}
+.lane{display:flex;gap:16px;width:max-content;will-change:transform;padding-left:32px}
+.card{flex:0 0 auto;width:clamp(240px,24vw,340px);height:clamp(250px,26vw,330px);border-radius:20px;overflow:hidden;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.card:hover{transform:translateY(-6px)}
+.card h3{font:900 clamp(34px,3.6vw,50px)/.9 var(--disp);text-transform:uppercase;margin:0;position:relative;z-index:2}
+.card p{font-size:13px;line-height:1.55;margin:10px 0 0;position:relative;z-index:2;max-width:26ch}
+.card .n{position:absolute;top:18px;left:22px;font:800 13px var(--disp);letter-spacing:.16em;z-index:2}
+.card .go{position:absolute;top:14px;right:16px;z-index:2;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--ink);font-weight:800;transition:transform .3s}
+.card:hover .go{transform:rotate(45deg)}
+.card.foto{background:#222}.card.foto svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .7s}.card.foto:hover svg{transform:scale(1.07)}
+.card.foto:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,0) 62%)}
+.card.verm{background:var(--red)}.card.verm .big{position:absolute;right:-8px;top:-18px;font:900 190px/1 var(--disp);color:rgba(0,0,0,.16)}
+.card.cont{background:var(--ink2);border:1.5px solid #3a3a3f;transition:transform .4s,background .3s,border-color .3s}.card.cont:hover{background:#1c1012;border-color:var(--red)}
+.card.cont h3{font-size:clamp(40px,4.4vw,62px)}.card.cont p{color:var(--muted)}
+.mod small{display:block;margin-top:34px;color:#7c7c82;font-size:12px}
+
+/* 5 grade (fundo muda) */
+.grade{padding:130px 0;background:var(--ink);color:#fff}
+.grade-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:56px}
+.sched-bar{display:flex;flex-direction:column;gap:18px;margin-bottom:26px}
+.days{display:none;gap:8px}.days button{flex:1;border:1.5px solid currentColor;background:transparent;color:inherit;border-radius:999px;padding:11px 4px;font-weight:800;font-size:13px;opacity:.6}.days button.on{background:var(--red);border-color:var(--red);color:#fff;opacity:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1.5px solid currentColor;background:transparent;color:inherit;border-radius:999px;padding:8px 15px;font-size:12px;font-weight:800;opacity:.7;transition:.2s}.chips button:hover{opacity:1}.chips button.on{background:var(--red);border-color:var(--red);color:#fff;opacity:1}
+.week{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.col{border:1.5px solid rgba(128,128,128,.35);border-radius:20px;padding:18px 14px 16px}
+.col h3{font:900 26px/1 var(--disp);text-transform:uppercase;margin:0 0 4px;display:flex;justify-content:space-between;align-items:center}
+.col h3 em{font:800 10px var(--body);letter-spacing:.14em;background:var(--red);color:#fff;padding:4px 8px;border-radius:99px;font-style:normal}
+.per{margin-top:16px}.per b{display:block;font:800 11px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.aula{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid rgba(128,128,128,.28);transition:opacity .25s}
+.aula time{font:800 17px var(--disp);letter-spacing:.04em;min-width:48px}.aula span{font-size:13px;font-weight:700;line-height:1.25}
+.week.filtrando .aula:not(.hit){opacity:.18}.aula.hit span{color:var(--red)}
+.sched-msg{opacity:.7}
+@media(max-width:900px){.days{display:flex}.week{grid-template-columns:1fr}.col{display:none}.col.on{display:block}.grade-grid{align-items:start}}
+.grade h2{font-size:clamp(52px,7.4vw,112px);margin:16px 0 26px}
+.grade p{line-height:1.75;max-width:460px;opacity:.78}
+.grade .sm{font-size:12px}
+.grade-img{background:#fff;padding:12px;border-radius:16px;box-shadow:0 30px 60px rgba(0,0,0,.35);max-width:470px;margin:auto;will-change:transform}
+.grade-img img{width:100%;height:auto;border-radius:8px}
+
+/* 6 para voce (accordion) */
+.pessoas{padding:130px 0;background:var(--paper);color:var(--ink)}
+.pessoas h2{font-size:clamp(50px,7vw,104px);margin:16px 0 50px}
+.acc{display:flex;gap:12px;height:520px}
+.pn{flex:1;min-width:0;border-radius:22px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:flex .7s cubic-bezier(.2,.8,.2,1);color:#fff;border:0;text-align:left;font-family:inherit}
+.pn.on{flex:3.2}
+.pn:nth-child(1){background:var(--ink)}.pn:nth-child(2){background:var(--red)}.pn:nth-child(3){background:#2a2a2e}.pn:nth-child(4){background:#7a1118}
+.pn .no{font:800 15px var(--disp);letter-spacing:.2em;opacity:.8}
+.pn h3{font:900 clamp(34px,4vw,60px)/.9 var(--disp);text-transform:uppercase;margin:0;transform-origin:left bottom}
+.pn .tx{max-height:0;opacity:0;overflow:hidden;transition:max-height .6s,opacity .5s .15s;line-height:1.6;font-size:14px;max-width:34ch;margin-top:12px;display:block}
+.pn.on .tx{max-height:140px;opacity:.92}
+.pn .chev{position:absolute;right:20px;top:18px;font:900 28px var(--disp);letter-spacing:-.15em;opacity:.7}
+
+/* 7 como comecar */
+.how{padding:140px 0 120px;background:var(--ink)}
+.how h2{font-size:clamp(50px,7vw,104px);margin:16px 0 20px}
+.arc{position:relative;margin-top:30px}
+.arc svg{width:100%;height:auto;overflow:visible}
+.arc path{fill:none;stroke:var(--red);stroke-width:3;stroke-linecap:round}
+.arc .base{stroke:#2b2b2f}
+.nodes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:-20px}
+.node{opacity:.25;transform:translateY(20px);transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1)}
+.node.on{opacity:1;transform:none}
+.node b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--red);font:900 30px var(--disp);margin-bottom:18px}
+.node h3{font:900 clamp(30px,3.2vw,44px)/.95 var(--disp);text-transform:uppercase;margin:0 0 10px}
+.node p{color:var(--muted);line-height:1.65;font-size:14px;margin:0;max-width:30ch}
+
+/* final */
+.final{background:var(--red);padding:110px 0;overflow:hidden}
+.final .in{display:flex;justify-content:space-between;align-items:center;gap:30px}
+.final h2{font-size:clamp(56px,9vw,140px)}
+.final p{max-width:380px;line-height:1.6}
+.final .btn{background:var(--ink)}.final .btn:hover{background:#000}
+footer{background:#070708;padding:80px 0 36px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer h3{font:800 26px var(--disp);text-transform:uppercase;margin:0 0 14px}
+footer p,footer a{font-size:14px;line-height:1.9;color:#b3b3b8}footer a:hover{color:#fff}
+.fl{border-top:1px solid #26262a;margin-top:60px;padding-top:22px;display:flex;justify-content:space-between;color:#76767c;font-size:12px}
+.wpp{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;box-shadow:0 10px 28px rgba(0,0,0,.45);transition:transform .3s}.wpp:hover{transform:scale(1.08)}.wpp svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+.wrap{width:calc(100% - 36px)}header{padding:10px 18px}nav{display:none;position:absolute;top:100%;left:0;right:0;background:#0b0b0c;padding:22px 24px;flex-direction:column;gap:18px}nav.open{display:flex}.menu{display:block}.hd-btn{display:none}
+.frame{clip-path:inset(34% 6% 6% 6% round 24px)}.frame:after{background:linear-gradient(180deg,rgba(11,11,12,.15),rgba(11,11,12,.5))}
+.frame img{object-position:70% 50%}
+.hero-in{justify-content:flex-start;padding-top:110px}.hero h1{font-size:clamp(60px,17vw,110px)}.hero p{font-size:14px;margin:16px 0 18px;max-width:340px}
+.story:before{background:linear-gradient(0deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.6) 50%,rgba(11,11,12,.15) 100%)}
+.steps{top:auto;bottom:70px;transform:none}.step{top:auto;bottom:0;transform:none}.step h2{font-size:clamp(52px,16vw,90px)}.step p{font-size:14px}.dots{right:0;top:96px;transform:none;flex-direction:row}
+.mod{padding:90px 0 100px}.mod-head{display:block}.mod-head p{margin-top:16px}.lane{padding-left:18px}
+.grade{padding:90px 0}.grade-grid{grid-template-columns:1fr;gap:36px}
+.pessoas{padding:90px 0}.acc{flex-direction:column;height:auto}.pn{flex:none;min-height:96px}.pn.on{min-height:260px}
+.how{padding:90px 0}.nodes{grid-template-columns:1fr;gap:28px;margin-top:10px}.arc svg{display:none}.node{opacity:1;transform:none}
+.final .in,.fl{display:block}.final .btn{margin-top:22px}.fg{grid-template-columns:1fr;gap:26px}.fl span{display:block;margin-top:8px}
+.manifesto{padding:14vh 0}}
+@media(prefers-reduced-motion:reduce){.ticker div{animation:none}.scroll-hint:after{animation:none}.manifesto .w{opacity:1}.step{opacity:0}.step:first-child{opacity:1}.node{opacity:1;transform:none}.frame{clip-path:inset(0)!important}.frame img{transform:none!important}}
+</style></head><body>
+
+<header id="top"><a class="logo" href="#inicio" aria-label="Ponto 1 Academia"><img src="assets/logo.png" alt="Logo Academia Ponto 1"><b>PONTO 1<br>ACADEMIA</b></a>
+<nav id="nav" aria-label="Menu principal"><a href="#sobre">A academia</a><a href="#modalidades">Modalidades</a><a href="#grade">Grade</a><a href="#para-voce">Para você</a><a href="#contato">Contato</a></nav>
+<a class="btn wa hd-btn" href="https://wa.me/5541984020845?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20aula%20experimental.">Aula experimental <i>→</i></a><button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
+
+<main>
+<section class="hero" id="inicio">
+ <div class="frame" id="frame"><img src="assets/hero.jpg" alt="Alunos de diferentes idades sorrindo após o treino"></div>
+ <div class="wrap hero-in">
+  <div class="eyebrow">Barreirinha · Curitiba</div>
+  <h1 class="disp" aria-label="Você em primeiro lugar"><span class="l"><span>Você</span></span><span class="l"><span>em <em>1º</em></span></span><span class="l"><span>lugar.</span></span></h1>
+  <p>Treino com acompanhamento de perto, aulas para todos os gostos e um ambiente onde você evolui no seu ritmo.</p>
+  <div class="cta"><a class="btn wa" href="https://wa.me/5541984020845?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20aula%20experimental.">Agende sua aula experimental <i>→</i></a><a class="btn ghost" href="#modalidades">Ver modalidades</a></div>
+ </div>
+ <div class="scroll-hint" aria-hidden="true">Role</div>
+</section>
+<div class="ticker" aria-hidden="true"><div>VOCÊ EM PRIMEIRO LUGAR &nbsp;>>>&nbsp; MOVIMENTO É VIDA &nbsp;>>>&nbsp; TREINE NO SEU RITMO &nbsp;>>>&nbsp; VOCÊ EM PRIMEIRO LUGAR &nbsp;>>>&nbsp; MOVIMENTO É VIDA &nbsp;>>>&nbsp; TREINE NO SEU RITMO &nbsp;>>>&nbsp; VOCÊ EM PRIMEIRO LUGAR &nbsp;>>>&nbsp; MOVIMENTO É VIDA &nbsp;>>>&nbsp; TREINE NO SEU RITMO &nbsp;>>>&nbsp;</div></div>
+
+<section class="manifesto" id="sobre"><div class="wrap"><div class="eyebrow">Mais que uma academia</div>
+ <p id="manifesto">Aqui você é recebido pelo nome, acompanhado de perto e evolui no seu próprio ritmo. <span class="r">Em qualquer fase da vida.</span></p></div></section>
+
+<section class="story" id="historia" aria-label="Como é treinar na Ponto 1">
+ <div class="story-img"><img id="storyImg" src="assets/academia.jpg" alt="Salão de musculação da Academia Ponto 1 com halteres e máquinas"></div>
+ <div class="wrap">
+  <div class="steps" id="steps">
+   <div class="step"><small>01 / 04</small><h2 class="disp">Chegue<br>como é.</h2><p>Sem pressão e sem julgamento. O primeiro passo é se sentir em casa.</p></div>
+   <div class="step"><small>02 / 04</small><h2 class="disp">Pesos<br>de verdade.</h2><p>Halteres de todos os tamanhos para quem quer ganhar força e massa.</p></div>
+   <div class="step"><small>03 / 04</small><h2 class="disp">Instrutor<br>por perto.</h2><p>Profissionais no salão para orientar cada movimento com segurança.</p></div>
+   <div class="step"><small>04 / 04</small><h2 class="disp">Evolua<br>no seu ritmo.</h2><p>Treino ajustado ao seu objetivo, ao seu corpo e à sua rotina.</p></div>
+  </div>
+  <div class="dots" id="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+  <span class="story-tag">Foto real do salão · Ponto 1</span>
+ </div>
+</section>
+
+<section class="mod" id="modalidades">
+ <div class="wrap mod-head"><div><div class="eyebrow">Encontre seu movimento</div><h2 class="disp">Uma aula para<br>chamar de sua.</h2></div><p>Role e veja as atividades da grade da Ponto 1. Escolha a sua e venha experimentar.</p></div>
+ <div class="lanes" id="lanes"></div>
+ <div class="wrap"><small>Modalidades conforme a grade publicada pela academia. Horários e vagas podem mudar; confirme pelo WhatsApp.</small></div>
+</section>
+
+<section class="grade" id="grade"><div class="wrap grade-grid">
+ <div><div class="eyebrow">Organize sua rotina</div><h2 class="disp">Seu treino<br>tem hora.</h2><p>Da manhã à noite, tem aula para encaixar no seu dia. Confira a grade e fale com a equipe para confirmar o horário atual.</p><p class="sm">A grade pode sofrer alterações sem aviso prévio.</p><a class="btn ghost wa" href="https://wa.me/5541984020845?text=Ol%C3%A1%21%20Gostaria%20de%20confirmar%20a%20grade%20de%20aulas.">Confirmar horários <i>→</i></a></div>
+</div>
+<div class="wrap sched">
+ <div class="sched-bar"><div class="days" id="days" role="tablist" aria-label="Dia da semana"></div><div class="chips" id="chips" aria-label="Filtrar por aula"></div></div>
+ <div class="week" id="week" aria-live="polite"><p class="sched-msg">Carregando a grade…</p></div>
+</div></section>
+
+<section class="pessoas" id="para-voce"><div class="wrap"><div class="eyebrow">Feita para você</div><h2 class="disp">Qual é o seu<br>objetivo?</h2>
+ <div class="acc" id="acc">
+  <button class="pn on" type="button" aria-expanded="true"><span class="chev">>>></span><span class="no">01</span><span><h3>Ganhar força<br>e massa</h3><span class="tx">Treinos direcionados e instrutores no salão para você progredir com segurança.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="chev">>>></span><span class="no">02</span><span><h3>Cuidar das<br>articulações</h3><span class="tx">Fortalecimento articular e movimentos orientados, no seu tempo.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="chev">>>></span><span class="no">03</span><span><h3>Emagrecer e<br>condicionar</h3><span class="tx">Aulas dinâmicas e treinos que combinam energia, ritmo e constância.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="chev">>>></span><span class="no">04</span><span><h3>Aliviar<br>o estresse</h3><span class="tx">Ambiente acolhedor, atenção a mulheres e alunos 60+, e movimento que faz bem.</span></span></button>
+ </div></div></section>
+
+<section class="how" id="como"><div class="wrap"><div class="eyebrow">Como começar</div><h2 class="disp">Três passos.<br>Nenhum medo.</h2>
+ <div class="arc"><svg viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path class="base" d="M10 120 C 300 -40, 900 -40, 1190 120"/><path id="arcPath" d="M10 120 C 300 -40, 900 -40, 1190 120"/></svg>
+ <div class="nodes" id="nodes">
+  <div class="node"><b>1</b><h3>Chame no WhatsApp</h3><p>Conte seu objetivo. A equipe responde e tira suas dúvidas.</p></div>
+  <div class="node"><b>2</b><h3>Faça uma aula experimental</h3><p>Conheça o espaço, os instrutores e a modalidade que combina com você.</p></div>
+  <div class="node"><b>3</b><h3>Escolha seu ritmo</h3><p>Treino, horários e acompanhamento do jeito que cabe na sua vida.</p></div>
+ </div></div></div></section>
+
+<section class="final"><div class="wrap in"><div><h2 class="disp">Vem treinar<br>com a gente.</h2><p>Comece com uma conversa e descubra a aula que combina com você.</p></div><a class="btn wa" href="https://wa.me/5541984020845?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20aula%20experimental.">Agende sua aula experimental <i>→</i></a></div></section>
+</main>
+
+<footer id="contato"><div class="wrap"><div class="fg">
+ <div><a class="logo" href="#inicio"><img src="assets/logo.png" alt="Academia Ponto 1"><b>PONTO 1<br>ACADEMIA</b></a><p style="margin-top:18px">Um espaço para cuidar da sua saúde<br>e celebrar cada conquista.</p></div>
+ <div><h3>Venha conhecer</h3><p>Av. Anita Garibaldi, 6033<br>Barreirinha · Curitiba – PR<br>CEP 82220-000</p><a href="https://maps.google.com/?q=Av.+Anita+Garibaldi+6033+Curitiba" target="_blank" rel="noopener">Como chegar ↗</a></div>
+ <div><h3>Fale com a gente</h3><p><a class="wa" href="https://wa.me/5541984020845">WhatsApp · (41) 98402-0845 ↗</a><br><a href="https://www.instagram.com/acadponto1/" target="_blank" rel="noopener">Instagram · @acadponto1 ↗</a></p></div></div>
+ <div class="fl"><span>© Ponto 1 Academia · Esboço de apresentação</span><span>Você em primeiro lugar.</span></div></div></footer>
+<a class="wpp wa" href="https://wa.me/5541984020845?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20aula%20experimental." aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.5 19.7l-.5-.3-3.5.9.9-3.4-.3-.6A10.6 10.6 0 0 1 16 5.4zm-4.7 4.5c-.4 0-.8.2-1 .5-.6.6-.9 1.4-.8 2.4.1 1.6 1.1 3.2 2.5 4.7 1.7 1.8 3.7 3.1 5.8 3.6 1.4.3 2.6 0 3.2-.8.3-.4.5-1.2.4-1.4-.1-.2-.5-.3-.8-.5l-1.8-.8c-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.4.2-.7.1-1.5-.7-2.9-1.9-3.7-3.2-.2-.3-.1-.5.1-.7l.7-.8c.2-.2.2-.5.1-.8l-.9-2.2c-.2-.3-.4-.3-.8-.3z"/></svg></a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* ---------- dados e cartões (feitos antes da animação) ---------- */
+const mods=[['Jump','Energia e movimento no mini trampolim.'],['Circuito Funcional','Força, coordenação e condicionamento.'],['HIIT','Sequências dinâmicas no seu ritmo.'],['Pilates','Consciência corporal e controle.'],['Abdominal','Aula dedicada à região abdominal.'],['Pilates Ball','Equilíbrio com apoio da bola.'],['Zumba','Ritmo e dança para mexer o corpo.'],['Fit Dance','Coreografias e muita energia.'],['Muay Thai','Movimentos e técnicas da modalidade.'],['Zumba Tonning','Dança com tonificação.'],['Ritbox','Ritmo inspirado no boxe.'],['Dance Music','Música e movimento para dançar junto.']];
+function sprite(src,index,alt){const ns='http://www.w3.org/2000/svg',s=document.createElementNS(ns,'svg'),im=document.createElementNS(ns,'image');s.setAttribute('preserveAspectRatio','xMidYMid slice');s.setAttribute('role','img');s.setAttribute('aria-label',alt);im.setAttribute('href',src);s.appendChild(im);const p=new Image();p.onload=()=>{const w=p.naturalWidth,h=p.naturalHeight,hw=w/2,hh=h/2,g=7;s.setAttribute('viewBox',`${index%2*hw+g} ${Math.floor(index/2)*hh+g} ${hw-g*2} ${hh-g*2}`);im.setAttribute('width',w);im.setAttribute('height',h)};p.src=src;return s}
+const wa=n=>'https://wa.me/5541984020845?text='+encodeURIComponent('Olá! Gostaria de agendar uma aula experimental de '+n+'.');
+/* 3 faixas, 4 aulas cada; modelos alternam: foto / vermelho / contorno */
+const lanes=document.getElementById('lanes');
+[0,1,2].forEach(l=>{const lane=document.createElement('div');lane.className='lane';lane.dataset.lane=l;
+ for(let k=0;k<2;k++)for(let j=0;j<4;j++){const i=l*4+j,[name,desc]=mods[i];const model=['foto','verm','cont'][(j+l+(k?1:0))%3];
+  const a=document.createElement('a');a.className='card '+model;a.href=wa(name);a.target='_blank';a.rel='noopener';if(k)a.setAttribute('aria-hidden','true'),a.tabIndex=-1;
+  const num=String(i+1).padStart(2,'0');
+  if(model==='foto')a.appendChild(sprite(`assets/aulas${Math.floor(i/4)+1}.jpg`,i%4,'Imagem ilustrativa de '+name));
+  if(model==='verm'){const b=document.createElement('span');b.className='big';b.textContent=num;b.setAttribute('aria-hidden','true');a.appendChild(b)}
+  a.insertAdjacentHTML('beforeend',`<span class="n">${num}</span><span class="go" aria-hidden="true">↗</span><h3>${name}</h3><p>${desc}</p>`);
+  lane.appendChild(a)}
+ lanes.appendChild(lane)});
+
+/* ---------- GRADE EDITÁVEL ----------
+   Fonte dos dados (em ordem): 1) GRADE_URL = link CSV de uma planilha Google publicada (o dono edita a planilha);
+   2) arquivo grade.csv desta pasta. Colunas: dia,hora,aula,obs */
+const GRADE_URL='';
+const DIAS=['Segunda','Terça','Quarta','Quinta','Sexta'];
+function csv(t){return t.trim().split(/\r?\n/).slice(1).map(l=>{const c=[];let s='',q=false;for(const ch of l){if(ch=='"')q=!q;else if(ch==','&&!q){c.push(s);s=''}else s+=ch}c.push(s);return{dia:(c[0]||'').trim(),hora:(c[1]||'').trim(),aula:(c[2]||'').trim(),obs:(c[3]||'').trim()}}).filter(r=>r.dia&&r.hora&&r.aula)}
+const hnum=h=>{const m=h.match(/(\d+)\D*(\d*)/);return m?(+m[1])*60+(+m[2]||0):0};
+const per=h=>hnum(h)<720?'Manhã':hnum(h)<1080?'Tarde':'Noite';
+const norm=s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+async function gradeInit(){
+ const week=document.getElementById('week');let rows;
+ try{const r=await fetch(GRADE_URL||'grade.csv',{cache:'no-cache'});if(!r.ok)throw 0;rows=csv(await r.text())}
+ catch(e){week.innerHTML='<p class="sched-msg">Não foi possível carregar a grade agora. Chame no WhatsApp para confirmar os horários.</p>';return}
+ const hoje=[null,'Segunda','Terça','Quarta','Quinta','Sexta',null][new Date().getDay()];
+ let ativo=hoje||'Segunda',filtro=null;
+ week.innerHTML='';const days=document.getElementById('days'),chips=document.getElementById('chips');
+ DIAS.forEach(d=>{const col=document.createElement('div');col.className='col';col.dataset.dia=d;
+  col.innerHTML=`<h3>${d}${d===hoje?'<em>HOJE</em>':''}</h3>`;
+  ['Manhã','Tarde','Noite'].forEach(p=>{const it=rows.filter(r=>norm(r.dia)===norm(d)&&per(r.hora)===p).sort((a,b)=>hnum(a.hora)-hnum(b.hora));if(!it.length)return;
+   const box=document.createElement('div');box.className='per';box.innerHTML=`<b>${p}</b>`;
+   it.forEach(r=>{const a=document.createElement('div');a.className='aula';a.dataset.aula=r.aula;const t=document.createElement('time');t.textContent=r.hora;const s=document.createElement('span');s.textContent=r.aula+(r.obs?' · '+r.obs:'');a.append(t,s);box.append(a)});col.append(box)});
+  week.append(col);
+  const b=document.createElement('button');b.type='button';b.textContent=d.slice(0,3);b.dataset.dia=d;b.onclick=()=>{ativo=d;mark()};days.append(b)});
+ const nomes=[...new Set(rows.map(r=>r.aula))].sort();
+ const all=document.createElement('button');all.type='button';all.className='on';all.innerHTML='<span>Todas</span>';all.onclick=()=>{filtro=null;mark()};chips.append(all);
+ nomes.forEach(n=>{const b=document.createElement('button');b.type='button';b.innerHTML=`<span>${n}</span>`;b.dataset.aula=n;b.onclick=()=>{filtro=filtro===n?null:n;mark()};chips.append(b)});
+ function mark(){document.querySelectorAll('.col').forEach(c=>c.classList.toggle('on',c.dataset.dia===ativo));days.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.dia===ativo));
+  chips.querySelectorAll('button').forEach(b=>b.classList.toggle('on',filtro?b.dataset.aula===filtro:!b.dataset.aula));
+  week.classList.toggle('filtrando',!!filtro);document.querySelectorAll('.aula').forEach(a=>a.classList.toggle('hit',a.dataset.aula===filtro))}
+ mark();if(window.ScrollTrigger)ScrollTrigger.refresh();
+}
+gradeInit();
+
+/* manifesto em palavras */
+const man=document.getElementById('manifesto');
+(function(){const out=[];man.childNodes.forEach(n=>{const red=n.nodeType===1;(n.textContent.trim().split(/\s+/)).forEach(w=>{if(w)out.push(`<span class="w${red?' r':''}">${w}</span>`)})});man.innerHTML=out.join(' ')})();
+
+/* menu e links */
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.onclick=()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o)};
+document.querySelectorAll('a.wa').forEach(a=>{a.target='_blank';a.rel='noopener'});
+/* accordion */
+document.querySelectorAll('.pn').forEach(p=>{const on=()=>{document.querySelectorAll('.pn').forEach(x=>{x.classList.toggle('on',x===p);x.setAttribute('aria-expanded',x===p)})};p.addEventListener('click',on);p.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover) and (min-width:901px)').matches)on()});p.addEventListener('focus',on)});
+
+/* ---------- movimento ---------- */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const header=document.getElementById('top');
+let lenis=null;
+if(window.gsap&&window.ScrollTrigger&&!reduce){
+ gsap.registerPlugin(ScrollTrigger);
+ if(window.Lenis){lenis=new Lenis({duration:1.1,smoothWheel:true});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=id.length>1&&document.querySelector(id);if(el){e.preventDefault();nav.classList.remove('open');lenis?lenis.scrollTo(el,{offset:-10}):el.scrollIntoView({behavior:'smooth'})}}));
+
+ const mm=gsap.matchMedia();
+ mm.add({desk:'(min-width:901px)',mob:'(max-width:900px)'},ctx=>{
+  const {desk}=ctx.conditions;
+
+  /* 1 hero: entrada das linhas + moldura que abre */
+  gsap.from('.hero h1 .l span',{yPercent:110,duration:1.1,ease:'power4.out',stagger:.12,delay:.15});
+  gsap.from('.hero .eyebrow,.hero p,.hero .cta',{opacity:0,y:24,duration:.9,ease:'power3.out',stagger:.1,delay:.6});
+  gsap.set('#frame',{clipPath:desk?'inset(13% 4% 13% 46% round 28px)':'inset(34% 6% 6% 6% round 24px)'});
+  const h=gsap.timeline({scrollTrigger:{trigger:'.hero',start:'top top',end:'+=90%',scrub:.6,pin:true,anticipatePin:1}});
+  h.to('#frame',{clipPath:'inset(0% 0% 0% 0% round 0px)',ease:'none'},0).to('#frame img',{scale:1,ease:'none'},0).to('.scroll-hint',{opacity:0},0);
+  if(!desk)h.to('.frame',{'--x':0},0);
+
+  /* 2 manifesto: palavras acendem */
+  gsap.to('.manifesto .w',{opacity:1,stagger:.12,ease:'none',scrollTrigger:{trigger:'.manifesto p',start:'top 78%',end:'bottom 45%',scrub:true}});
+
+  /* 3 historia por rolagem */
+  const steps=gsap.utils.toArray('.step'),dots=gsap.utils.toArray('#dots i');
+  const view=[{s:1.05,x:0,y:0},{s:1.9,x:22,y:6},{s:1.9,x:-24,y:8},{s:2.1,x:-6,y:-18}];
+  gsap.set('#storyImg',{scale:view[0].s});
+  const st=gsap.timeline({scrollTrigger:{trigger:'.story',start:'top top',end:'+=320%',scrub:.8,pin:true,anticipatePin:1,onUpdate:s=>{const i=Math.min(3,Math.round(s.progress*3));dots.forEach((d,k)=>d.classList.toggle('on',k===i))}}});
+  view.forEach((v,i)=>{
+   if(i>0){st.to(steps[i-1],{opacity:0,y:-40,duration:.35,ease:'power2.in'},i-.35).fromTo(steps[i],{opacity:0,y:40},{opacity:1,y:0,duration:.45,ease:'power3.out'},i-.1);
+           st.to('#storyImg',{scale:v.s,xPercent:desk?v.x:v.x*.5,yPercent:v.y,duration:1,ease:'power2.inOut'},i-1)}
+  });
+  st.to({},{duration:.4});
+
+  /* 4 faixas Paaspop: andam em direções/velocidades diferentes */
+  gsap.utils.toArray('.lane').forEach((lane,i)=>{
+   const dir=i===1?-1:1,speed=[1,.7,1.25][i];
+   const dist=()=>Math.max(0,lane.scrollWidth/2-innerWidth*.15)*speed;
+   gsap.fromTo(lane,{x:()=>dir>0?0:-dist()},{x:()=>dir>0?-dist():0,ease:'none',scrollTrigger:{trigger:'.lanes',start:'top bottom',end:'bottom top',scrub:true,invalidateOnRefresh:true}});
+  });
+
+  /* 5 fundo muda: preto -> papel */
+  gsap.timeline({scrollTrigger:{trigger:'.grade',start:'top 85%',end:'top 25%',scrub:true}}).fromTo('.grade',{backgroundColor:'#0b0b0c',color:'#ffffff'},{backgroundColor:'#efece8',color:'#0b0b0c',ease:'none'});
+  gsap.utils.toArray('.pessoas .disp,.how .disp,.mod h2,.grade h2').forEach(el=>gsap.from(el,{y:50,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+
+  /* 6 traço que se desenha + números acendem */
+  if(desk){const p=document.getElementById('arcPath'),len=p.getTotalLength();gsap.set(p,{strokeDasharray:len,strokeDashoffset:len});
+   const nodes=gsap.utils.toArray('.node');
+   gsap.to(p,{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:'.arc',start:'top 80%',end:'bottom 55%',scrub:true,onUpdate:s=>nodes.forEach((n,i)=>n.classList.toggle('on',s.progress>(i)/3+.05))}});}
+
+  gsap.from('.final h2',{y:70,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:'.final',start:'top 75%'}});
+ });
+
+ /* topo: some ao descer, volta ao subir */
+ let last=0;ScrollTrigger.create({onUpdate:s=>{const y=s.scroll();header.classList.toggle('solid',y>40);header.classList.toggle('hide',y>last&&y>500&&!nav.classList.contains('open'));last=y}});
+}else{
+ /* sem movimento: tudo já visível */
+ document.querySelectorAll('.node').forEach(n=>n.classList.add('on'));
+ document.querySelectorAll('.lane').forEach(l=>l.style.cssText='flex-wrap:wrap;width:auto;padding:0 32px');
+ document.querySelectorAll('.step:not(:first-child)').forEach(s=>{s.style.position='static';s.style.opacity=1;s.style.transform='none'});
+}
+</script></body></html>

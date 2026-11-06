@@ -30,6 +30,7 @@ nav{display:flex;gap:28px;font-size:13px;font-weight:700;color:#ddd}nav a{positi
 .frame img{width:100%;height:100%;object-fit:cover;object-position:75% 50%;transform:scale(1.25);will-change:transform}
 .frame:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.9),rgba(11,11,12,.1) 65%)}
 .hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-top:84px}
+.hero .eyebrow{margin-bottom:clamp(16px,3.4vh,34px)}
 .hero h1{font-size:clamp(56px,min(11.2vw,17.5vh),176px);max-width:9ch}
 .hero h1 .l{display:block;overflow:hidden;padding:.16em 0 .04em;margin-top:-.16em}.hero h1 .l span{display:block}
 .hero h1 em{font-style:normal;color:var(--red)}
@@ -68,6 +69,8 @@ nav{display:flex;gap:28px;font-size:13px;font-weight:700;color:#ddd}nav a{positi
 .mod-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px}
 .mod h2{font-size:clamp(50px,7vw,104px);margin-top:16px}
 .mod-head p{max-width:360px;color:var(--muted);line-height:1.7;font-size:14px;margin:0}
+.mod-hint{display:flex;align-items:center;gap:12px;margin:-26px 0 26px;font-size:15px;font-weight:700;color:#d6d6da}
+.mod-hint:before{content:'>>>';font:900 20px var(--disp);letter-spacing:-.15em;color:var(--red)}
 .lanes{display:flex;flex-direction:column;gap:16px}
 .lane{display:flex;gap:16px;width:max-content;will-change:transform;padding-left:32px}
 .card{flex:0 0 auto;width:clamp(240px,24vw,340px);height:clamp(250px,26vw,330px);border:0;font:inherit;color:#fff;text-align:left;cursor:pointer;border-radius:20px;overflow:hidden;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:transform .4s cubic-bezier(.2,.8,.2,1)}
@@ -265,6 +268,7 @@ dialog{width:100%;max-width:100%;max-height:92vh;max-height:92dvh;margin:auto 0 
 
 <section class="mod" id="modalidades">
  <div class="wrap mod-head"><div><div class="eyebrow">Encontre seu movimento</div><h2 class="disp">Uma aula para<br>chamar de sua.</h2></div><p>Role e veja as atividades da grade da Ponto 1. Escolha a sua e venha experimentar.</p></div>
+ <div class="wrap"><p class="mod-hint">Clique em cada atividade para ver os detalhes</p></div>
  <div class="lanes" id="lanes"></div>
  <div class="wrap"><small>Modalidades conforme a grade publicada pela academia. Horários e vagas podem mudar; confirme pelo WhatsApp.</small></div>
 </section>

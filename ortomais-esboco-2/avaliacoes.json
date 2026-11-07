@@ -1,0 +1,72 @@
+[
+ {
+  "autor": "Cliente A.",
+  "nota": 5,
+  "quando": "há 2 semanas",
+  "texto": "Exemplo de avaliação: atendimento atencioso e explicações claras em cada etapa.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente B.",
+  "nota": 5,
+  "quando": "há 1 mês",
+  "texto": "Exemplo de avaliação: ambiente acolhedor e equipe que deixa a gente à vontade.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente C.",
+  "nota": 5,
+  "quando": "há 3 semanas",
+  "texto": "Exemplo de avaliação: pontualidade e cuidado com a família toda no mesmo lugar.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente D.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Exemplo de avaliação: o plano foi mostrado com calma e sem pressa para decidir.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente E.",
+  "nota": 5,
+  "quando": "há 5 dias",
+  "texto": "Exemplo de avaliação: meu filho foi tranquilo, a equipe teve muita paciência.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente F.",
+  "nota": 5,
+  "quando": "há 1 semana",
+  "texto": "Exemplo de avaliação: recepção simpática e organização na agenda.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente G.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Exemplo de avaliação: acompanhamento próximo durante todo o tratamento.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente H.",
+  "nota": 5,
+  "quando": "há 3 meses",
+  "texto": "Exemplo de avaliação: profissionais atenciosos e consultório muito bem cuidado.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente I.",
+  "nota": 5,
+  "quando": "há 6 dias",
+  "texto": "Exemplo de avaliação: tirei todas as minhas dúvidas antes de começar.",
+  "exemplo": true
+ },
+ {
+  "autor": "Cliente J.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Exemplo de avaliação: sempre sou bem recebido e o retorno é simples de agendar.",
+  "exemplo": true
+ }
+]

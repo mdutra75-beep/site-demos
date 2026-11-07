@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b2a55">
+<meta name="description" content="You Odonto: implantes, lentes em resina, ortodontia, clareamento e harmonização em Curitiba (Água Verde) e Praia Brava, Itajaí/SC. Avaliação sem custo."><title>You Odonto | Clínica odontológica em Curitiba e Praia Brava</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b2a55;--ink2:#233f66;--brand:#2e8b3d;--aqua:#cfe0f5;--aqua2:#6dae77;--cream:#f3f7fc;--paper:#ffffff;--line:#e5eefa;--muted:#71839c;--gold:#e7c878;--ink-rgb:11,42,85;--shade-rgb:7,27,55;--brand-rgb:46,139,61;--light:#a9c8f2;--tint:#ecf3fb;--soft:#e6efe0;--softtext:#3c587d;--mutedlight:#86a5cf;--revtext:#41597a;--mutedlight2:#6786b0;--star:#c9a13a;--ringlight:#4a6994;--faint:#919fb2;--tagtext:#7a5d12;--herotext:#e1ecfa;--herohint:#c3d8f6;--contactlink:#d0e1f8;--serif:Montserrat,Arial,sans-serif;--body:Montserrat,Arial,sans-serif}
+*{box-sizing:border-box}html{background:var(--cream)}html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.5}
+a{color:inherit;text-decoration:none}img,svg{display:block;max-width:100%}button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.wrap{width:min(1220px,calc(100% - 64px));margin:auto}
+.serif{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1;margin:0}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--brand);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.eyebrow:before{content:'';width:28px;height:2px;background:currentColor;border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:#fff;padding:16px 26px;font-weight:800;font-size:13px;letter-spacing:.03em;border-radius:999px;border:0;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,background .2s;box-shadow:0 10px 24px rgba(var(--ink-rgb),.2)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(var(--ink-rgb),.28)}.btn i{font-style:normal;transition:transform .3s}.btn:hover i{transform:translateX(5px)}
+.btn.brand{background:var(--brand)}.btn.line{background:transparent;color:inherit;border:1.5px solid currentColor;box-shadow:none}.btn.line:hover{background:#fff;color:var(--ink)}
+
+/* topo */
+header{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:20px;height:72px;padding:0 32px;color:#fff;border-bottom:1px solid transparent;transition:background .3s,transform .4s,border-color .3s,color .3s}
+header.solid{background:rgba(247,245,239,.97);color:var(--ink);border-bottom-color:var(--line)}header.hide{transform:translateY(-100%)}
+.logo{display:flex;align-items:center;gap:12px;flex:none}.logo img{width:46px;height:46px;object-fit:contain;background:#fff;border-radius:12px;padding:3px}
+.logo b{display:block;font:500 22px/1 var(--serif);letter-spacing:.08em}.logo small{display:block;font-size:9px;letter-spacing:.22em;text-transform:uppercase;opacity:.75;margin-top:3px}
+nav{display:flex;gap:28px;font-size:13px;font-weight:700}nav a{position:relative;opacity:.9}nav a:after{content:'';position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:transform .3s}nav a:hover:after{transform:scaleX(1)}
+header .btn{padding:12px 20px;background:#fff;color:var(--ink);box-shadow:none}header.solid .btn{background:var(--ink);color:#fff}
+.menu{display:none;background:none;border:1px solid currentColor;color:inherit;border-radius:10px;padding:9px 12px}
+
+/* hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:620px;overflow:hidden;background:var(--ink);color:#fff}
+.frame{position:absolute;inset:0;will-change:clip-path;background:var(--ink2);overflow:hidden}
+.frame .vid{position:absolute;inset:0;overflow:hidden}
+.frame iframe{position:absolute;top:50%;left:50%;width:max(100%,177.78vh);height:max(100%,56.25vw);transform:translate(-50%,-50%);border:0;pointer-events:none}
+.frame .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(var(--shade-rgb),.82),rgba(var(--shade-rgb),.4) 58%,rgba(var(--shade-rgb),.18))}
+.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:92px 0 56px}
+.hero .eyebrow{color:var(--light);margin-bottom:clamp(14px,3vh,30px)}
+.hero h1{font-size:clamp(40px,min(6.4vw,11vh),98px);max-width:11ch}
+.hero h1 .l{display:block;overflow:hidden;padding:.14em 0 .06em;margin-top:-.14em}.hero h1 .l span{display:block}.hero h1 em{font-style:italic;color:var(--light)}
+.hero p{max-width:470px;color:var(--herotext);line-height:1.7;font-size:17px;margin:24px 0 30px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}.hero .btn{background:#fff;color:var(--ink)}.hero .btn.line{background:transparent;color:#fff}
+.scroll-hint{position:absolute;left:50%;bottom:20px;z-index:3;transform:translateX(-50%);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--herohint);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint:after{content:'';width:1px;height:32px;background:linear-gradient(#fff,transparent);animation:drip 1.8s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* manifesto */
+.manifesto{padding:20vh 0;background:var(--cream)}
+.manifesto p{font:500 clamp(32px,5.2vw,78px)/1.06 var(--serif);letter-spacing:-.025em;max-width:19ch;margin:26px 0 0}
+.gsap-ok .manifesto .w{opacity:.16}.manifesto .w{display:inline-block;margin-right:.2em}.manifesto .w.r{color:var(--brand);font-style:italic}
+
+/* experiencia (por rolagem) */
+.story{position:relative;height:100vh;height:100svh;background:var(--paper);overflow:hidden}
+.st-grid{height:100%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.st-text{position:relative;height:60%}
+.st{position:absolute;left:0;top:50%;transform:translateY(-50%);width:100%;opacity:0}.st:first-child{opacity:1}
+.st small{display:block;color:var(--brand);font-weight:800;font-size:13px;letter-spacing:.2em;margin-bottom:14px}
+.st h2{font-size:clamp(46px,6.4vw,100px)}.st h2 em{font-style:italic;color:var(--brand)}
+.st p{color:var(--muted);line-height:1.7;font-size:17px;max-width:430px;margin:22px 0 0}
+.arch{position:relative;justify-self:end;width:min(100%,500px);height:min(76vh,640px);border-radius:260px 260px 28px 28px;overflow:hidden;background:var(--aqua);box-shadow:0 30px 70px rgba(var(--ink-rgb),.2)}
+.pic{position:absolute;inset:0}.pic svg{width:100%;height:100%}
+.dots{position:absolute;left:0;bottom:6%;display:flex;gap:8px}.dots i{width:34px;height:4px;border-radius:4px;background:var(--line);transition:.4s}.dots i.on{background:var(--brand);width:54px}
+
+/* tratamentos (faixas) */
+.mod{padding:130px 0 150px;background:var(--cream);overflow:hidden}
+.mod-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px}
+.mod h2{font-size:clamp(40px,5.6vw,84px);margin-top:16px;max-width:12ch}.mod-head p{max-width:360px;color:var(--muted);line-height:1.7;font-size:15px;margin:0}
+.mod-hint{display:flex;align-items:center;gap:12px;margin:-26px 0 26px;font-size:15px;font-weight:700;color:var(--ink)}
+.mod-hint:before{content:'';width:34px;height:34px;border-radius:50%;background:var(--aqua) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23123a38' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center/16px no-repeat}
+.lanes{display:flex;flex-direction:column;gap:18px}
+.lane{display:flex;gap:18px;width:max-content;will-change:transform;padding-left:32px}
+.card{flex:0 0 auto;width:clamp(250px,24vw,340px);height:clamp(310px,28vw,390px);border:0;font:inherit;color:#fff;text-align:left;border-radius:28px;overflow:hidden;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;box-shadow:0 14px 34px rgba(var(--ink-rgb),.14)}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 46px rgba(var(--ink-rgb),.22)}
+.card h3{font:500 clamp(26px,2.5vw,34px)/1.02 var(--serif);letter-spacing:-.02em;margin:0;position:relative;z-index:2}
+.card p{font-size:13px;line-height:1.55;margin:10px 0 0;position:relative;z-index:2;max-width:28ch;opacity:.92}
+.card .n{position:absolute;top:20px;left:24px;font:800 12px var(--body);letter-spacing:.18em;z-index:2}
+.card .go{position:absolute;top:16px;right:18px;z-index:2;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--ink);font-weight:800;transition:transform .3s}.card:hover .go{transform:rotate(45deg)}
+.card:not(.esp):not(.split){background:#223}
+.card:not(.esp) svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .7s}.card:not(.esp):hover svg{transform:scale(1.07)}
+.card:not(.esp):not(.split):after{content:'';position:absolute;inset:0;z-index:0}
+.card.foto:after{background:linear-gradient(0deg,rgba(10,40,38,.92),rgba(10,40,38,0) 64%)}
+.card.aqua:after{background:linear-gradient(0deg,rgba(var(--brand-rgb),.96),rgba(var(--brand-rgb),.55) 60%,rgba(var(--brand-rgb),.22))}
+.card.aqua .big{position:absolute;right:-6px;top:-22px;z-index:1;font:500 190px/1 var(--serif);color:rgba(255,255,255,.25)}
+.card.split{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.card.split svg{height:58%;bottom:auto;border-radius:0}.card.split p{color:var(--muted)}.card.split .n{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.card.esp{background:var(--aqua);color:var(--ink);justify-content:space-between}.card.esp h3{font-size:clamp(26px,2.6vw,36px)}.card.esp h3 em{color:var(--brand);font-style:italic}.card.esp .go{background:var(--ink);color:#fff}.card.esp .n{color:var(--ink)}.card.esp .arrow{font:500 70px/1 var(--serif);color:var(--brand)}
+.mod small.note{display:block;margin-top:34px;color:var(--muted);font-size:12px}
+
+/* numeros (fundo muda) */
+.nums{padding:130px 0;background:var(--cream);color:var(--ink)}
+.nums h2{font-size:clamp(40px,5.6vw,84px);margin:16px 0 56px;max-width:14ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{border-top:1.5px solid currentColor;padding-top:20px}.stat b{display:block;font:500 clamp(48px,6vw,92px)/1 var(--serif);letter-spacing:-.03em}.stat span{display:block;margin-top:12px;font-size:14px;opacity:.8;max-width:20ch}
+.nums .note{margin-top:34px;font-size:12px;opacity:.6}
+
+/* objetivos */
+.pessoas{padding:130px 0;background:var(--paper)}
+.pessoas h2{font-size:clamp(40px,5.6vw,84px);margin:16px 0 50px;max-width:13ch}
+.acc{display:flex;gap:12px;height:520px}
+.pn{flex:1;min-width:0;border-radius:30px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;transition:flex .7s cubic-bezier(.2,.8,.2,1);color:#fff;border:0;text-align:left;font-family:inherit}
+.pn.on{flex:3.2}
+.pn:nth-child(1){background:var(--ink)}.pn:nth-child(2){background:var(--brand)}.pn:nth-child(3){background:var(--aqua);color:var(--ink)}.pn:nth-child(4){background:var(--soft);color:var(--ink)}
+.pn .no{font:500 18px var(--serif);opacity:.8}.pn h3{font:500 clamp(28px,3.4vw,50px)/1 var(--serif);letter-spacing:-.02em;margin:0}
+.pn .tx{max-height:0;opacity:0;overflow:hidden;transition:max-height .6s,opacity .5s .15s;line-height:1.6;font-size:14px;max-width:34ch;margin-top:12px;display:block}.pn.on .tx{max-height:140px;opacity:.92}
+.pn .pn-cta{display:inline-block;margin-top:14px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-bottom:2px solid currentColor;padding-bottom:3px;width:max-content}
+.pn .arrow{position:absolute;right:22px;top:20px;font:500 28px var(--serif);opacity:.7}
+
+/* equipe */
+.equipe{background:var(--ink);color:#fff;padding:120px 0 90px;overflow:hidden;position:relative}
+.equipe .eyebrow{color:var(--light)}.equipe h2{font-size:clamp(40px,5.6vw,84px);margin:16px 0 30px}
+.stage{position:relative;height:clamp(460px,50vw,600px);perspective:1400px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.stage:active{cursor:grabbing}.stage:focus-visible{outline:3px solid var(--light);outline-offset:-6px;border-radius:20px}
+.eq-ghost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:500 clamp(260px,38vw,560px)/1 var(--serif);color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.07);pointer-events:none;z-index:0;white-space:nowrap}
+.slide{position:absolute;left:50%;top:50%;width:clamp(230px,26vw,340px);aspect-ratio:3/4;border-radius:200px 200px 24px 24px;overflow:hidden;background:var(--ink2);box-shadow:0 30px 60px rgba(0,0,0,.4);will-change:transform,opacity}
+.slide svg{width:100%;height:100%;pointer-events:none}.slide.on{box-shadow:0 0 0 3px var(--brand),0 40px 90px rgba(var(--brand-rgb),.35)}
+.eq-ui{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:30px}
+.eq-count{font:500 16px var(--serif);letter-spacing:.2em;color:var(--mutedlight)}.eq-count b{color:#fff}
+.eq-mask{overflow:hidden;padding-bottom:.08em}.eq-name{font:500 clamp(36px,4.8vw,70px)/1 var(--serif);letter-spacing:-.02em;margin:8px 0 0}.eq-role{color:var(--mutedlight);margin-top:10px;font-weight:600}
+.eq-ctrl{display:flex;gap:10px;flex:none}.eq-ctrl button{width:58px;height:58px;border-radius:50%;border:1.5px solid var(--ringlight);background:transparent;color:#fff;font-size:22px;transition:.25s}.eq-ctrl button:hover{background:var(--brand);border-color:var(--brand);transform:scale(1.06)}
+.eq-note{font-size:12px;color:var(--mutedlight2);margin-top:26px}
+
+/* como comecar */
+.how{padding:140px 0 120px;background:var(--cream)}
+.how h2{font-size:clamp(40px,5.6vw,84px);margin:16px 0 20px;max-width:13ch}
+.arc{position:relative;margin-top:30px}.arc svg{width:100%;height:auto;overflow:visible}.arc path{fill:none;stroke:var(--brand);stroke-width:3;stroke-linecap:round}.arc .base{stroke:var(--line)}
+.nodes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:-20px}
+.node{opacity:.3;transform:translateY(20px);transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1)}.node.on{opacity:1;transform:none}
+.node b{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#fff;font:500 28px var(--serif);margin-bottom:18px}
+.node h3{font:500 clamp(26px,2.6vw,36px)/1.05 var(--serif);margin:0 0 10px}.node p{color:var(--muted);line-height:1.65;font-size:14px;margin:0;max-width:30ch}
+
+/* final + contato */
+.final{background:linear-gradient(130deg,var(--aqua),var(--tint));padding:110px 0}
+.final .in{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}.final h2{font-size:clamp(44px,7vw,108px);max-width:11ch}.final p{max-width:400px;line-height:1.6;color:var(--softtext)}
+.contato{background:var(--ink);color:#e6f3ef;padding:100px 0 40px}
+.cg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}.contato h2{font-size:clamp(34px,4.2vw,60px);color:#fff;max-width:15ch}.contato .lead{color:var(--mutedlight);max-width:46ch;line-height:1.7;margin-top:18px}
+.cp{border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:28px;background:rgba(255,255,255,.05)}.cp h3{font:500 28px var(--serif);margin:0 0 20px;color:var(--light)}
+.cl{display:grid;gap:18px}.cl a,.cl div{display:flex;gap:14px;align-items:flex-start;color:var(--contactlink);font-size:14px;line-height:1.5}.cl a:hover{color:#fff}.cl strong{display:block;color:#fff;font-size:14px;margin-bottom:2px}.cl .ic{flex:none;width:26px;color:var(--light);font-size:20px;line-height:1.2}
+.fl{border-top:1px solid rgba(255,255,255,.14);margin-top:60px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;color:var(--mutedlight2);font-size:12px}
+.wpp{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;box-shadow:0 10px 28px rgba(0,0,0,.35);transition:transform .3s}.wpp:hover{transform:scale(1.08)}.wpp svg{width:30px;height:30px;fill:#fff}
+
+/* avaliações do Google */
+.aval{background:var(--paper);padding:120px 0}
+.av-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:44px}.av-head h2{font-size:clamp(38px,5vw,72px);margin-top:16px;max-width:12ch}
+.av-score{display:grid;grid-template-columns:auto 1fr;gap:2px 18px;align-items:center;background:var(--aqua);border-radius:28px;padding:22px 28px;min-width:min(100%,430px)}
+.av-score b{grid-row:1/3;font:500 72px/1 var(--serif);letter-spacing:-.03em}.stars{color:var(--star);letter-spacing:.14em;font-size:20px}.av-score span{font-size:13px;color:var(--softtext)}
+.av-score .btn{grid-column:1/3;justify-content:center;margin-top:14px;padding:12px 20px}.av-score .btn.line:hover{background:var(--ink);color:#fff}
+.av-list{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rv{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}.rv:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(var(--ink-rgb),.12)}
+.rv-top{display:flex;align-items:center;gap:12px}.rv-av{flex:none;width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font:500 19px var(--serif)}
+.rv-top b{display:block;font-size:14px;line-height:1.2}.rv-top small{color:var(--muted);font-size:12px}
+.rv p{margin:0;font-size:14px;line-height:1.65;color:var(--revtext);display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}.rv.open p{display:block;-webkit-line-clamp:unset}
+.rv-more{align-self:flex-start;background:none;border:0;padding:0;color:var(--brand);font-weight:800;font-size:12px;letter-spacing:.04em;margin-top:-4px}.rv-more:hover{text-decoration:underline}.rv-sp{flex:1}
+.rv-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}.rv-g{font:800 15px var(--body);color:#4285f4}
+.rv-tag{background:var(--soft);color:var(--tagtext);border-radius:99px;padding:3px 9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:10px}
+.av-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:26px}.av-note{margin:0;font-size:12px;color:var(--muted);max-width:60ch;text-align:right}
+
+/* popup */
+dialog{border:0;padding:0;margin:auto;background:var(--paper);color:var(--ink);border-radius:30px;width:min(980px,calc(100% - 32px));max-width:none;max-height:min(88vh,780px);overflow:hidden;box-shadow:0 40px 120px rgba(var(--shade-rgb),.5)}
+dialog[open]{animation:pop .5s cubic-bezier(.2,.8,.2,1)}dialog::backdrop{background:rgba(var(--shade-rgb),.7);backdrop-filter:blur(6px)}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
+.x{position:absolute;top:14px;right:14px;z-index:6;width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:20px;font-weight:800;display:grid;place-items:center;transition:transform .3s,background .2s}.x:hover{transform:rotate(90deg);background:var(--brand)}
+.dlg-body{display:grid;grid-template-columns:.8fr 1.2fr;height:min(88vh,780px);max-height:min(88vh,780px)}
+.dlg-img{position:relative;background:var(--aqua);overflow:hidden}.dlg-img svg{position:absolute;inset:0;width:100%;height:100%}.dlg-img:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(var(--ink-rgb),.35),transparent 45%)}
+.dlg-img.obj{display:flex;flex-direction:column;justify-content:flex-end;padding:30px}.dlg-img.obj:after{display:none}
+.dlg-img.obj .big{position:absolute;top:10px;left:22px;font:500 clamp(120px,16vw,220px)/1 var(--serif);opacity:.25}.dlg-img.obj h3{font:500 clamp(36px,4.4vw,62px)/1 var(--serif);letter-spacing:-.02em;margin:0;position:relative}
+.dlg-txt{padding:46px 40px 30px;overflow:auto;overscroll-behavior:contain}.dlg-txt .eyebrow{margin-bottom:14px}
+.dlg-txt h3{font:500 clamp(40px,5vw,68px)/1 var(--serif);letter-spacing:-.025em;margin:0 0 8px}.dlg-txt .frase{color:var(--brand);font-weight:800;font-size:15px;margin:0 0 16px}
+.dlg-txt p{line-height:1.7;color:var(--muted);font-size:15px;margin:0 0 18px;max-width:52ch}
+.dlg-txt h4{font:800 11px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);opacity:.6;margin:22px 0 10px}
+.dlg-txt ul{list-style:none;padding:0;margin:0}.dlg-txt li{display:flex;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:14px;font-weight:600}.dlg-txt li:before{content:'';flex:none;width:8px;height:8px;margin-top:7px;border-radius:50%;background:var(--brand)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{border:1.5px solid var(--line);border-radius:99px;padding:6px 13px;font-size:12px;font-weight:700}
+.dlg-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}
+.dlg-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.dlg-nav button,.link{background:none;border:0;color:var(--ink);font-weight:800;font-size:13px;padding:10px 4px}.dlg-nav button:hover,.link:hover{color:var(--brand)}
+.obj-list{display:grid;gap:10px;margin-top:6px}
+.obj-item{display:flex;justify-content:space-between;align-items:center;gap:14px;width:100%;background:var(--cream);border:1.5px solid transparent;border-radius:18px;padding:14px 18px;color:var(--ink);text-align:left;font:inherit;cursor:pointer;transition:border-color .2s,transform .3s}.obj-item:hover{border-color:var(--brand);transform:translateX(4px)}
+.obj-item b{display:block;font:500 22px/1.1 var(--serif)}.obj-item em{font-style:normal;font-size:12px;color:var(--muted)}.obj-item i{font-style:normal;color:var(--brand);font-weight:800;flex:none}
+.mini{font-size:12px;color:var(--faint);margin-top:18px}
+
+@media(max-width:1180px){nav{gap:18px;font-size:12px}header .btn{display:none}.av-list{grid-template-columns:repeat(3,1fr)}.av-list .rv:nth-child(n+4){display:flex}}
+@media(max-width:700px){.av-head{display:block}.av-score{margin-top:24px}.av-list{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -18px;padding:6px 18px 18px}.rv{flex:0 0 82%;scroll-snap-align:center}.av-foot{display:block}.av-note{text-align:left;margin-top:14px}.aval{padding:90px 0}}
+@media(max-width:900px){
+.wrap{width:calc(100% - 36px)}header{padding:0 16px;height:62px}.logo img{width:40px;height:40px}.logo b{font-size:19px}
+nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);color:var(--ink);padding:22px 24px;flex-direction:column;gap:18px;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}
+.hero-in{justify-content:flex-start;padding-top:96px}.hero h1{font-size:clamp(38px,min(11vw,8vh),64px)}.hero p{font-size:15px;margin:16px 0 20px;max-width:340px}
+.frame .shade{background:linear-gradient(180deg,rgba(var(--shade-rgb),.62),rgba(var(--shade-rgb),.72))}
+.manifesto{padding:14vh 0}
+.st-grid{grid-template-columns:1fr;grid-template-rows:42% 1fr;gap:10px;padding-top:70px}.arch{justify-self:center;height:100%;width:min(78vw,320px)}.st-text{height:100%}.st{top:auto;bottom:0;transform:none}.st h2{font-size:clamp(40px,11vw,60px)}.st p{font-size:15px}.dots{position:absolute;bottom:auto;top:-8px}
+.mod{padding:90px 0 100px}.mod-head{display:block}.mod-head p{margin-top:16px}.lane{padding-left:18px}
+.nums{padding:90px 0}.stats{grid-template-columns:1fr 1fr;gap:26px 18px}
+.pessoas{padding:90px 0}.acc{flex-direction:column;height:auto}.pn{flex:none;min-height:100px}.pn.on{min-height:270px}
+.equipe{padding:90px 0 70px}.eq-ui{align-items:center}.eq-ctrl button{width:52px;height:52px}.stage{height:440px}.slide{width:62vw;max-width:300px}
+.how{padding:90px 0}.nodes{grid-template-columns:1fr;gap:28px;margin-top:10px}.arc svg{display:none}.node{opacity:1;transform:none}
+.final .in,.fl{display:block}.final .btn{margin-top:22px}.cg{grid-template-columns:1fr}.fl span{display:block;margin-top:8px}
+dialog{width:100%;max-width:100%;max-height:92vh;max-height:92dvh;margin:auto 0 0;border-radius:28px 28px 0 0}dialog[open]{animation:sheet .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes sheet{from{transform:translateY(100%)}to{transform:none}}
+.dlg-body{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:92vh;height:92dvh;max-height:none}.dlg-img{height:200px}.dlg-img.obj{height:auto;padding:22px 22px 18px}.dlg-img.obj .big{font-size:110px}.dlg-img.obj h3{font-size:36px;padding-right:54px}
+.dlg-txt{padding:24px 20px 28px}.dlg-txt h3{font-size:42px}.x{top:12px;right:12px;width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.scroll-hint:after{animation:none}.gsap-ok .manifesto .w{opacity:1}.node{opacity:1;transform:none}}
+.static-story .story{height:auto;padding:90px 0}.static-story .st-grid{height:auto}.static-story .st-text{height:auto}.static-story .st{position:static;opacity:1;transform:none;margin-bottom:30px}.static-story .arch{height:420px}.static-story .pic:not(:first-child){display:none}
+</style></head><body>
+
+<header id="top"><a class="logo" href="#inicio" aria-label="You Odonto, início"><span><b>YOU ODONTO</b><small>clínica odontológica</small></span></a>
+<nav id="nav" aria-label="Menu principal"><a href="#tratamentos">Tratamentos</a><a href="#experiencia">A experiência</a><a href="#para-voce">Para você</a><a href="#equipe">Equipe</a><a href="#contato">Contato</a></nav>
+<a class="btn wa" href="https://wa.me/5541991457638?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Avaliação sem custo <i>→</i></a><button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button></header>
+
+<main>
+<section class="hero" id="inicio">
+ <div class="frame" id="frame"><div class="vid"><img src="assets/predio.jpg" alt="Fachada da clínica You Odonto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></div><div class="shade"></div></div>
+ <div class="wrap hero-in">
+  <div class="eyebrow">Curitiba · Praia Brava (SC)</div>
+  <h1 class="serif" aria-label="A clínica dos melhores feedbacks."><span class="l"><span>A clínica</span></span><span class="l"><span>dos melhores</span></span><span class="l"><span><em>feedbacks.</em></span></span></h1>
+  <p>Implantes, lentes em resina, ortodontia e harmonização, com planejamento individual. Agende uma avaliação sem custo.</p>
+  <div class="cta"><a class="btn wa" href="https://wa.me/5541991457638?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Agendar avaliação sem custo <i>→</i></a><a class="btn line" href="#tratamentos">Ver tratamentos</a></div>
+ </div>
+ <div class="scroll-hint" aria-hidden="true">Role</div>
+</section>
+
+<section class="manifesto"><div class="wrap"><div class="eyebrow">Mais que uma clínica</div>
+ <p id="manifesto">Cada sorriso é planejado com você. O nosso melhor resultado é o <span class="r">feedback</span> de quem passou por aqui.</p></div></section>
+
+<section class="story" id="experiencia" aria-label="A experiência"><div class="wrap st-grid">
+ <div class="st-text" id="stText">
+  <div class="st"><small>01 / 04</small><h2 class="serif">Você é <em>recebido.</em></h2><p>Avaliação sem custo, feita com calma, para entender o que você deseja.</p></div>
+  <div class="st"><small>02 / 04</small><h2 class="serif">Você é <em>ouvido.</em></h2><p>O planejamento começa pela conversa: seus objetivos, suas dúvidas, seu momento.</p></div>
+  <div class="st"><small>03 / 04</small><h2 class="serif">Você <em>entende.</em></h2><p>Exames e imagens explicados com clareza, sem termos difíceis.</p></div>
+  <div class="st"><small>04 / 04</small><h2 class="serif">Você <em>decide.</em></h2><p>Um plano transparente, com as etapas e as opções, para escolher com segurança.</p></div>
+  <div class="dots" id="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+ </div>
+ <div class="arch" id="arch" role="img" aria-label="Cenas de atendimento na clínica"></div>
+</div></section>
+
+<section class="mod" id="tratamentos">
+ <div class="wrap mod-head"><div><div class="eyebrow">Tratamentos</div><h2 class="serif">Do implante ao sorriso novo.</h2></div><p>Planejamento individual para cada tratamento, em Curitiba e na Praia Brava.</p></div>
+ <div class="wrap"><p class="mod-hint">Clique em cada tratamento para ver os detalhes</p></div>
+ <div class="lanes" id="lanes"></div>
+ <div class="wrap"><small class="note">Imagens e textos de apresentação. A indicação de cada tratamento é feita na avaliação.</small></div>
+</section>
+
+<section class="nums" id="numeros"><div class="wrap"><div class="eyebrow">Presença e confiança</div><h2 class="serif">Uma clínica que as pessoas recomendam.</h2>
+ <div class="stats"><div class="stat"><b data-count="10000" data-plus="1">10.000+</b><span>seguidores no Instagram</span></div><div class="stat"><b data-count="2">2</b><span>unidades: Curitiba e Praia Brava (SC)</span></div><div class="stat"><b>Sem custo</b><span>na avaliação inicial</span></div><div class="stat"><b>Seg a Sáb</b><span>atendimento, sábado até 12h</span></div></div><p class="note">Números provisórios (Instagram e site atual), a confirmar com a clínica.</p></div></section>
+
+<section class="pessoas" id="para-voce"><div class="wrap"><div class="eyebrow">Feito para você</div><h2 class="serif">O que você procura?</h2>
+ <div class="acc" id="acc">
+  <button class="pn on" type="button" aria-expanded="true"><span class="arrow">→</span><span class="no">01</span><span><h3>Alinhar<br>o sorriso</h3><span class="tx">Ortodontia e alinhadores, planejados para cada fase.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="arrow">→</span><span class="no">02</span><span><h3>Renovar<br>o sorriso</h3><span class="tx">Lentes, porcelanas, clareamento e harmonização.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="arrow">→</span><span class="no">03</span><span><h3>Recuperar<br>dentes</h3><span class="tx">Implantes e próteses para devolver função e estética.</span></span></button>
+  <button class="pn" type="button" aria-expanded="false"><span class="arrow">→</span><span class="no">04</span><span><h3>Cuidar da<br>família</h3><span class="tx">Odontopediatria e acompanhamento no mesmo lugar.</span></span></button>
+ </div></div></section>
+
+<section class="equipe" id="equipe" aria-label="Nossa equipe"><div class="wrap"><div class="eyebrow">Gente que cuida de você</div><h2 class="serif">Nossa equipe</h2></div>
+ <div class="stage" id="stage" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Profissionais da You Odonto. Use as setas do teclado ou arraste."><div class="eq-ghost" id="ghost" aria-hidden="true">01</div><div id="slides"></div></div>
+ <div class="wrap eq-ui"><div><div class="eq-count"><b id="eqN">01</b> / <span id="eqT">08</span></div><div class="eq-mask"><h3 class="eq-name" id="eqName"></h3></div><div class="eq-mask"><div class="eq-role" id="eqRole"></div></div></div>
+ <div class="eq-ctrl"><button type="button" id="eqPrev" aria-label="Profissional anterior">←</button><button type="button" id="eqNext" aria-label="Próximo profissional">→</button></div></div>
+ <div class="wrap"><p class="eq-note">Fotos e nomes fictícios, para demonstração. Serão substituídos pelos profissionais reais da clínica.</p></div></section>
+
+<section class="how" id="como"><div class="wrap"><div class="eyebrow">Como começar</div><h2 class="serif">Três passos, sem pressa.</h2>
+ <div class="arc"><svg viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path class="base" d="M10 120 C 300 -40, 900 -40, 1190 120"/><path id="arcPath" d="M10 120 C 300 -40, 900 -40, 1190 120"/></svg>
+ <div class="nodes" id="nodes">
+  <div class="node"><b>1</b><h3>Você agenda</h3><p>Chame no WhatsApp ou preencha o formulário. A avaliação inicial é sem custo.</p></div>
+  <div class="node"><b>2</b><h3>A equipe orienta</h3><p>Na avaliação, você entende as possibilidades e recebe um plano explicado com clareza.</p></div>
+  <div class="node"><b>3</b><h3>O sorriso evolui</h3><p>O tratamento é acompanhado de perto, com atenção aos detalhes e à sua rotina.</p></div>
+ </div></div></div></section>
+
+<section class="final"><div class="wrap in"><div><div class="eyebrow">Seu próximo sorriso começa com uma conversa</div><h2 class="serif" style="margin-top:16px">Vamos cuidar disso juntos?</h2><p style="margin-top:18px">Agende sua avaliação sem custo em Curitiba (Água Verde) ou na Praia Brava.</p></div><a class="btn wa" href="https://wa.me/5541991457638?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Falar pelo WhatsApp <i>→</i></a></div></section>
+
+
+</main>
+
+<footer class="contato" id="contato"><div class="wrap"><div class="cg">
+ <div><div class="eyebrow" style="color:var(--light)">Encontre a You Odonto</div><h2 class="serif" style="margin-top:16px">Agende sua avaliação sem custo.</h2><p class="lead">Duas unidades para atender você: Curitiba (Água Verde) e Praia Brava, em Itajaí/SC.</p></div>
+ <div class="cp"><h3>Clínica You Odonto</h3><div class="cl">
+  <a href="https://goo.gl/maps/Z88B4BRV5mDdKiZP8" target="_blank" rel="noopener"><span class="ic">⌖</span><span><strong>Curitiba</strong>Rua Brigadeiro Franco, 3323 · Água Verde</span></a>
+  <a href="tel:+5541984979594" target="_blank" rel="noopener"><span class="ic">☎</span><span><strong>Telefones Curitiba</strong>(41) 98497-9594 · (41) 3040-9915</span></a>
+  <a href="https://wa.me/5541991457638" target="_blank" rel="noopener"><span class="ic">✆</span><span><strong>WhatsApp</strong>(41) 99145-7638 · (41) 99790-5490</span></a>
+  <a href="https://www.instagram.com/youbrava" target="_blank" rel="noopener"><span class="ic">⌖</span><span><strong>Praia Brava (SC)</strong>Av. Osvaldo Reis, 3385 · anexo ao Hilton Garden Inn, Itajaí</span></a>
+  <div><span class="ic">◷</span><span><strong>Horários</strong>Seg a Sex: 08h às 18h<br>Sáb: 08h às 12h</span></div>
+  <a href="https://www.instagram.com/youodonto/" target="_blank" rel="noopener"><span class="ic">◎</span><span><strong>Instagram</strong>@youodonto · @youbrava</span></a></div></div></div>
+ <div class="fl"><span>© You Odonto · Esboço de apresentação</span><span>A clínica dos melhores feedbacks.</span></div></div></footer>
+
+<dialog id="dlg" aria-modal="true" aria-label="Detalhes"><button type="button" class="x" id="dlgX" aria-label="Fechar">✕</button><div class="dlg-body" id="dlgBody" data-lenis-prevent></div></dialog>
+<a class="wpp wa" href="https://wa.me/5541991457638?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 2.4a10.6 10.6 0 1 1-5.5 19.7l-.5-.3-3.5.9.9-3.4-.3-.6A10.6 10.6 0 0 1 16 5.4zm-4.7 4.5c-.4 0-.8.2-1 .5-.6.6-.9 1.4-.8 2.4.1 1.6 1.1 3.2 2.5 4.7 1.7 1.8 3.7 3.1 5.8 3.6 1.4.3 2.6 0 3.2-.8.3-.4.5-1.2.4-1.4-.1-.2-.5-.3-.8-.5l-1.8-.8c-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.4.2-.7.1-1.5-.7-2.9-1.9-3.7-3.2-.2-.3-.1-.5.1-.7l.7-.8c.2-.2.2-.5.1-.8l-.9-2.2c-.2-.3-.4-.3-.8-.3z"/></svg></a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* =====================================================================
+   CONTEÚDO EDITÁVEL — tratamentos, objetivos, equipe, cenas.
+   Textos de apresentação: revisar com a clínica. Imagens provisórias.
+   Cada imagem é um recorte [arquivo, x, y, largura, altura] em frações (0 a 1) da foto.
+   ===================================================================== */
+const TRAT=[{"n": "Implante dentário", "img": ["assets/jornada-visuais.jpg", 0.34, 0.52, 0.32, 0.46], "frase": "Recupere a função e o sorriso.", "desc": "Reposição de dentes perdidos com planejamento e acompanhamento, para devolver conforto ao mastigar e sorrir.", "quem": "Quem perdeu um ou mais dentes.", "ben": ["Planejamento com exames", "Conforto ao mastigar", "Acompanhamento no pós"], "curto": "Reposição de dentes com planejamento."}, {"n": "Lentes em resina", "img": ["assets/jornada-visuais.jpg", 0.672, 0.504, 0.328, 0.492], "frase": "Transformação estética do sorriso.", "desc": "Remodelagem da cor, da forma e do alinhamento aparente dos dentes com resina, a partir de um planejamento feito com você.", "quem": "Quem quer renovar o sorriso e deixar para trás pequenas imperfeições.", "ben": ["Planejamento visual", "Estética natural", "Indicação após avaliação"], "curto": "Estética do sorriso com resina."}, {"n": "Prótese dentária", "img": ["assets/tratamentos-visuais.jpg", 0.72, 0.62, 0.26, 0.34], "frase": "Função e estética de volta.", "desc": "A ausência de dentes causa incômodo e constrangimento. A prótese dentária devolve mastigação, conforto e naturalidade.", "quem": "Quem perdeu dentes e busca recuperar função e estética.", "ben": ["Planejamento individual", "Conforto no dia a dia", "Aparência natural"], "curto": "Mastigação e estética de volta."}, {"n": "Ortodontia", "img": ["assets/tratamentos-visuais.jpg", 0.12, 0, 0.38, 0.486], "frase": "Dentes alinhados, autoestima em alta.", "desc": "Tratamento com aparelho ortodôntico personalizado, com cuidado para alinhar os dentes e melhorar a mordida.", "quem": "Crianças, adolescentes e adultos.", "ben": ["Planejamento individual", "Acompanhamento regular", "Sorriso alinhado e saudável"], "curto": "Aparelho personalizado para alinhar."}, {"n": "Clareamento", "img": ["assets/jornada-visuais.jpg", 0.336, 0, 0.328, 0.492], "frase": "Mais brilho para o sorriso.", "desc": "Clareamento dental com segurança e acompanhamento profissional, definido após avaliação.", "quem": "Quem quer um sorriso mais claro, com cuidado.", "ben": ["Avaliação prévia", "Acompanhamento profissional", "Resultado natural"], "curto": "Sorriso mais claro, com segurança."}, {"n": "Harmonização facial", "img": ["assets/jornada-visuais.jpg", 0.11, 0.52, 0.22, 0.46], "frase": "Beleza natural e equilibrada.", "desc": "Harmonização facial personalizada, realçando a beleza de forma natural e respeitando as características de cada pessoa.", "quem": "Quem busca equilíbrio estético com resultado natural.", "ben": ["Avaliação individual", "Resultado natural", "Profissional habilitado"], "curto": "Equilíbrio e naturalidade."}, {"n": "Alinhadores", "img": ["assets/tratamentos-visuais.jpg", 0.12, 0.52, 0.38, 0.46], "frase": "Discretos e planejados.", "desc": "Placas transparentes, trocadas ao longo do tratamento, planejadas a partir de uma avaliação detalhada.", "quem": "Adultos e jovens que buscam mais discrição.", "ben": ["Estética discreta", "Planejamento digital", "Acompanhamento próximo"], "curto": "Alinhamento com discrição."}, {"n": "Porcelanas", "img": ["assets/jornada-visuais.jpg", 0.4, 0.56, 0.2, 0.24], "frase": "Desenho do sorriso.", "desc": "Facetas e lentes de porcelana que remodelam cor, forma e proporção dos dentes, planejadas com você.", "quem": "Quem quer um sorriso renovado, com estética natural.", "ben": ["Planejamento visual", "Estética natural", "Indicação após avaliação"], "curto": "Cor, forma e proporção planejadas."}, {"n": "Odontopediatria", "img": ["assets/tratamentos-visuais.jpg", 0.52, 0, 0.46, 0.486], "frase": "Um primeiro cuidado leve e acolhedor.", "desc": "Atendimento pensado para a infância, com linguagem simples e um ambiente que ajuda a criança a se sentir segura.", "quem": "Bebês, crianças e pré-adolescentes.", "ben": ["Acolhimento e paciência", "Prevenção desde cedo", "Orientação aos pais"], "curto": "Cuidado acolhedor na infância."}];
+const OBJ=[{"t": "Alinhar o sorriso", "cor": "#0b2a55", "claro": false, "intro": "Dentes bem posicionados ajudam na estética e na mordida. A avaliação define o melhor caminho.", "ativ": ["Ortodontia", "Alinhadores", "Odontopediatria"]}, {"t": "Renovar o sorriso", "cor": "#2e8b3d", "claro": false, "intro": "Opções estéticas planejadas com você, com foco em resultado natural.", "ativ": ["Lentes em resina", "Porcelanas", "Clareamento", "Harmonização facial"]}, {"t": "Recuperar dentes", "cor": "#cfe0f5", "claro": true, "intro": "Tratamentos para devolver conforto, mastigação e confiança.", "ativ": ["Implante dentário", "Prótese dentária"]}, {"t": "Cuidar da família", "cor": "#e6efe0", "claro": true, "intro": "Acolhimento para crianças e adultos, no mesmo lugar.", "ativ": ["Odontopediatria", "Ortodontia", "Clareamento"]}];
+const CENAS=[["assets/jornada-visuais.jpg", 0, 0, 0.328, 0.492], ["assets/jornada-visuais.jpg", 0, 0.504, 0.328, 0.492], ["assets/jornada-visuais.jpg", 0.672, 0, 0.328, 0.492], ["assets/jornada-visuais.jpg", 0.336, 0.504, 0.328, 0.492]];
+const EQUIPE=[["Henrique Salles", "Implantodontia", ["assets/team-portraits-clean.jpg", 0.754, 0.004, 0.242, 0.492]], ["Marina Oliveira", "Lentes e estética", ["assets/team-portraits-clean.jpg", 0.004, 0.004, 0.242, 0.492]], ["Rafael Duarte", "Prótese dentária", ["assets/team-portraits-clean.jpg", 0.254, 0.004, 0.242, 0.492]], ["Bianca Moreira", "Ortodontia", ["assets/team-portraits-clean.jpg", 0.504, 0.004, 0.242, 0.492]], ["Thiago Lacerda", "Clínica geral", ["assets/team-portraits-clean.jpg", 0.004, 0.504, 0.242, 0.492]], ["Camila Freitas", "Harmonização facial", ["assets/team-portraits-clean.jpg", 0.754, 0.504, 0.242, 0.492]], ["Lucas Prado", "Alinhadores", ["assets/team-portraits-clean.jpg", 0.504, 0.504, 0.242, 0.492]], ["Paula Mendes", "Odontopediatria", ["assets/team-portraits-clean.jpg", 0.254, 0.504, 0.242, 0.492]]];
+const WA='https://wa.me/5541991457638?text=';
+const wa=t=>WA+encodeURIComponent(t);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* recorte de imagem (SVG com caixa em frações) */
+function recorte(c,alt){const[src,fx,fy,fw,fh]=c,ns='http://www.w3.org/2000/svg',s=document.createElementNS(ns,'svg'),im=document.createElementNS(ns,'image');s.setAttribute('preserveAspectRatio','xMidYMin slice');s.setAttribute('role','img');s.setAttribute('aria-label',alt);im.setAttribute('href',src);s.appendChild(im);const p=new Image();p.onload=()=>{const w=p.naturalWidth,h=p.naturalHeight;s.setAttribute('viewBox',`${fx*w} ${fy*h} ${fw*w} ${fh*h}`);im.setAttribute('width',w);im.setAttribute('height',h)};p.src=src;return s}
+
+/* faixas de cards */
+const lanes=document.getElementById('lanes');
+const LANES=[[0, 3], [3, 6], [6, 9]];
+[0,1,2].forEach(l=>{const lane=document.createElement('div');lane.className='lane';
+ const esp=(tag,href,n,html)=>{const e=document.createElement(tag);e.className='card esp';if(href)e.href=href;e.innerHTML=`<span class="n">${n}</span><span class="arrow" aria-hidden="true">→</span>${html}`;return e};
+ if(l===0)lane.appendChild(esp('div','',TRAT.length+' TRATAMENTOS','<h3>Um cuidado<br><em>para cada fase.</em></h3><p>Toque num tratamento e veja como ele funciona.</p>'));
+ const lista=TRAT.slice(...LANES[l]);
+ lista.forEach((t,j)=>{const i=TRAT.indexOf(t),model=['foto','aqua','split'][(j+l)%3];
+  const a=document.createElement('button');a.type='button';a.className='card '+model;a.dataset.trat=t.n;a.setAttribute('aria-label','Ver detalhes de '+t.n);
+  a.addEventListener('click',()=>window.abrirTrat&&window.abrirTrat(t.n));
+  const num=String(i+1).padStart(2,'0');
+  a.appendChild(recorte(t.img,'Imagem ilustrativa de '+t.n));
+  if(model==='aqua'){const b=document.createElement('span');b.className='big';b.textContent=num;b.setAttribute('aria-hidden','true');a.appendChild(b)}
+  a.insertAdjacentHTML('beforeend',`<span class="n">${num}</span><span class="go" aria-hidden="true">↗</span><h3>${esc(t.n)}</h3><p>${esc(t.curto)}</p>`);
+  lane.appendChild(a)});
+ if(l===0)lane.appendChild(esp('a',wa('Olá! Gostaria de agendar uma avaliação.'),'1ª CONSULTA','<h3>Agende sua <em>avaliação</em></h3><p>Chame no WhatsApp e converse com a equipe.</p>'));
+ if(l===1)lane.appendChild(esp('a','#para-voce','NÃO SABE?','<h3>Escolha pelo <em>objetivo</em></h3><p>Mostramos os tratamentos indicados.</p>'));
+ if(l===2){lane.appendChild(esp('a','#equipe','EQUIPE','<h3>Conheça quem <em>cuida de você</em></h3><p>Profissionais de várias áreas, juntos.</p>'));lane.appendChild(esp('a',wa('Olá! Gostaria de agendar uma avaliação.'),'1ª CONSULTA','<h3>Vamos <em>conversar?</em></h3><p>Sem pressa e sem compromisso.</p>'))}
+ const row=document.createElement('div');row.className='lane-row';row.appendChild(lane);lanes.appendChild(row)});
+
+/* cenas da experiência */
+const arch=document.getElementById('arch');CENAS.forEach((c,i)=>{const d=document.createElement('div');d.className='pic';d.appendChild(recorte(c,["Recepção acolhedora", "Conversa entre dentista e paciente", "Raio-X explicado ao paciente", "Plano de tratamento mostrado em tela"][i]));arch.appendChild(d)});
+
+/* manifesto em palavras */
+const man=document.getElementById('manifesto');(function(){const out=[];man.childNodes.forEach(n=>{const r=n.nodeType===1;n.textContent.trim().split(/\s+/).forEach(w=>{if(w)out.push(`<span class="w${r?' r':''}">${w}</span>`)})});man.innerHTML=out.join(' ')})();
+
+/* menu e acordeão */
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.onclick=()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o)};
+document.querySelectorAll('a.wa').forEach(a=>{a.target='_blank';a.rel='noopener'});
+document.querySelectorAll('.pn>span:last-child').forEach(s=>s.insertAdjacentHTML('beforeend','<span class="pn-cta">Ver tratamentos →</span>'));
+document.querySelectorAll('.pn').forEach((p,idx)=>{const on=()=>{document.querySelectorAll('.pn').forEach(x=>{x.classList.toggle('on',x===p);x.setAttribute('aria-expanded',x===p)})};p.addEventListener('click',()=>{on();window.abrirObjetivo&&window.abrirObjetivo(idx)});p.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover) and (min-width:901px)').matches)on()});p.addEventListener('focus',on)});
+
+/* ---------- movimento ---------- */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const header=document.getElementById('top');let lenis=null;
+if(window.gsap&&window.ScrollTrigger&&!reduce){
+ document.documentElement.classList.add('gsap-ok');gsap.registerPlugin(ScrollTrigger);
+ if(window.Lenis){lenis=new Lenis({duration:1.1,smoothWheel:true});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0)}
+ document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=id.length>1&&document.querySelector(id);if(el){e.preventDefault();nav.classList.remove('open');lenis?lenis.scrollTo(el,{offset:-10}):el.scrollIntoView({behavior:'smooth'})}}));
+ const mm=gsap.matchMedia();
+ mm.add({desk:'(min-width:901px)',mob:'(max-width:900px)'},ctx=>{
+  const {desk}=ctx.conditions;
+  /* 1 hero: moldura em arco que abre */
+  gsap.from('.hero h1 .l span',{yPercent:110,duration:1.1,ease:'power4.out',stagger:.1,delay:.15});
+  gsap.from('.hero .eyebrow,.hero p,.hero .cta',{opacity:0,y:24,duration:.9,ease:'power3.out',stagger:.1,delay:.55});
+  gsap.set('#frame',{clipPath:desk?'inset(13% 4% 13% 52% round 280px 280px 30px 30px)':'inset(40% 7% 7% 7% round 220px 220px 26px 26px)'});
+  gsap.timeline({scrollTrigger:{trigger:'.hero',start:'top top',end:'+=90%',scrub:.6,pin:true,anticipatePin:1}})
+   .to('#frame',{clipPath:'inset(0% 0% 0% 0% round 0px 0px 0px 0px)',ease:'none'},0).to('.scroll-hint',{opacity:0},0);
+  /* 2 manifesto */
+  gsap.to('.manifesto .w',{opacity:1,stagger:.12,ease:'none',scrollTrigger:{trigger:'.manifesto p',start:'top 78%',end:'bottom 45%',scrub:true}});
+  /* 3 experiência: foto em arco troca por revelação de baixo pra cima */
+  const steps=gsap.utils.toArray('.st'),pics=gsap.utils.toArray('.pic'),dots=gsap.utils.toArray('#dots i');
+  pics.forEach((p,i)=>{if(i>0)gsap.set(p,{clipPath:'inset(100% 0% 0% 0% round 200px 200px 0px 0px)'})});
+  const st=gsap.timeline({scrollTrigger:{trigger:'.story',start:'top top',end:'+=320%',scrub:.8,pin:true,anticipatePin:1,onUpdate:s=>{const i=Math.min(3,Math.round(s.progress*3));dots.forEach((d,k)=>d.classList.toggle('on',k===i))}}});
+  for(let i=1;i<4;i++){
+   st.to(steps[i-1],{opacity:0,y:-40,duration:.35,ease:'power2.in'},i-.35).fromTo(steps[i],{opacity:0,y:40},{opacity:1,y:0,duration:.45,ease:'power3.out'},i-.1);
+   st.to(pics[i],{clipPath:'inset(0% 0% 0% 0% round 0px 0px 0px 0px)',duration:1,ease:'power2.inOut'},i-1)}
+  st.to({},{duration:.4});
+  /* 4 faixas fixas: andam de lado 1 pra 1; todos os cards aparecem por inteiro */
+  gsap.utils.toArray('.lane').forEach((lane,i)=>{
+   const row=lane.parentElement,dir=i===1?-1:1,dist=()=>Math.max(0,lane.scrollWidth-innerWidth+32);
+   gsap.fromTo(lane,{x:()=>dir>0?0:-dist()},{x:()=>dir>0?-dist():0,ease:'none',scrollTrigger:{trigger:row,start:'center 52%',end:()=>'+='+Math.max(160,Math.round(dist()*(desk?1:.9))),pin:true,pinSpacing:true,anticipatePin:1,scrub:.35,invalidateOnRefresh:true}})});
+  /* 5 fundo muda: creme -> verde-petróleo, com contagem */
+  gsap.timeline({scrollTrigger:{trigger:'.nums',start:'top 85%',end:'top 25%',scrub:true}}).fromTo('.nums',{backgroundColor:'#f3f7fc',color:'#0b2a55'},{backgroundColor:'#0b2a55',color:'#ffffff',ease:'none'});
+  document.querySelectorAll('[data-count]').forEach(el=>{const to=+el.dataset.count,dec=+(el.dataset.dec||0),plus=el.dataset.plus,o={v:0};
+   const fmt=v=>(dec?v.toFixed(dec).replace('.',','):Math.round(v).toLocaleString('pt-BR'))+(plus?'+':'');
+   ScrollTrigger.create({trigger:el,start:'top 85%',once:true,onEnter:()=>gsap.to(o,{v:to,duration:1.6,ease:'power2.out',onUpdate:()=>el.textContent=fmt(o.v)})})});
+  gsap.utils.toArray('.pessoas h2,.how h2,.mod h2,.nums h2,.equipe h2').forEach(el=>gsap.from(el,{y:50,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+  /* 8 traço que se desenha */
+  if(desk){const p=document.getElementById('arcPath'),len=p.getTotalLength();gsap.set(p,{strokeDasharray:len,strokeDashoffset:len});const nodes=gsap.utils.toArray('.node');
+   gsap.to(p,{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:'.arc',start:'top 80%',end:'bottom 55%',scrub:true,onUpdate:s=>nodes.forEach((n,i)=>n.classList.toggle('on',s.progress>i/3+.05))}})}
+  gsap.from('.final h2',{y:70,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:'.final',start:'top 75%'}});
+ });
+ let last=0;ScrollTrigger.create({onUpdate:s=>{const y=s.scroll();header.classList.toggle('solid',y>40);header.classList.toggle('hide',y>last&&y>500&&!nav.classList.contains('open'));last=y}});
+}else{
+ document.documentElement.classList.add('static-story');
+ document.querySelectorAll('.node').forEach(n=>n.classList.add('on'));
+ document.querySelectorAll('.lane').forEach(l=>l.style.cssText='flex-wrap:wrap;width:auto;padding:0 32px');
+ header.classList.add('solid');
+}
+</script>
+<script>
+/* ===== popup ===== */
+const dlg=document.getElementById('dlg'),dlgBody=document.getElementById('dlgBody');let lastFocus=null;
+function abrirDlg(){if(!dlg.open){lastFocus=document.activeElement;dlg.showModal();document.documentElement.style.overflow='hidden';if(lenis)lenis.stop()}dlgBody.scrollTop=0;const t=dlgBody.querySelector('.dlg-txt');if(t)t.scrollTop=0}
+dlg.addEventListener('close',()=>{document.documentElement.style.overflow='';if(lenis)lenis.start();if(lastFocus&&lastFocus.focus)lastFocus.focus({preventScroll:true})});
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+document.getElementById('dlgX').addEventListener('click',()=>dlg.close());
+window.abrirTrat=function(nome,deObj){
+ const i=TRAT.findIndex(t=>t.n===nome);if(i<0)return;const d=TRAT[i];
+ const lista=deObj==null?TRAT.map(t=>t.n):OBJ[deObj].ativ,pos=lista.indexOf(nome),L=lista.length;
+ const objs=OBJ.filter(o=>o.ativ.includes(nome)),num=String(i+1).padStart(2,'0');
+ dlgBody.dataset.k=deObj==null?'':deObj;dlgBody.dataset.nome=nome;
+ dlgBody.innerHTML=`<div class="dlg-img" id="dImg"></div><div class="dlg-txt">
+  <div class="eyebrow">Tratamento ${num} / ${TRAT.length}</div>
+  <h3 id="dlgTitle">${esc(nome)}</h3><p class="frase">${esc(d.frase)}</p><p>${esc(d.desc)}</p>
+  <h4>Para quem</h4><p style="margin:0">${esc(d.quem)}</p>
+  <h4>O que você encontra</h4><ul>${d.ben.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>
+  ${objs.length?`<h4>Indicado para</h4><div class="tags">${objs.map(o=>`<span>${esc(o.t)}</span>`).join('')}</div>`:''}
+  <div class="dlg-cta"><a class="btn" target="_blank" rel="noopener" href="${wa('Olá! Gostaria de saber mais sobre '+nome+' e agendar uma avaliação.')}">Agendar avaliação <i>→</i></a>${deObj!=null?'<button type="button" class="link" data-back>← Voltar aos objetivos</button>':''}</div>
+  <div class="dlg-nav"><button type="button" data-nav="-1">← ${esc(lista[(pos+L-1)%L])}</button><button type="button" data-nav="1">${esc(lista[(pos+1)%L])} →</button></div>
+  <p class="mini">Descrição ilustrativa. A indicação de cada tratamento é feita na avaliação com a equipe.</p></div>`;
+ dlgBody.querySelector('#dImg').appendChild(recorte(d.img,'Imagem ilustrativa de '+nome));abrirDlg()};
+window.abrirObjetivo=function(k){const o=OBJ[k];dlgBody.dataset.k=k;dlgBody.dataset.nome='';
+ dlgBody.innerHTML=`<div class="dlg-img obj" style="background:${o.cor};color:${o.claro?'#123a38':'#fff'}"><span class="big" aria-hidden="true">${String(k+1).padStart(2,'0')}</span><h3 id="dlgTitle">${esc(o.t)}</h3></div><div class="dlg-txt">
+  <div class="eyebrow">Tratamentos indicados</div><p>${esc(o.intro)}</p>
+  <div class="obj-list">${o.ativ.map(n=>{const t=TRAT.find(x=>x.n===n)||{};return `<button type="button" class="obj-item" data-trat="${esc(n)}"><span><b>${esc(n)}</b><em>${esc(t.curto||'')}</em></span><i>Ver →</i></button>`}).join('')}</div>
+  <div class="dlg-cta"><a class="btn" target="_blank" rel="noopener" href="${wa('Olá! Meu objetivo é: '+o.t.toLowerCase()+'. Gostaria de agendar uma avaliação.')}">Falar com a equipe <i>→</i></a></div>
+  <p class="mini">Sugestão inicial. A equipe indica o melhor caminho para cada pessoa. Um tratamento pode servir a mais de um objetivo.</p></div>`;abrirDlg()};
+dlgBody.addEventListener('click',e=>{const b=e.target.closest('[data-trat],[data-nav],[data-back]');if(!b)return;
+ const k=dlgBody.dataset.k===''||dlgBody.dataset.k==null?null:+dlgBody.dataset.k;
+ if(b.dataset.trat!==undefined)return window.abrirTrat(b.dataset.trat,k);
+ if(b.hasAttribute('data-back'))return window.abrirObjetivo(k);
+ if(b.dataset.nav){const lista=k==null?TRAT.map(t=>t.n):OBJ[k].ativ,cur=lista.indexOf(dlgBody.dataset.nome);window.abrirTrat(lista[(cur+(+b.dataset.nav)+lista.length)%lista.length],k)}});
+
+/* ===== Nossa Equipe: carrossel 3D (fotos e nomes fictícios) ===== */
+(function(){
+ const slidesEl=document.getElementById('slides'),stage=document.getElementById('stage');if(!slidesEl||!window.gsap)return;
+ const n=EQUIPE.length,nm=document.getElementById('eqName'),rl=document.getElementById('eqRole'),no=document.getElementById('eqN'),gh=document.getElementById('ghost');
+ document.getElementById('eqT').textContent=String(n).padStart(2,'0');
+ let cur=0,prev=[],dragMoved=false,pausa=false,visivel=true;const pad=i=>String(i+1).padStart(2,'0');
+ EQUIPE.forEach(([nome,funcao,c],i)=>{const s=document.createElement('div');s.className='slide';s.setAttribute('role','group');s.setAttribute('aria-roledescription','slide');s.setAttribute('aria-label',`${i+1} de ${n}: ${nome}, ${funcao}`);
+  s.append(recorte(c,'Foto ilustrativa de '+nome));s.addEventListener('click',()=>{if(!dragMoved)ir(i)});slidesEl.append(s);gsap.set(s,{xPercent:-50,yPercent:-50,transformPerspective:1400})});
+ const els=[...slidesEl.children],off=i=>((i-cur+n/2)%n+n)%n-n/2;
+ function layout(instant){const w=els[0].offsetWidth,step=w*(innerWidth<700?.74:.68);
+  els.forEach((s,i)=>{const o=off(i),a=Math.abs(o),p=prev[i],wrapped=p!==undefined&&Math.abs(o-p)>n/2;
+   gsap.to(s,{x:o*step,z:-a*150,rotationY:-o*26,scale:1-a*.07,opacity:a<=2.01?1-a*.28:0,filter:`grayscale(${Math.min(1,a*.8)}) brightness(${1-Math.min(a,2)*.14})`,zIndex:10-Math.round(a),duration:(instant||wrapped||reduce)?0:.95,ease:'power3.out',overwrite:true});
+   s.classList.toggle('on',a<.5);s.setAttribute('aria-hidden',a>2.01?'true':'false');prev[i]=o})}
+ function info(instant){const[nome,func]=EQUIPE[cur];const set=()=>{nm.textContent=nome;rl.textContent=func;no.textContent=pad(cur);gh.textContent=pad(cur)};
+  if(instant||reduce){set();return}
+  gsap.to([nm,rl],{yPercent:-115,duration:.22,ease:'power2.in',overwrite:true,onComplete(){set();gsap.fromTo([nm,rl],{yPercent:115},{yPercent:0,duration:.55,ease:'power3.out',stagger:.07})}});
+  gsap.fromTo(gh,{opacity:.4,scale:.94},{opacity:1,scale:1,duration:.7,ease:'power3.out',overwrite:true})}
+ function ir(i){cur=((i%n)+n)%n;layout();info()}
+ const prox=()=>ir(cur+1),ant=()=>ir(cur-1);
+ document.getElementById('eqNext').addEventListener('click',()=>{prox();pausar()});document.getElementById('eqPrev').addEventListener('click',()=>{ant();pausar()});
+ stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){prox();pausar()}else if(e.key==='ArrowLeft'){ant();pausar()}});
+ let x0=null;stage.addEventListener('pointerdown',e=>{x0=e.clientX;pausar()});
+ stage.addEventListener('pointerup',e=>{if(x0==null)return;const dx=e.clientX-x0;x0=null;if(Math.abs(dx)>45){dragMoved=true;setTimeout(()=>dragMoved=false,60);dx<0?prox():ant()}});
+ stage.addEventListener('pointercancel',()=>{x0=null});
+ let tP;function pausar(){pausa=true;clearTimeout(tP);tP=setTimeout(()=>pausa=false,9000)}
+ stage.addEventListener('mouseenter',()=>pausa=true);stage.addEventListener('mouseleave',()=>{clearTimeout(tP);tP=setTimeout(()=>pausa=false,1500)});
+ if('IntersectionObserver' in window)new IntersectionObserver(en=>visivel=en[0].isIntersecting,{threshold:.35}).observe(stage);
+ if(!reduce)setInterval(()=>{if(!pausa&&visivel&&!document.hidden&&!dlg.open)prox()},4800);
+ addEventListener('resize',()=>layout(true));layout(true);info(true);
+ if(window.ScrollTrigger&&!reduce)gsap.from('#stage',{opacity:0,y:60,duration:1,ease:'power3.out',scrollTrigger:{trigger:'#stage',start:'top 88%'}});
+})();
+
+/* ===== Avaliações do Google: 5 sorteadas a cada visita =====
+   FONTE DOS DADOS (nesta ordem):
+   1) AVAL_URL: endereço de um arquivo/serviço que devolve uma lista JSON [{autor,nota,quando,texto}] (ex.: o backend, depois que as avaliações reais forem importadas);
+   2) a lista abaixo (AVAL), que hoje tem só EXEMPLOS de demonstração (marcados com "exemplo":true e sinalizados na página).
+   Para usar avaliações reais: troque os itens abaixo pelas reais (sem "exemplo") ou preencha AVAL_URL. */
+const AVAL_URL='';
+const AVAL=[];
+(async function(){
+ const box=document.getElementById('avList');if(!box)return;
+ let lista=AVAL;
+ if(AVAL_URL){try{const r=await fetch(AVAL_URL,{cache:'no-store'});if(r.ok){const j=await r.json();if(Array.isArray(j)&&j.length)lista=j}}catch(e){}}
+ let atual=[];
+ const sortear=()=>{let a=[...lista];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}
+  if(lista.length>=10&&atual.length){const fora=a.filter(x=>!atual.includes(x)),dentro=a.filter(x=>atual.includes(x));a=[...fora,...dentro]}
+  return a.slice(0,5)};
+ const estrelas=n=>'★'.repeat(Math.max(0,Math.min(5,Math.round(n||5))));
+ const render=(animar)=>{atual=sortear();
+  box.innerHTML=atual.map(r=>`<article class="rv"><div class="rv-top"><span class="rv-av" aria-hidden="true">${esc((r.autor||'?').trim().charAt(0).toUpperCase())}</span><span><b>${esc(r.autor||'Cliente')}</b><small>${esc(r.quando||'')}</small></span></div><div class="stars" role="img" aria-label="${Math.round(r.nota||5)} de 5 estrelas">${estrelas(r.nota)}</div><p>${esc(r.texto||'')}</p>${(r.texto||'').length>190?'<button type="button" class="rv-more" aria-expanded="false">Ler tudo</button>':''}<span class="rv-sp"></span><div class="rv-foot"><span class="rv-g" aria-label="Google">G</span>${r.exemplo?'<span class="rv-tag">Exemplo</span>':'<span>Avaliação no Google</span>'}</div></article>`).join('');
+  const temEx=atual.some(r=>r.exemplo);const nota=document.getElementById('avNote');
+  nota.textContent=temEx?'Avaliações de exemplo, só para mostrar o funcionamento. Na versão final aparecem 5 avaliações reais do Google, sorteadas a cada visita.':'5 avaliações sorteadas entre as publicadas no Google. A cada visita, uma seleção diferente.';
+  if(animar&&window.gsap&&!reduce)gsap.from(box.children,{y:26,opacity:0,duration:.6,ease:'power3.out',stagger:.08,clearProps:'opacity,transform'})};
+ render(true);
+ box.addEventListener('click',e=>{const b=e.target.closest('.rv-more');if(!b)return;const c=b.closest('.rv'),o=c.classList.toggle('open');b.textContent=o?'Mostrar menos':'Ler tudo';b.setAttribute('aria-expanded',o)});
+ document.getElementById('avMais').addEventListener('click',()=>render(true));
+})();
+</script></body></html>

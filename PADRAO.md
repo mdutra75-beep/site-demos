@@ -24,6 +24,7 @@ Referências: `ponto1-esboco-2/` e `ortomais-esboco-2/` (cada um tem seu `DESIGN
 - Conteúdo editável concentrado em blocos de dados no começo do script (ou planilha Google, como a grade do Ponto 1).
 - Sempre testar em largura de computador (1440) e de celular (375), com o painel de pré-visualização visível (senão as animações não rodam).
 - Publicar por padrão (commit + push em `main`).
+- Ao terminar a 1ª versão do esboço, gerar a **ficha privada** do cliente (HTML, fora do repositório): presença digital, problemas do site atual × qualidades do novo, estimativa de visitas atual × novo, contatos. Gerador e fichas ficam em `C:\DEV\Propostas` (não é repositório).
 
 ## Bibliotecas
 GSAP + ScrollTrigger + Lenis por CDN (versões fixas), fontes do Google Fonts. Hospedagem: GitHub Pages.

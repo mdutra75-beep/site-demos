@@ -1,72 +1,188 @@
 [
  {
-  "autor": "Cliente A.",
-  "nota": 5,
-  "quando": "há 2 semanas",
-  "texto": "Exemplo de avaliação: atendimento atencioso e explicações claras em cada etapa.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente B.",
+  "autor": "Anderson M.",
   "nota": 5,
   "quando": "há 1 mês",
-  "texto": "Exemplo de avaliação: ambiente acolhedor e equipe que deixa a gente à vontade.",
-  "exemplo": true
+  "texto": "Fiz minha primeira consulta com a Dra. Larissa. Adorei o atendimento, ela é super profissional, explica direitinho cada passo passo do tratamento e faz a gente se sentir bem a vontade. Nota mil."
  },
  {
-  "autor": "Cliente C.",
-  "nota": 5,
-  "quando": "há 3 semanas",
-  "texto": "Exemplo de avaliação: pontualidade e cuidado com a família toda no mesmo lugar.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente D.",
-  "nota": 5,
-  "quando": "há 2 meses",
-  "texto": "Exemplo de avaliação: o plano foi mostrado com calma e sem pressa para decidir.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente E.",
-  "nota": 5,
-  "quando": "há 5 dias",
-  "texto": "Exemplo de avaliação: meu filho foi tranquilo, a equipe teve muita paciência.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente F.",
-  "nota": 5,
-  "quando": "há 1 semana",
-  "texto": "Exemplo de avaliação: recepção simpática e organização na agenda.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente G.",
-  "nota": 5,
-  "quando": "há 4 meses",
-  "texto": "Exemplo de avaliação: acompanhamento próximo durante todo o tratamento.",
-  "exemplo": true
- },
- {
-  "autor": "Cliente H.",
+  "autor": "Giovana V.",
   "nota": 5,
   "quando": "há 3 meses",
-  "texto": "Exemplo de avaliação: profissionais atenciosos e consultório muito bem cuidado.",
-  "exemplo": true
+  "texto": "Nossa família inteira faz tratamento com as dentistas da clínica e nossa experiência sempre foi maravilhosa. O atendimento é impecável do começo ao fim. As dentistas são extremamente atenciosas, cuidadosas e competentes. Sempre …"
  },
  {
-  "autor": "Cliente I.",
+  "autor": "Monica P.",
   "nota": 5,
-  "quando": "há 6 dias",
-  "texto": "Exemplo de avaliação: tirei todas as minhas dúvidas antes de começar.",
-  "exemplo": true
+  "quando": "há 1 semana",
+  "texto": "Boa tarde!! Somos pacientes aproximadamente uns 5 anos 6 anos ,atendimento desde as secretária até os dentista excepcional. Ótimo ambiente, super indico."
  },
  {
-  "autor": "Cliente J.",
+  "autor": "Jaqueline G.",
   "nota": 5,
   "quando": "há 2 meses",
-  "texto": "Exemplo de avaliação: sempre sou bem recebido e o retorno é simples de agendar.",
-  "exemplo": true
+  "texto": "Profissionais qualificados! Sempre somos muito bem atendidos. Eu, meu marido, e meus filhos pequenos somos pacientes da Ortomais há mais 3 anos."
+ },
+ {
+  "autor": "Mikaellen C.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Excelente atendimento! Fui muito bem recebida desde a chegada. A equipe é extremamente acolhedora, atenciosa e prestativa. O atendimento foi rápido, organizado e transmitiu confiança. Recomenda a clínica pela qualidade e cuidado com os pacientes"
+ },
+ {
+  "autor": "Andreia B.",
+  "nota": 5,
+  "quando": "há 1 semana",
+  "texto": "Gostei muito do atendimento! Estou em tratamento ainda, mas até o momento estou achando ótimo!"
+ },
+ {
+  "autor": "Marcos S.",
+  "nota": 5,
+  "quando": "há 5 meses",
+  "texto": "Atendimento ótimo, todos sempre gentis e solícitos. Ambiente agradável e profissionais ótimos."
+ },
+ {
+  "autor": "Daiane B.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Excelente atendimento, com profissionais super capacitados e atendimento humanizado do início ao fim. Recepção impecável, recepcionistas muito simpáticas. Parabéns a toda a equipe Ortomais Odontologia 🤝"
+ },
+ {
+  "autor": "Gisa S.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Depois de muitos anos, passando por várias clínicas fui indicada para o consultório da Dr Larissa e ela resolveu e está resolvendo todos os problemas que tive ao ir em clínicas que fizeram o tratamento errado, sou e serei sempre grata pela dedicação e amor com que você é toda sua equipe tratam seus pacientes Obrigada dr Larissa e Sandra"
+ },
+ {
+  "autor": "Aline T.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Estou tendo uma boa experiência na clínica com a Dra Áurea. Ótimo atendimento desde a recepção, profissionais cuidadosos e ambiente tranquilo."
+ },
+ {
+  "autor": "Larissa O.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Minha experiência com essa clínica foi ótima! Muito bem atendida pela Dra. Carol (excelente profissional, maravilhosa e muito habilidosa!) e pelas recepcionistas, consulta muito bem explicada e foi super paciente em explicar todas as minhas dúvidas. Muito satisfeita!"
+ },
+ {
+  "autor": "Camille B.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "O melhor lugar para tratar meus dentes e da minha filha! Todos muito atenciosos, desde a recepção até as profissionais! Indico de olhos fechados!"
+ },
+ {
+  "autor": "Ricardo G.",
+  "nota": 5,
+  "quando": "há 2 semanas",
+  "texto": "Muito bom oh atendimento os profissionais são excelentes"
+ },
+ {
+  "autor": "Juliana M.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Excelente. Primeira vez no consultório e fui muito bem atendida pela Drª. Carolinna e demais funcionários. 😉"
+ },
+ {
+  "autor": "Daniella R.",
+  "nota": 5,
+  "quando": "há 3 meses",
+  "texto": "Fui bem atendida desde o primeiro contato. Clínica excelente. As meninas da recepção muito simpáticas e atenciosas. Consultei com o Dr. José e também me atendeu muito bem e com atenção."
+ },
+ {
+  "autor": "Suli S.",
+  "nota": 5,
+  "quando": "há 3 meses",
+  "texto": "Fui muito bem atendida, desde a recepção até às doutoras que me atenderam atenciosas. Uma ótima experiência."
+ },
+ {
+  "autor": "Ana Flavia F.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Super recomendo! Profissionais super competentes e cuidadosas! Larissa acompanha minha filha há anos, e sempre estamos por lá! A recepção sempre atenciosa e ágil! Muito bom 😊"
+ },
+ {
+  "autor": "Franciely S.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Atendimento maravilhoso dês da recepção até às dentistas minha família toda é super bem atendida aqui meu esposo já colocou aparelho agora meu filho tbm está fazendo o tratamento e sempre que precisa ele é bem atendido e rápido."
+ },
+ {
+  "autor": "Gean R.",
+  "nota": 5,
+  "quando": "há 3 meses",
+  "texto": "Ótima experiência. Clínica organizada, ambiente agradável e atendimento atencioso desde a recepção. Fui muito bem atendido e saí satisfeito com o serviço prestado."
+ },
+ {
+  "autor": "Angela R.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Adorei o atendimento da recepção como das Dras Maria Eduarda como da Dra Larissa elas são uns amores."
+ },
+ {
+  "autor": "Ana F.",
+  "nota": 5,
+  "quando": "há 4 semanas",
+  "texto": "Ótimo atendimento! Meu filho tem medo de dentista e a Dra. Carolina foi super paciente!"
+ },
+ {
+  "autor": "Nicoly O.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Atendimento excelente, recepção organizada e agilizada, Dr Aurea muito atenciosa"
+ },
+ {
+  "autor": "Cris",
+  "nota": 5,
+  "quando": "há 3 meses",
+  "texto": "Estou fazendo meu primeiro tratamento nesta Clinica, pelo plano Odontológico. Fui super bem atendida, com rapidez e atenção. a Dra. Aurea então, muito eficiente, Gostei!!"
+ },
+ {
+  "autor": "Rayane F.",
+  "nota": 5,
+  "quando": "há 6 meses",
+  "texto": "Quero agradecer pelo excelente atendimento. A Dra. é muito atenciosa, cuidadosa e transmite muita segurança no que faz. Explica tudo com clareza, tira as dúvidas com paciência e demonstra muito cuidado em cada detalhe. …"
+ },
+ {
+  "autor": "Lilian P.",
+  "nota": 5,
+  "quando": "há 1 mês",
+  "texto": "Fui muito bem atendida o tempo todo pela doutora Áurea, muito profissional e atenciosa!"
+ },
+ {
+  "autor": "Thais S.",
+  "nota": 5,
+  "quando": "há 2 meses",
+  "texto": "Super bem atendidos, a médica super atenciosa! Meu pequeno amou a dentista que atendeu ele! …"
+ },
+ {
+  "autor": "Marcio M.",
+  "nota": 5,
+  "quando": "há 3 semanas",
+  "texto": "Experiência excepcional, todos os profissionais muito atenciosos e muito competentes."
+ },
+ {
+  "autor": "Fernando D.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Excelente atendimento! Fui muito bem recebido desde a recepção. O dentista foi muito atencioso, explicou todo o procedimento com calma e passou bastante confiança super recomendo."
+ },
+ {
+  "autor": "Sayonara O.",
+  "nota": 5,
+  "quando": "há 1 mês",
+  "texto": "Atendimento de qualidade, profissionais competentes e empáticos. Super recomendo!"
+ },
+ {
+  "autor": "Marcy Z.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Atendimento excelente de todos os profissionais, desde o atendimento no whats, e presencial 👏🏻 Os Valores ótimos e com várias opções de pagamento! São excelentes !!"
+ },
+ {
+  "autor": "Lidiane F.",
+  "nota": 5,
+  "quando": "há 4 meses",
+  "texto": "Minha filha é atendida pela Dr Larissa na ortodontia, super indico. Também já utilizamos outras especialidades da clinica e sempre fomos atendidas com profissionalismo e empatia por toda equipe."
  }
 ]

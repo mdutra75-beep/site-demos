@@ -145,7 +145,8 @@ header .btn{padding:12px 20px;background:#fff;color:var(--ink);box-shadow:none}h
 .rv{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:12px;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}.rv:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(18,58,56,.12)}
 .rv-top{display:flex;align-items:center;gap:12px}.rv-av{flex:none;width:42px;height:42px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font:500 19px var(--serif)}
 .rv-top b{display:block;font-size:14px;line-height:1.2}.rv-top small{color:var(--muted);font-size:12px}
-.rv p{margin:0;font-size:14px;line-height:1.65;color:#3b5654;flex:1}
+.rv p{margin:0;font-size:14px;line-height:1.65;color:#3b5654;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}.rv.open p{display:block;-webkit-line-clamp:unset}
+.rv-more{align-self:flex-start;background:none;border:0;padding:0;color:var(--brand);font-weight:800;font-size:12px;letter-spacing:.04em;margin-top:-4px}.rv-more:hover{text-decoration:underline}.rv-sp{flex:1}
 .rv-foot{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted)}.rv-g{font:800 15px var(--body);color:#4285f4}
 .rv-tag{background:#f1e8d4;color:#7a5d12;border-radius:99px;padding:3px 9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:10px}
 .av-foot{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:26px}.av-note{margin:0;font-size:12px;color:var(--muted);max-width:60ch;text-align:right}
@@ -508,11 +509,12 @@ const AVAL=[
   return a.slice(0,5)};
  const estrelas=n=>'★'.repeat(Math.max(0,Math.min(5,Math.round(n||5))));
  const render=(animar)=>{atual=sortear();
-  box.innerHTML=atual.map(r=>`<article class="rv"><div class="rv-top"><span class="rv-av" aria-hidden="true">${esc((r.autor||'?').trim().charAt(0).toUpperCase())}</span><span><b>${esc(r.autor||'Cliente')}</b><small>${esc(r.quando||'')}</small></span></div><div class="stars" role="img" aria-label="${Math.round(r.nota||5)} de 5 estrelas">${estrelas(r.nota)}</div><p>${esc(r.texto||'')}</p><div class="rv-foot"><span class="rv-g" aria-label="Google">G</span>${r.exemplo?'<span class="rv-tag">Exemplo</span>':'<span>Avaliação no Google</span>'}</div></article>`).join('');
+  box.innerHTML=atual.map(r=>`<article class="rv"><div class="rv-top"><span class="rv-av" aria-hidden="true">${esc((r.autor||'?').trim().charAt(0).toUpperCase())}</span><span><b>${esc(r.autor||'Cliente')}</b><small>${esc(r.quando||'')}</small></span></div><div class="stars" role="img" aria-label="${Math.round(r.nota||5)} de 5 estrelas">${estrelas(r.nota)}</div><p>${esc(r.texto||'')}</p>${(r.texto||'').length>190?'<button type="button" class="rv-more" aria-expanded="false">Ler tudo</button>':''}<span class="rv-sp"></span><div class="rv-foot"><span class="rv-g" aria-label="Google">G</span>${r.exemplo?'<span class="rv-tag">Exemplo</span>':'<span>Avaliação no Google</span>'}</div></article>`).join('');
   const temEx=atual.some(r=>r.exemplo);const nota=document.getElementById('avNote');
   nota.textContent=temEx?'Avaliações de exemplo, só para mostrar o funcionamento. Na versão final aparecem 5 avaliações reais do Google, sorteadas a cada visita.':'5 avaliações sorteadas entre as publicadas no Google. A cada visita, uma seleção diferente.';
   if(animar&&window.gsap&&!reduce)gsap.from(box.children,{y:26,opacity:0,duration:.6,ease:'power3.out',stagger:.08,clearProps:'opacity,transform'})};
  render(true);
+ box.addEventListener('click',e=>{const b=e.target.closest('.rv-more');if(!b)return;const c=b.closest('.rv'),o=c.classList.toggle('open');b.textContent=o?'Mostrar menos':'Ler tudo';b.setAttribute('aria-expanded',o)});
  document.getElementById('avMais').addEventListener('click',()=>render(true));
 })();
 </script></body></html>

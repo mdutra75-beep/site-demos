@@ -28,3 +28,12 @@ Referências: `ponto1-esboco-2/` e `ortomais-esboco-2/` (cada um tem seu `DESIGN
 
 ## Bibliotecas
 GSAP + ScrollTrigger + Lenis por CDN (versões fixas), fontes do Google Fonts. Hospedagem: GitHub Pages.
+
+## Identidade por cliente (para dois sites do mesmo ramo não parecerem o mesmo)
+A estrutura e os movimentos são os mesmos; **a identidade muda por cliente**, tirada do logo e do Instagram dele (09/11/2026, academias):
+| Cliente | Base | Vermelho | Claro (seção "papel") | Motivo/tipo |
+|---|---|---|---|---|
+| Ponto 1 | preto puro `#050505` | vivo `#ec1c24` | branco frio `#f2f2f2` | setas `>>>`, fotos de abertura em P&B, Barlow Condensed |
+| Versátil | grafite `#16171b` | carmim `#d42a30` | cinza prata `#cfd1d5` | barra inclinada `//` (o V do logo), títulos itálicos, Oswald |
+| Fórum | preto quente `#100a0b` | bordô `#b8202f` | creme `#f1e7da` | losango `◆`, destaques em serifa itálica (Cormorant), texto creme |
+Regras: (1) cores vêm da `paleta` do cliente em `Propostas/clientes/*.py`; (2) a parte estrutural (setas, itálico, fonte) fica em `Propostas/_engine/identidade_academias.py` e roda depois de `gerar.py`; (3) não usar `>>>` fora do Ponto 1; (4) a foto de abertura ainda é a mesma no Ponto 1 e no Versátil (banco de imagens) — trocar quando houver fotos reais.

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dicas de Saúde | Dr. Ricardo Schneider · Integrative Health Clinic</title>
+<meta name="description" content="Dicas de saúde e explicações sobre cirurgia cardíaca do Dr. Ricardo Schneider, organizadas por tema, com busca e índice.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="logo-dr.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.dh{padding:130px 0 54px;background:radial-gradient(ellipse at 90% 0%,rgba(226,195,116,.4),transparent 55%),linear-gradient(160deg,var(--green),var(--green2));color:#fff;position:relative;overflow:hidden}
+.dh:after{content:"";position:absolute;right:-120px;bottom:-200px;width:520px;height:520px;border-radius:50%;border:70px solid rgba(255,255,255,.05)}
+.dh h1{font-size:clamp(2.4rem,6vw,4.4rem);max-width:16ch}
+.dh h1 .acc{color:var(--gold2)}
+.dh p{max-width:54ch;opacity:.9;margin:16px 0 26px;font-size:1.1rem}
+.sb{display:flex;gap:10px;background:#fff;border-radius:999px;padding:8px 10px 8px 24px;box-shadow:0 18px 40px rgba(0,0,0,.25);max-width:620px;position:relative;z-index:2}
+.sb input{flex:1;border:0;outline:0;font:600 1.05rem var(--sans);background:none;color:var(--ink);min-width:0}
+.sb button{border:0;background:var(--gold);color:#2b1f05;border-radius:999px;padding:10px 20px;font:800 .9rem var(--sans);cursor:pointer}
+.tools{position:sticky;top:74px;z-index:40;background:rgba(251,247,238,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tools .wrap{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding-top:14px;padding-bottom:14px}
+.chip{border:2px solid var(--green);color:var(--green);background:none;border-radius:999px;padding:8px 18px;font:800 .86rem var(--sans);cursor:pointer;transition:background .2s,color .2s}
+.chip:hover{background:var(--sand)}
+.chip.on{background:var(--green);color:#fff}
+.tools .cnt{margin-left:auto;font-size:.82rem;color:var(--mut);font-weight:700}
+.lib{padding:44px 0 90px}
+.lib .wrap{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:start}
+@media(max-width:960px){.lib .wrap{grid-template-columns:1fr}.idx{display:none}}
+.idx{position:sticky;top:150px;max-height:calc(100vh - 170px);overflow:auto;padding-right:8px}
+.idx h4{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.idx h4:not(:first-child){margin-top:24px}
+.idx a{display:block;text-decoration:none;padding:7px 12px;border-radius:10px;font-size:.88rem;font-weight:700;color:var(--green2);border-left:3px solid transparent}
+.idx a:hover{background:var(--sand)}
+.idx a.on{background:var(--sand);border-left-color:var(--gold)}
+.gr{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:1100px){.gr{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.gr{grid-template-columns:1fr}}
+.cd{background:#fff;border-radius:22px;overflow:hidden;text-decoration:none;box-shadow:0 10px 30px rgba(15,42,34,.1);display:flex;flex-direction:column;transition:translate .35s,box-shadow .35s}
+.cd:hover{translate:0 -8px;box-shadow:0 26px 50px rgba(15,42,34,.22)}
+.cd .tx{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cd h3{font-size:1.1rem;line-height:1.25}
+.cd p{font-size:.86rem;color:var(--mut)}
+.cd .meta{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;font-size:.72rem;font-weight:800;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.vazio{padding:60px 20px;text-align:center;color:var(--mut)}
+mark{background:var(--gold2);color:inherit;padding:0 2px;border-radius:3px}
+
+/* leitura */
+.art{padding:120px 0 80px;display:none}
+.art.on{display:block}
+.art .wrap{max-width:1100px;display:grid;grid-template-columns:1fr 250px;gap:50px;align-items:start}
+@media(max-width:960px){.art .wrap{grid-template-columns:1fr}.toc{display:none}}
+.voltar{display:inline-flex;gap:8px;align-items:center;text-decoration:none;font-weight:800;font-size:.88rem;color:var(--green);margin-bottom:22px}
+.art .cap{border-radius:26px;aspect-ratio:21/8;margin-bottom:30px}
+.art .meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.art h1{font-size:clamp(2rem,4.6vw,3.2rem);color:var(--green2);margin-bottom:26px}
+.corpo{font-size:1.08rem;line-height:1.8;color:#2a3632}
+.corpo p{margin:0 0 1.15em}
+.corpo h3{font-size:1.4rem;color:var(--green);margin:1.8em 0 .6em;scroll-margin-top:100px;padding-left:16px;border-left:4px solid var(--gold)}
+.corpo ul{margin:0 0 1.3em 1.2em;display:grid;gap:8px}
+.corpo li::marker{color:var(--gold)}
+.corpo figure{margin:1.6em 0;background:#fff;border-radius:18px;padding:14px;box-shadow:0 10px 30px rgba(15,42,34,.1);cursor:zoom-in}
+.corpo figure img{width:100%;height:auto;border-radius:10px}
+.toc{position:sticky;top:110px;background:#fff;border-radius:20px;padding:20px;box-shadow:0 10px 30px rgba(15,42,34,.1)}
+.toc h4{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.toc a{display:block;text-decoration:none;font-size:.84rem;font-weight:700;color:var(--green2);padding:6px 0;border-bottom:1px solid var(--line);line-height:1.3}
+.toc a:last-child{border:0}
+.toc a:hover{color:var(--gold)}
+.cta{margin-top:40px;background:linear-gradient(140deg,var(--green),var(--green2));color:#fff;border-radius:26px;padding:30px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.cta h3{font-size:1.4rem}
+.cta p{opacity:.88;font-size:.95rem;margin-top:4px}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.pn a{background:#fff;border-radius:18px;padding:16px 18px;text-decoration:none;box-shadow:0 8px 24px rgba(15,42,34,.08);transition:translate .25s}
+.pn a:hover{translate:0 -4px}
+.pn small{display:block;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.pn b{font-size:.95rem;line-height:1.3}
+.pn a:last-child{text-align:right}
+.rel{margin-top:50px}
+.rel h3{font-size:1.3rem;margin-bottom:16px}
+.orig{margin-top:26px;font-size:.78rem;color:var(--mut)}
+.orig a{color:var(--green)}
+.lb{position:fixed;inset:0;background:rgba(8,20,16,.9);z-index:200;display:none;align-items:center;justify-content:center;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;border-radius:12px;background:#fff}
+@media(max-width:560px){.pn{grid-template-columns:1fr}.pn a:last-child{text-align:left}}
+</style>
+</head>
+<body>
+<main>
+<section id="lista">
+  <div class="dh"><div class="wrap">
+    <div class="eyebrow" style="color:var(--gold2)">Dicas de saúde</div>
+    <h1>Entenda sua saúde, <span class="acc">sem complicação.</span></h1>
+    <p>Os textos do Dr. Ricardo sobre alimentação, pressão, diabetes, colesterol e cirurgia cardíaca, agora organizados por tema, com índice e busca.</p>
+    <form class="sb" id="sf"><input id="q" type="search" placeholder="Busque: pressão, colesterol, dieta, transplante…" aria-label="Buscar"><button type="submit">Buscar</button></form>
+  </div></div>
+  <div class="tools"><div class="wrap"><button class="chip on" data-c="">Todas</button><button class="chip" data-c="Dicas de Saúde">Dicas de saúde</button><button class="chip" data-c="Cirurgia Cardíaca">Cirurgia cardíaca</button><span class="cnt" id="cnt"></span></div></div>
+  <div class="lib"><div class="wrap">
+    <aside class="idx" id="idx"></aside>
+    <div><div class="gr" id="gr"></div><div class="vazio" id="vz" hidden>Nenhuma dica encontrada. Tente outra palavra, como “pressão” ou “dieta”.</div></div>
+  </div></div>
+</section>
+
+<article class="art" id="art"><div class="wrap"><div>
+  <a class="voltar" href="#/" id="vv">← Todas as dicas</a>
+  <div id="capa"></div>
+  <div class="meta" id="am"></div>
+  <h1 id="at"></h1>
+  <div class="corpo" id="ac"></div>
+  <div class="cta"><div><h3>Ficou com dúvida?</h3><p>Converse com o Dr. Ricardo, on-line ou presencialmente.</p></div><a class="btn wa" id="aw" target="_blank" rel="noopener" href="#"></a></div>
+  <div class="pn" id="pn"></div>
+  <div class="rel"><h3>Leia também</h3><div class="gr" id="rel"></div></div>
+  <p class="orig" id="orig"></p>
+</div>
+<aside class="toc" id="toc"></aside></div></article>
+</main>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="dados.js"></script>
+<script src="dicas-dados.js"></script>
+<script src="capas.js"></script>
+<script>window.PAGE='dicas'</script>
+<script src="site.js"></script>
+<script>
+(function(){
+'use strict';
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function norm(s){return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')}
+ARTIGOS.forEach(function(a){
+  var t=[a.titulo,a.resumo,a.tags.join(' ')];
+  a.blocos.forEach(function(b){if(b.t==='ul')t.push(b.x.join(' '));else if(b.t!=='img')t.push(b.x)});
+  a._txt=norm(t.join(' '));a._tit=norm(a.titulo)});
+var cat='',q='';
+function hl(s){if(!q)return esc(s);var n=norm(s),i=n.indexOf(q);if(i<0)return esc(s);return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+q.length))+'</mark>'+esc(s.slice(i+q.length))}
+function lista(){
+  var l=ARTIGOS.filter(function(a){return(!cat||a.categoria===cat)&&(!q||a._txt.indexOf(q)>-1)});
+  if(q)l.sort(function(a,b){return (b._tit.indexOf(q)>-1)-(a._tit.indexOf(q)>-1)});
+  $('gr').innerHTML=l.map(function(a){return '<a class="cd" href="#/'+a.slug+'">'+capaHTML(a)+'<div class="tx"><h3>'+hl(a.titulo)+'</h3><p>'+esc(a.resumo)+'</p><span class="meta"><span>'+a.min+' min</span><span>'+(a.categoria==='Cirurgia Cardíaca'?'Cirurgia cardíaca':'Dicas de saúde')+'</span></span></div></a>'}).join('');
+  $('vz').hidden=l.length>0;$('cnt').textContent=l.length+' de '+ARTIGOS.length+' dicas';
+  if(window.gsap&&!window.SITE_REDUCED)gsap.from('.cd',{y:30,duration:.5,ease:'power3.out',stagger:.04,clearProps:'transform'});
+}
+function indice(){
+  var g={};ARTIGOS.forEach(function(a){(g[a.categoria]=g[a.categoria]||[]).push(a)});
+  var h='';Object.keys(g).forEach(function(k){h+='<h4>'+(k==='Cirurgia Cardíaca'?'Cirurgia cardíaca':k)+'</h4>'+g[k].slice().sort(function(a,b){return a.titulo.localeCompare(b.titulo,'pt')}).map(function(a){return '<a href="#/'+a.slug+'" data-s="'+a.slug+'">'+esc(a.titulo)+'</a>'}).join('')});
+  $('idx').innerHTML=h;
+}
+document.querySelectorAll('.chip').forEach(function(c){c.onclick=function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});c.classList.add('on');cat=c.dataset.c;lista()}});
+$('sf').onsubmit=function(e){e.preventDefault();q=norm($('q').value.trim());lista()};
+$('q').oninput=function(){q=norm(this.value.trim());lista()};
+
+/* leitura */
+function render(a){
+  $('capa').innerHTML=capaHTML(a);
+  $('am').innerHTML='<span>'+(a.categoria==='Cirurgia Cardíaca'?'Cirurgia cardíaca':'Dicas de saúde')+'</span><span>·</span><span>'+a.min+' min de leitura</span>'+(a.data?'<span>·</span><span>'+a.data+'</span>':'');
+  $('at').textContent=a.titulo;
+  var toc=[],i=0;
+  $('ac').innerHTML=a.blocos.map(function(b){
+    if(b.t==='p')return '<p>'+esc(b.x)+'</p>';
+    if(b.t==='h'){i++;toc.push(['h'+i,b.x]);return '<h3 id="h'+i+'">'+esc(b.x)+'</h3>'}
+    if(b.t==='ul')return '<ul>'+b.x.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>';
+    if(b.t==='img')return '<figure><img src="artigos/'+esc(b.x)+'" alt="Ilustração do texto: '+esc(a.titulo)+'" loading="lazy"></figure>';
+    return ''}).join('');
+  $('toc').innerHTML=toc.length?'<h4>Neste texto</h4>'+toc.map(function(t){return '<a href="#'+t[0]+'">'+esc(t[1])+'</a>'}).join(''):'<h4>Neste texto</h4><a href="#/">← Todas as dicas</a>';
+  $('toc').style.display=toc.length?'':'';
+  $('aw').innerHTML=WA_ICON+'Falar no WhatsApp';$('aw').href=waLink('Olá, Dr. Ricardo! Li o texto “'+a.titulo+'” no site e gostaria de conversar.');
+  var ix=ARTIGOS.indexOf(a),pv=ARTIGOS[ix-1],nx=ARTIGOS[ix+1];
+  $('pn').innerHTML=(pv?'<a href="#/'+pv.slug+'"><small>← Anterior</small><b>'+esc(pv.titulo)+'</b></a>':'<span></span>')+(nx?'<a href="#/'+nx.slug+'"><small>Próxima →</small><b>'+esc(nx.titulo)+'</b></a>':'<span></span>');
+  var rel=ARTIGOS.filter(function(x){return x!==a&&x.categoria===a.categoria}).slice(0,3);
+  $('rel').innerHTML=rel.map(function(x){return '<a class="cd" href="#/'+x.slug+'">'+capaHTML(x)+'<div class="tx"><h3>'+esc(x.titulo)+'</h3><span class="meta"><span>'+x.min+' min</span></span></div></a>'}).join('');
+  $('orig').innerHTML='Texto original publicado no <a target="_blank" rel="noopener" href="'+esc(a.original)+'">site anterior</a>. Conteúdo informativo, não substitui a consulta médica.';
+  document.title=a.titulo+' | Dr. Ricardo Schneider';
+}
+function rota(){
+  var h=location.hash.replace(/^#\/?/,'');
+  var a=ARTIGOS.filter(function(x){return x.slug===h})[0];
+  if(a){$('lista').style.display='none';$('art').classList.add('on');render(a);scrollTo(0,0);if(window.LENIS)LENIS.scrollTo(0,{immediate:true});
+    if(window.gsap&&!window.SITE_REDUCED)gsap.from('#art .wrap>div>*',{y:30,duration:.7,ease:'power3.out',stagger:.07,clearProps:'transform'});}
+  else if(h&&h.indexOf('h')===0&&/^h\d+$/.test(h)){/* âncora interna do texto */}
+  else{$('art').classList.remove('on');$('lista').style.display='';document.title='Dicas de Saúde | Dr. Ricardo Schneider · Integrative Health Clinic'}
+}
+addEventListener('hashchange',rota);
+var qs=new URLSearchParams(location.search).get('q');if(qs){$('q').value=qs;q=norm(qs.trim())}
+indice();lista();rota();
+document.addEventListener('click',function(e){var f=e.target.closest('.corpo figure');if(f){$('lb').querySelector('img').src=f.querySelector('img').src;$('lb').classList.add('on')}});
+$('lb').onclick=function(){this.classList.remove('on')};
+addEventListener('keydown',function(e){if(e.key==='Escape')$('lb').classList.remove('on')});
+iniciaMovimento();
+})();
+</script>
+</body>
+</html>

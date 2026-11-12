@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dr. Ricardo Schneider · Integrative Health Clinic | Medicina Funcional, Esportiva e Cirurgia Cardiovascular</title>
+<meta name="description" content="Dr. Ricardo Schneider, Integrative Health Clinic (Curitiba): Medicina Funcional Integrativa, Medicina Esportiva e do Exercício e Cirurgia Cardiovascular. Atendimento on-line ou presencial.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="logo-dr.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+/* hero */
+.hero{position:relative;padding:150px 0 70px;background:radial-gradient(ellipse at 85% 10%,rgba(226,195,116,.35),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(29,75,60,.16),transparent 55%),var(--cream);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);color:var(--green2)}
+.hero h1 .acc{display:block;color:var(--gold);font-size:.52em;margin-top:14px;line-height:1.15}
+.hero p.lead{font-size:1.18rem;color:var(--mut);max-width:50ch;margin:22px 0 30px}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap}
+.cred{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.82rem;font-weight:700;color:var(--green)}
+.cred span:before{content:"✦ ";color:var(--gold)}
+.pf{position:relative}
+.pf .ph{position:relative;border-radius:200px 200px 28px 28px;overflow:hidden;aspect-ratio:4/5;background:var(--sand);box-shadow:0 30px 70px rgba(15,42,34,.28);border:8px solid #fff}
+.pf .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.pf .b{position:absolute;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 16px 40px rgba(15,42,34,.22);font-size:.8rem;font-weight:800;color:var(--green2);line-height:1.25}
+.pf .b small{display:block;font-weight:600;color:var(--mut);font-size:.72rem}
+.pf .b1{left:-26px;bottom:60px}.pf .b2{right:-14px;top:40px}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:120px}.pf{max-width:420px;margin:0 auto}.pf .b1{left:-8px}.pf .b2{right:-8px}}
+
+/* índice das frentes */
+.fr-ind{padding:0 0 30px;background:var(--cream)}
+.fr-ind .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:-6px}
+.fi{position:relative;display:flex;flex-direction:column;gap:6px;text-decoration:none;border-radius:24px;padding:26px 26px 24px;color:#fff;overflow:hidden;transition:translate .35s,box-shadow .35s;min-height:190px}
+.fi:hover{translate:0 -8px;box-shadow:0 26px 50px rgba(0,0,0,.25)}
+.fi .n{font:800 .78rem var(--sans);letter-spacing:.2em;opacity:.7}
+.fi h3{font-size:1.35rem}
+.fi p{font-size:.92rem;opacity:.9;max-width:34ch}
+.fi .go{margin-top:auto;font-weight:800;font-size:.9rem}
+.fi svg{position:absolute;right:-14px;bottom:-14px;width:130px;height:130px;opacity:.16;stroke-width:1.3}
+.fi.a{background:linear-gradient(140deg,#2e6a56,var(--green2))}
+.fi.b{background:linear-gradient(140deg,#1f69b0,var(--blue2))}
+.fi.c{background:linear-gradient(140deg,#b44558,var(--wine2))}
+@media(max-width:860px){.fr-ind .wrap{grid-template-columns:1fr}.fi{min-height:0}}
+
+/* painéis das frentes */
+.fr{position:relative;padding:100px 0;color:#fff;overflow:hidden}
+.fr .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.fr.inv .wrap{direction:rtl}.fr.inv .wrap>*{direction:ltr}
+.fr .tag{display:inline-flex;align-items:center;gap:10px;font:800 .76rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;border-radius:999px;background:rgba(255,255,255,.12);margin-bottom:18px}
+.fr .tag b{color:var(--gold2)}
+.fr h2{color:#fff;margin-bottom:12px}
+.fr h2 .acc{color:var(--gold2)}
+.fr .lead{font-size:1.1rem;opacity:.92;max-width:48ch;margin-bottom:26px}
+.fr .itens{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
+.it{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px 16px;text-decoration:none;color:#fff;transition:background .25s,translate .25s}
+a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
+.it svg{color:var(--gold2);width:22px;height:22px;margin-top:2px}
+.it b{display:block;font-size:.95rem;line-height:1.25}
+.it span{display:block;font-size:.8rem;opacity:.8;line-height:1.35;margin-top:3px}
+.it em{font-style:normal;font-size:.72rem;font-weight:800;color:var(--gold2);display:block;margin-top:5px}
+.fr .imgs{position:relative}
+.fr .imgs .m{border-radius:26px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4);aspect-ratio:4/5}
+.fr .imgs .m img{width:100%;height:100%;object-fit:cover}
+.fr .imgs .s{position:absolute;width:46%;left:-6%;bottom:-8%;border-radius:20px;overflow:hidden;border:6px solid var(--cream);box-shadow:0 20px 50px rgba(0,0,0,.35);aspect-ratio:4/3}
+.fr.inv .imgs .s{left:auto;right:-6%}
+.fr .imgs .s img{width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.fr .wrap,.fr.inv .wrap{grid-template-columns:1fr;direction:ltr;gap:40px}.fr .itens{grid-template-columns:1fr}.fr .imgs .s{left:auto;right:4%}.fr .imgs .m{aspect-ratio:4/3}}
+#funcional{background:linear-gradient(160deg,var(--green),var(--green2))}
+#cirurgia{background:linear-gradient(160deg,var(--wine),var(--wine2))}
+#cirurgia .itens{grid-template-columns:1fr 1fr}
+#cirurgia .imgs .m{aspect-ratio:3/4}
+@media(max-width:560px){#cirurgia .itens{grid-template-columns:1fr}}
+
+/* esporte */
+#esporte{background:linear-gradient(170deg,var(--blue),var(--blue2));color:#fff;padding:100px 0 90px;position:relative;overflow:hidden}
+#esporte:before{content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;border:80px solid rgba(255,255,255,.06)}
+.es-top{display:grid;grid-template-columns:1.05fr 1fr;gap:54px;align-items:center;position:relative}
+#esporte h2{color:#fff}
+#esporte h2 .acc{color:var(--gold2)}
+.es-top .tag{display:inline-flex;gap:10px;align-items:center;font:800 .76rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;border-radius:999px;background:rgba(255,255,255,.12);margin-bottom:18px}
+.es-top .tag b{color:var(--gold2)}
+.es-top p{font-size:1.1rem;opacity:.93;margin:16px 0 20px;max-width:52ch}
+.idade{display:inline-flex;align-items:center;gap:14px;background:var(--gold2);color:#1b2a3a;border-radius:20px;padding:12px 20px;font-weight:800;margin-bottom:26px}
+.idade b{font:800 2.2rem/1 var(--sans)}
+.idade span{font-size:.82rem;line-height:1.2}
+.es-photo{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+.es-photo img{width:100%;height:100%;object-fit:cover}
+.es-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,42,76,.55))}
+.pil{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:60px 0 40px;position:relative}
+.pc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:24px;transition:translate .3s,background .3s}
+.pc:hover{translate:0 -6px;background:rgba(255,255,255,.14)}
+.pc .nn{font:800 .78rem var(--sans);letter-spacing:.2em;color:var(--gold2);margin-bottom:10px}
+.pc h3{font-size:1.15rem;margin-bottom:6px}
+.pc p{font-size:.9rem;opacity:.85}
+@media(max-width:900px){.es-top{grid-template-columns:1fr}.pil{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pil{grid-template-columns:1fr}}
+.faixa{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}
+.faixa div{border-radius:18px;overflow:hidden;aspect-ratio:3/4;position:relative}
+.faixa div:nth-child(even){transform:translateY(22px)}
+.faixa img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.faixa div:hover img{transform:scale(1.08)}
+@media(max-width:760px){.faixa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:10px}.faixa div{flex:0 0 62%;scroll-snap-align:center;transform:none!important}}
+.es-cta{margin-top:56px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;position:relative}
+.es-cta small{opacity:.7;font-size:.78rem}
+
+/* instagram */
+.insta{padding:100px 0;background:var(--cream)}
+.insta .top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.insta h2{color:var(--green2)}
+.insta h2 .acc{color:var(--gold)}
+.insta .top p{color:var(--mut);max-width:46ch;margin-top:10px}
+.igrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.igp{position:relative;display:block;border-radius:20px;overflow:hidden;aspect-ratio:1;background:var(--sand);box-shadow:0 12px 30px rgba(15,42,34,.14);transition:translate .35s,box-shadow .35s}
+.igp:hover{translate:0 -8px;rotate:-.6deg;box-shadow:0 26px 50px rgba(15,42,34,.28)}
+.igp img{width:100%;height:100%;object-fit:cover}
+.igp .ov{position:absolute;inset:auto 0 0 0;padding:34px 14px 14px;background:linear-gradient(180deg,transparent,rgba(15,42,34,.9));color:#fff;font-size:.78rem;font-weight:700;line-height:1.3;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}
+.igp:hover .ov,.igp:focus-visible .ov{opacity:1;transform:none}
+.igp .ico{position:absolute;right:10px;top:10px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-content:center}
+.igp .ico svg{width:18px;height:18px;fill:var(--green2)}
+@media(hover:none){.igp .ov{opacity:1;transform:none}}
+@media(max-width:900px){.igrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:12px}.igp{flex:0 0 64%;scroll-snap-align:center}}
+.insta .nota{margin-top:20px;font-size:.8rem;color:var(--mut)}
+.btn.ig{background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);color:#fff}
+
+/* dicas teaser */
+.dc{padding:100px 0;background:var(--sand)}
+.dc .top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.dc h2{color:var(--green2)}
+.dc h2 .acc{color:var(--gold)}
+.dc .top p{color:var(--mut);max-width:50ch;margin-top:10px}
+.busca{display:flex;gap:10px;background:#fff;border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 12px 30px rgba(15,42,34,.12);max-width:520px;width:100%}
+.busca input{flex:1;border:0;outline:0;font:600 1rem var(--sans);background:none;min-width:0}
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.dgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.dgrid{grid-template-columns:1fr}}
+.dcard{background:#fff;border-radius:22px;overflow:hidden;text-decoration:none;box-shadow:0 10px 30px rgba(15,42,34,.1);display:flex;flex-direction:column;transition:translate .35s,box-shadow .35s}
+.dcard:hover{translate:0 -8px;box-shadow:0 26px 50px rgba(15,42,34,.22)}
+.dcard .tx{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.dcard h3{font-size:1.12rem;line-height:1.25}
+.dcard p{font-size:.88rem;color:var(--mut)}
+.dcard .meta{margin-top:auto;font-size:.76rem;font-weight:800;color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.dc .mais{text-align:center;margin-top:36px}
+
+/* sobre */
+.sob{padding:100px 0;background:var(--cream)}
+.sob .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.sob .ph{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 26px 60px rgba(15,42,34,.25);background:var(--sand)}
+.sob .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.sob h2{color:var(--green2);margin-bottom:16px}
+.sob h2 .acc{color:var(--gold)}
+.sob ul{list-style:none;display:grid;gap:12px;margin:22px 0 28px}
+.sob li{display:flex;gap:12px;color:var(--ink)}
+.sob li:before{content:"✦";color:var(--gold);flex:none}
+@media(max-width:860px){.sob .wrap{grid-template-columns:1fr}.sob .ph{max-width:380px}}
+
+/* contato */
+.ct{padding:90px 0;background:linear-gradient(160deg,var(--green),var(--green2));color:#fff}
+.ct .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:stretch}
+.ct h2{color:#fff}
+.ct h2 .acc{color:var(--gold2)}
+.ct ul{list-style:none;display:grid;gap:14px;margin:24px 0 28px}
+.ct li{display:flex;gap:12px}
+.ct li svg{color:var(--gold2);width:24px;height:24px;margin-top:2px}
+.ct iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:24px;background:#16382d}
+@media(max-width:860px){.ct .wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <symbol id="i-ok" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-seta" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" fill="currentColor"/></symbol>
+ <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1Z" fill="currentColor"/></symbol>
+ <symbol id="i-rel" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <div class="tx">
+      <div class="eyebrow">Integrative Health Clinic · Curitiba</div>
+      <h1>Dr. Ricardo Schneider<span class="acc">Medicina que cuida do coração e da vida inteira.</span></h1>
+      <p class="lead">Três frentes de atuação em um só lugar: Medicina Funcional Integrativa, Medicina Esportiva e do Exercício e Cirurgia Cardiovascular. Atendimento on-line ou presencial.</p>
+      <div class="row">
+        <a class="btn wa" id="heroWa" target="_blank" rel="noopener" href="#"></a>
+        <a class="btn line" style="color:var(--green)" href="#frentes">Conheça as especialidades</a>
+      </div>
+      <div class="cred"><span>CRM-PR 17214</span><span>RQE-PR 12237</span><span>Mestre em Clínica Cirúrgica (PUC-PR)</span></div>
+    </div>
+    <div class="pf">
+      <div class="ph"><img id="heroImg" src="fotos/dr-consultorio.jpg" alt="Dr. Ricardo Schneider em seu consultório"></div>
+      <div class="b b1">Atendimento<small>on-line ou presencial</small></div>
+      <div class="b b2">Residência na<small>Santa Casa de Curitiba</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="fr-ind" id="frentes">
+  <div class="wrap">
+    <a class="fi a" href="#funcional"><span class="n">FRENTE 01</span><h3>Medicina Funcional Integrativa</h3><p>Check-up, nutrologia, emagrecimento e hormônios.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M10 54C8 30 22 10 54 8c2 30-12 46-34 44M10 54 36 28" fill="none" stroke="#fff"/></svg></a>
+    <a class="fi b" href="#esporte"><span class="n">FRENTE 02</span><h3>Medicina Esportiva e do Exercício</h3><p>Atletas de todas as idades, com foco no futebol de base.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M8 24v16M16 18v28M48 18v28M56 24v16M16 32h32" fill="none" stroke="#fff"/></svg></a>
+    <a class="fi c" href="#cirurgia"><span class="n">FRENTE 03</span><h3>Cirurgia Cardiovascular</h3><p>Cirurgia do coração, explicada com clareza.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M32 54C14 40 6 30 6 20a12 12 0 0 1 22-6l4 5 4-5a12 12 0 0 1 22 6c0 10-8 20-26 34Z" fill="none" stroke="#fff"/></svg></a>
+  </div>
+</section>
+
+<section class="fr" id="funcional">
+  <div class="wrap">
+    <div>
+      <div class="tag"><b>01</b> Frente · Funcional</div>
+      <h2 id="f1t"></h2>
+      <p class="lead" id="f1c"></p>
+      <div class="itens" id="f1i"></div>
+      <a class="btn gold" target="_blank" rel="noopener" id="f1w" href="#">Agendar avaliação</a>
+    </div>
+    <div class="imgs"><div class="m"><img src="fotos/funcional-pratos.jpg" alt="Pratos de alimentação saudável" loading="lazy"></div><div class="s"><img src="fotos/funcional-pressao.jpg" alt="Aferição de pressão arterial" loading="lazy"></div></div>
+  </div>
+</section>
+
+<section id="esporte">
+  <div class="wrap">
+    <div class="es-top">
+      <div>
+        <div class="tag"><b>02</b> Frente · Esportiva</div>
+        <h2 id="esT"></h2>
+        <p id="esX"></p>
+        <div class="idade"><b>8–13</b><span>anos<br>jovens atletas</span></div>
+        <div class="itens" id="f2i" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"></div>
+      </div>
+      <div class="es-photo"><img id="esImg" src="fotos/esporte-jogo.jpg" alt="Jovens jogadores de futebol em treino" loading="lazy"></div>
+    </div>
+    <div class="pil" id="esP"></div>
+    <div class="faixa" id="esF"></div>
+    <div class="es-cta"><a class="btn gold" target="_blank" rel="noopener" id="esW" href="#">Agendar avaliação do atleta</a><small id="esC"></small></div>
+  </div>
+</section>
+
+<section class="fr inv" id="cirurgia">
+  <div class="wrap">
+    <div>
+      <div class="tag"><b>03</b> Frente · Cirurgia</div>
+      <h2 id="f3t"></h2>
+      <p class="lead" id="f3c"></p>
+      <div class="itens" id="f3i"></div>
+      <a class="btn gold" target="_blank" rel="noopener" id="f3w" href="#">Agendar consulta</a>
+    </div>
+    <div class="imgs"><div class="m"><img src="fotos/cirurgia-cirurgiao.jpg" alt="Cirurgião em centro cirúrgico" loading="lazy"></div><div class="s"><img src="fotos/cirurgia-centro.jpg" alt="Equipe em centro cirúrgico" loading="lazy"></div></div>
+  </div>
+</section>
+
+<section class="insta" id="instagram">
+  <div class="wrap">
+    <div class="top">
+      <div><div class="eyebrow">No Instagram</div><h2>As últimas <span class="acc">postagens</span></h2><p>Conteúdo novo sobre coração, nutrição e performance, direto do perfil do Dr. Ricardo.</p></div>
+      <a class="btn ig" id="igBtn" target="_blank" rel="noopener" href="#"></a>
+    </div>
+    <div class="igrid" id="igrid"></div>
+    <p class="nota" id="igNota"></p>
+  </div>
+</section>
+
+<section class="dc" id="dicas">
+  <div class="wrap">
+    <div class="top">
+      <div><div class="eyebrow">Dicas de saúde</div><h2>Informação <span class="acc">clara</span>, em um só lugar</h2><p>Todo o conteúdo do consultório, agora com índice, busca, imagens e leitura fácil.</p></div>
+      <form class="busca" action="dicas.html" method="get"><input type="search" name="q" placeholder="Busque: pressão, colesterol, dieta…" aria-label="Buscar nas dicas de saúde"><button class="btn dark" type="submit">Buscar</button></form>
+    </div>
+    <div class="dgrid" id="dgrid"></div>
+    <div class="mais"><a class="btn dark" href="dicas.html" id="dTodos"></a></div>
+  </div>
+</section>
+
+<section class="sob" id="sobre">
+  <div class="wrap">
+    <div class="ph"><img src="fotos/dr-casual.jpg" alt="Dr. Ricardo Schneider" loading="lazy"></div>
+    <div>
+      <div class="eyebrow">Sobre</div>
+      <h2>Quem cuida de <span class="acc">você</span></h2>
+      <p style="color:var(--mut);font-size:1.1rem">Médico com formação em cirurgia cardiovascular e atuação em medicina funcional integrativa, nutrologia e medicina esportiva, para olhar o paciente por inteiro.</p>
+      <ul id="cred"></ul>
+      <a class="btn dark" target="_blank" rel="noopener" id="sobW" href="#">Falar com o Dr. Ricardo</a>
+    </div>
+  </div>
+</section>
+
+<section class="ct" id="contato">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--gold2)">Contato</div>
+      <h2>Vamos <span class="acc">conversar?</span></h2>
+      <ul>
+        <li><svg><use href="#i-tel"/></svg><span id="ctTel"></span></li>
+        <li><svg><use href="#i-pin"/></svg><span id="ctEnd"></span></li>
+        <li><svg><use href="#i-rel"/></svg><span id="ctAt"></span></li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn wa" id="ctW" target="_blank" rel="noopener" href="#"></a><a class="btn line" id="ctM" target="_blank" rel="noopener" href="#">Como chegar</a></div>
+    </div>
+    <iframe id="mapa" title="Mapa da clínica" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="dados.js"></script>
+<script src="dicas-dados.js"></script>
+<script src="capas.js"></script>
+<script>window.PAGE='home'</script>
+<script src="site.js"></script>
+<script>
+(function(){
+'use strict';
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var wa=function(m){return waLink(m)};
+$('heroWa').innerHTML=WA_ICON+'Agendar consulta';$('heroWa').href=wa();
+['f1w','f3w','esW','sobW','ctW'].forEach(function(id){$(id).href=wa()});
+$('ctW').innerHTML=WA_ICON+SITE.telefoneTexto;
+$('ctM').href=SITE.mapa;
+$('ctTel').textContent='WhatsApp '+SITE.telefoneTexto;$('ctEnd').textContent=SITE.endereco;$('ctAt').textContent='Atendimento '+SITE.atendimento.toLowerCase();
+$('mapa').src='https://maps.google.com/maps?q='+encodeURIComponent(SITE.mapaEmbed)+'&output=embed';
+
+/* frentes */
+function itens(f,link){return f.itens.map(function(x){
+  var h='<svg class="ic"><use href="#i-ok"/></svg><div><b>'+esc(x.t)+'</b><span>'+esc(x.d)+'</span>'+(x.link?'<em>Ler explicação →</em>':'')+'</div>';
+  return x.link?'<a class="it" href="dicas.html#/'+esc(x.link)+'">'+h+'</a>':'<div class="it">'+h+'</div>'}).join('')}
+function titulo(t){var p=t.split(' ');var k=p.pop();return p.join(' ')+' <span class="acc">'+k+'</span>'}
+$('f1t').innerHTML=titulo(FRENTES.funcional.titulo);$('f1c').textContent=FRENTES.funcional.chamada+' '+FRENTES.funcional.texto;$('f1i').innerHTML=itens(FRENTES.funcional);
+$('f3t').innerHTML=titulo(FRENTES.cirurgia.titulo);$('f3c').textContent=FRENTES.cirurgia.chamada+' '+FRENTES.cirurgia.texto;$('f3i').innerHTML=itens(FRENTES.cirurgia);
+$('f2i').innerHTML=itens(FRENTES.esportiva);
+/* esporte */
+$('esT').innerHTML=ESPORTE.titulo.replace(/(crescer jogando)/i,'<span class="acc">$1</span>');$('esX').textContent=ESPORTE.texto;
+$('esP').innerHTML=ESPORTE.pilares.map(function(p,i){return '<div class="pc"><div class="nn">0'+(i+1)+'</div><h3>'+esc(p.t)+'</h3><p>'+esc(p.d)+'</p></div>'}).join('');
+$('esF').innerHTML=ESPORTE.fotos.map(function(f){return '<div><img src="'+esc(f)+'" alt="Jovens jogadores de futebol" loading="lazy"></div>'}).join('');
+$('esC').textContent=ESPORTE.creditoFotos;
+
+/* instagram: 5 últimas */
+$('igBtn').innerHTML=IG_ICON.replace('<svg','<svg class="i"')+'Seguir '+SITE.instagramUsuario;$('igBtn').href=SITE.instagram;
+function desenhaIG(posts,ao_vivo){
+  $('igrid').innerHTML=posts.slice(0,INSTAGRAM.quantidade).map(function(p){
+    return '<a class="igp" target="_blank" rel="noopener" href="'+esc(p.link)+'"><img src="'+esc(p.img)+'" alt="'+esc(p.legenda)+'" loading="lazy"><span class="ico">'+IG_ICON+'</span><span class="ov">'+esc(p.legenda)+'</span></a>'}).join('');
+  $('igNota').textContent=ao_vivo?'Atualizado automaticamente a partir do Instagram.':'Prévia com postagens de exemplo. Ao conectar o Instagram (veja dados.js), as 5 últimas aparecem aqui sozinhas.';
+}
+var exemplo=INSTAGRAM.exemplo.map(function(e){return{img:e.img,legenda:e.legenda,link:'https://www.instagram.com/p/'+e.id+'/'}});
+desenhaIG(exemplo,false);
+if(INSTAGRAM.feedUrl){fetch(INSTAGRAM.feedUrl).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){
+  var l=(j.posts||j.data||[]).filter(function(p){return !p.mediaType||/IMAGE|CAROUSEL|VIDEO/i.test(p.mediaType)});
+  var m=l.map(function(p){var sz=p.sizes&&(p.sizes.medium||p.sizes.small);return{img:(sz&&sz.mediaUrl)||p.thumbnailUrl||p.mediaUrl||p.media_url,legenda:(p.prunedCaption||p.caption||'').slice(0,140),link:p.permalink}}).filter(function(p){return p.img&&p.link});
+  if(m.length)desenhaIG(m,true)}).catch(function(){})}
+
+/* dicas teaser */
+var dest=['hipertensao-como-tratar','colesterol-e-gorduras-o-que-sao','alimentacao-saudavel-low-carb-uma-mudanca-de-paradigmas','revascularizacao-do-miocardio','atividades-fisicas-vida-saudavel','hormonios-implantaveis-o-que-sao-e-quais-as-indicacoes'];
+function art(s){for(var i=0;i<ARTIGOS.length;i++)if(ARTIGOS[i].slug.indexOf(s)===0)return ARTIGOS[i]}
+$('dgrid').innerHTML=dest.map(art).filter(Boolean).map(function(a){return '<a class="dcard" href="dicas.html#/'+a.slug+'">'+capaHTML(a)+'<div class="tx"><h3>'+esc(a.titulo)+'</h3><p>'+esc(a.resumo)+'</p><span class="meta">'+a.min+' min de leitura</span></div></a>'}).join('');
+$('dTodos').textContent='Ver todas as '+ARTIGOS.length+' dicas →';
+$('cred').innerHTML=CREDENCIAIS.map(function(c){return '<li>'+esc(c)+'</li>'}).join('');
+
+/* movimento */
+iniciaMovimento(function(g){
+  if(!g)return;
+  g.from('.hero .eyebrow,.hero h1,.hero .lead,.hero .row,.hero .cred',{y:34,duration:.9,ease:'power3.out',stagger:.12,delay:.1});
+  g.from('.pf .ph',{clipPath:'inset(100% 0 0 0 round 200px 200px 28px 28px)',duration:1.3,ease:'power3.out',delay:.2});
+  g.from('.pf .b',{scale:.6,y:20,duration:.8,ease:'back.out(1.8)',stagger:.2,delay:.9});
+  g.from('.fi',{y:60,duration:.9,ease:'power3.out',stagger:.12,clearProps:'transform',scrollTrigger:{trigger:'.fr-ind',start:'top 90%'}});
+  ['#funcional','#cirurgia'].forEach(function(s){
+    g.from(s+' .tag,'+s+' h2,'+s+' .lead',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:s,start:'top 70%'}});
+    g.from(s+' .it',{y:30,duration:.7,ease:'power3.out',stagger:.06,clearProps:'transform',scrollTrigger:{trigger:s+' .itens',start:'top 85%'}});
+    g.from(s+' .imgs .m',{clipPath:'inset(0 0 100% 0 round 26px)',duration:1.2,ease:'power3.out',scrollTrigger:{trigger:s+' .imgs',start:'top 80%'}});
+    g.from(s+' .imgs .s',{y:60,scale:.9,duration:1,ease:'power3.out',scrollTrigger:{trigger:s+' .imgs',start:'top 70%'}});
+    g.to(s+' .imgs .s',{y:-40,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});
+  });
+  g.from('#esporte .es-top>div:first-child>*',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#esporte',start:'top 70%'}});
+  g.from('.es-photo',{clipPath:'inset(0 100% 0 0 round 30px)',duration:1.3,ease:'power3.out',scrollTrigger:{trigger:'.es-photo',start:'top 85%'}});
+  g.fromTo('.es-photo img',{scale:1.2},{scale:1,ease:'none',scrollTrigger:{trigger:'.es-photo',start:'top bottom',end:'bottom top',scrub:true}});
+  g.from('.idade',{scale:.7,rotate:-6,duration:.9,ease:'back.out(1.8)',scrollTrigger:{trigger:'.idade',start:'top 90%'}});
+  g.from('.pc',{y:50,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'.pil',start:'top 88%'}});
+  g.from('.faixa div',{y:70,duration:.9,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'.faixa',start:'top 92%'}});
+  g.from('.igp',{y:60,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#igrid',start:'top 90%'}});
+  g.from('.dcard',{y:60,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#dgrid',start:'top 90%'}});
+  g.from('.sob .ph',{clipPath:'inset(0 0 100% 0 round 28px)',duration:1.2,ease:'power3.out',scrollTrigger:{trigger:'.sob',start:'top 70%'}});
+  g.from('.sob li',{x:40,duration:.7,ease:'power3.out',stagger:.08,clearProps:'transform',scrollTrigger:{trigger:'#cred',start:'top 88%'}});
+  g.from('#mapa',{clipPath:'inset(0 0 100% 0 round 24px)',duration:1.2,ease:'power3.out',scrollTrigger:{trigger:'#mapa',start:'top 88%'}});
+});
+})();
+</script>
+</body>
+</html>

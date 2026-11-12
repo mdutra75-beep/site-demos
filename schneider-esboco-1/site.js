@@ -14,7 +14,7 @@ head.innerHTML='<div class="prog" id="prog"></div><header class="top" id="hd"><d
  '<button class="burger" id="bg" aria-label="Abrir menu">☰</button>'+
  '<nav class="m" id="nv">'+
  '<a href="'+H+'#frentes">Especialidades</a><a href="'+H+'#esporte">Medicina esportiva</a><a href="'+H+'#instagram">Instagram</a>'+
- '<a href="dicas.html"'+(PAGE==='dicas'?' class="on"':'')+'>Dicas de saúde</a><a href="'+H+'#sobre">Sobre</a><a href="'+H+'#contato">Contato</a>'+
+ '<a href="dicas.html"'+(PAGE==='dicas'?' class="on"':'')+'>Dicas de saúde</a><a href="livros.html"'+(PAGE==='livros'?' class="on"':'')+'>Livros</a><a href="'+H+'#sobre">Sobre</a><a href="'+H+'#contato">Contato</a>'+
  '<a class="btn wa" target="_blank" rel="noopener" href="'+waLink()+'">'+WA+'Agendar</a></nav></div></header>';
 while(head.firstChild)document.body.insertBefore(head.firstChild,document.body.firstChild);
 
@@ -23,7 +23,7 @@ ft.innerHTML='<div class="wrap"><div class="g">'+
  '<div><div class="logo">Dr. Ricardo Schneider<small>Integrative Health Clinic</small></div><p>Medicina Funcional Integrativa · Medicina Esportiva e do Exercício · Cirurgia Cardiovascular</p>'+
  '<a class="ig-ft" href="'+SITE.instagram+'" target="_blank" rel="noopener" aria-label="Instagram do Dr. Ricardo Schneider"><i>'+IG+'</i><span>'+SITE.instagramUsuario+'</span></a></div>'+
  '<div><h4>Atendimento</h4><ul><li>'+SITE.atendimento+'</li><li><a target="_blank" rel="noopener" href="'+waLink()+'">WhatsApp '+SITE.telefoneTexto+'</a></li><li>'+SITE.endereco+'</li><li><a target="_blank" rel="noopener" href="'+SITE.mapa+'">Como chegar ↗</a></li></ul></div>'+
- '<div><h4>Navegue</h4><ul><li><a href="'+H+'#frentes">Especialidades</a></li><li><a href="'+H+'#esporte">Medicina esportiva</a></li><li><a href="dicas.html">Dicas de saúde</a></li><li><a href="'+H+'#sobre">Sobre o Dr. Ricardo</a></li></ul></div></div>'+
+ '<div><h4>Navegue</h4><ul><li><a href="'+H+'#frentes">Especialidades</a></li><li><a href="'+H+'#esporte">Medicina esportiva</a></li><li><a href="dicas.html">Dicas de saúde</a></li><li><a href="livros.html">Livros</a></li><li><a href="'+H+'#sobre">Sobre o Dr. Ricardo</a></li></ul></div></div>'+
  '<div class="fim">'+SITE.nome+' · '+SITE.crm+' · '+SITE.rqe+' · '+SITE.clinica+'. Este site tem caráter informativo e não substitui a consulta médica.</div></div>';
 document.body.appendChild(ft);
 

@@ -30,13 +30,13 @@ header.top.s{border-color:var(--line);box-shadow:0 8px 26px rgba(15,42,34,.08)}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;line-height:1.1}
 .brand img{height:38px;width:auto}
 .brand span{font:800 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--green);border-left:2px solid var(--gold);padding-left:12px}
-nav.m{display:flex;gap:24px;align-items:center}
+nav.m{display:flex;gap:20px;align-items:center}
 nav.m a{white-space:nowrap;text-decoration:none;font-weight:700;font-size:.92rem;color:var(--green2);position:relative}
 nav.m a:not(.btn):after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--gold);transition:right .3s}
 nav.m a:not(.btn):hover:after,nav.m a.on:after{right:0}
 nav.m .btn{padding:10px 20px;font-size:.88rem}
 .burger{display:none;background:none;border:0;font-size:1.8rem;color:var(--green2);cursor:pointer}
-@media(max-width:1020px){.burger{display:block}.brand span{display:none}nav.m{position:absolute;top:74px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:18px 22px 26px;gap:16px;display:none;border-bottom:1px solid var(--line)}nav.m.o{display:flex}}
+@media(max-width:1180px){.burger{display:block}.brand span{display:none}nav.m{position:absolute;top:74px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:18px 22px 26px;gap:16px;display:none;border-bottom:1px solid var(--line)}nav.m.o{display:flex}}
 
 footer.ft{background:var(--green2);color:#cfe0d8;padding:54px 0 100px}
 .ft .g{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px}
@@ -78,14 +78,17 @@ footer.ft{background:var(--green2);color:#cfe0d8;padding:54px 0 100px}
 .home-hero header.top:not(.s) .brand span{color:#fff;border-color:var(--gold2)}
 .home-hero header.top:not(.s) nav.m a:not(.btn){color:#fff}
 .home-hero header.top:not(.s) .burger{color:#fff}
-@media(max-width:1020px){.home-hero header.top:not(.s) nav.m{background:rgba(15,42,34,.96)}.home-hero header.top:not(.s) nav.m a:not(.btn){color:#fff}}
+@media(max-width:1180px){.home-hero header.top:not(.s) nav.m{background:rgba(15,42,34,.96)}.home-hero header.top:not(.s) nav.m a:not(.btn){color:#fff}}
 
 /* palavras do efeito "texto que acende" */
 .aw{display:inline}
 /* mobile: marca ao lado do logo e cabeçalho sempre legível */
 header.top{transition:box-shadow .3s,border-color .3s}
-@media(max-width:1020px){
+@media(max-width:1180px){
   .brand span{display:block;font-size:.58rem;letter-spacing:.14em;padding-left:9px;line-height:1.25}
   .brand img.l1,.home-hero header.top:not(.s) .brand .l2{height:30px}
 }
 @media(max-width:380px){.brand span{font-size:.52rem;letter-spacing:.1em}}
+
+header.top .wrap{max-width:1360px}
+@media(min-width:1181px) and (max-width:1359px){.brand span{display:none}}

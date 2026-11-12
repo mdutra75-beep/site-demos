@@ -35,6 +35,7 @@ const LOJA = {
 /* ---------------------------------------------------------------------
    1) CONTATOS POR SETOR
    setor      = nome que aparece no cartão
+   foto       = imagem do cartão (arquivo da pasta fotos; vazio = fundo dourado)
    descricao  = o que se resolve nesse setor
    telefone   = só números, com DDD (ex.: 41991247790)
    tipo       = 'whatsapp' (botão verde) ou 'ligar' (telefone fixo)
@@ -46,29 +47,29 @@ const LOJA = {
    A ordem aqui é a ordem na tela.
    --------------------------------------------------------------------- */
 const SETORES = [
-  { setor: 'Setor Feminino',
+  { setor: 'Setor Feminino', foto: '14.jpg',
     descricao: 'Moda feminina • Novidades',
     telefone: '41991247790', tipo: 'whatsapp',
     categorias: ['Feminino'], ativo: true },
 
-  { setor: 'Setor Masculino',
+  { setor: 'Setor Masculino', foto: '59.jpg',
     descricao: 'Moda masculina • Infantil • Brinquedos • Uniformes • Papelaria',
     telefone: '41991247770', tipo: 'whatsapp',
     categorias: ['Masculino', 'Infantil', 'Papelaria'], ativo: true },
 
-  { setor: 'Calçados e Fitness',
+  { setor: 'Calçados e Fitness', foto: '45.jpg',
     descricao: 'Tênis • Esportivo • Acessórios',
     telefone: '41991268797', tipo: 'whatsapp',
     categorias: ['Calçados', 'Fitness'], ativo: true },
 
-  { setor: 'Crediário e Caixa',
+  { setor: 'Crediário e Caixa', foto: '',
     descricao: 'Pagamentos • Informações',
     telefone: '4133540290', tipo: 'ligar',
     categorias: [], ativo: true },
 
   // ATENÇÃO (conferir com a loja): o Linktree antigo lista "Vendas On-Line" como (41) 99179-4061;
   // o site atual lista "Compre Aqui" como (41) 98415-9389. Usei o do site atual.
-  { setor: 'Compre Aqui',
+  { setor: 'Compre Aqui', foto: '64.jpg',
     descricao: 'Atendimento • Pedidos',
     telefone: '41984159389', tipo: 'whatsapp',
     categorias: [], ativo: true }

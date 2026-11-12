@@ -14,8 +14,9 @@
 :root{--navy:#12266a;--blue:#1f3f9f;--gold:#e2a812;--gold2:#f6d36b;--cream:#fbf6ea;--paper:#fffdf8;--ink:#1a1d2b;--mut:#5b6075;--wa:#1fa855;
 --serif:'Fraunces',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-html,body{overflow-x:clip}
+html{scroll-padding-top:76px}
+main{overflow-x:clip}
+.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
 body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -45,8 +46,7 @@ nav a:hover{opacity:1;color:var(--gold2)}
 /* hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--navy);overflow:hidden}
 .hero .bg{position:absolute;inset:0;overflow:hidden}
-.hero .bg img{position:absolute;inset:-4% 0;width:100%;height:108%;object-fit:cover;object-position:center 35%;will-change:transform;animation:kb 22s ease-in-out infinite alternate}
-@keyframes kb{from{transform:scale(1.04)}to{transform:scale(1.14) translateX(-1.5%)}}
+.hero .bg img{position:absolute;inset:-4% 0;width:100%;height:108%;object-fit:cover;object-position:center 35%}
 .hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,70,.78) 0,rgba(10,22,70,.35) 28%,rgba(10,22,70,.5) 60%,rgba(8,16,56,.96) 100%),radial-gradient(ellipse at 15% 85%,rgba(8,16,56,.7),transparent 60%)}
 .hero .in{position:relative;width:100%;padding-top:120px;padding-bottom:0}
 .hero .tt{padding-bottom:54px;max-width:760px}
@@ -207,7 +207,7 @@ footer a{color:var(--gold2)}
 .fab:hover{transform:translateY(-2px)}
 
 dialog{border:0;border-radius:26px;padding:0;max-width:880px;width:calc(100% - 24px);overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.5);background:#fff}
-dialog::backdrop{background:rgba(8,16,56,.72);backdrop-filter:blur(4px)}
+dialog::backdrop{background:rgba(8,16,56,.78)}
 dialog[open]{animation:pop .35s cubic-bezier(.2,.8,.2,1)}
 @keyframes pop{from{transform:translateY(24px) scale(.97)}}
 .md{display:grid;grid-template-columns:1.1fr 1fr}
@@ -484,7 +484,7 @@ else{
   gsap.from('.hero h1 .ln>span',{yPercent:110,duration:1.1,ease:'power4.out',stagger:.18,delay:.15});
   gsap.from('.hero p,.hero .row,.hstrip',{y:30,duration:.9,ease:'power3.out',stagger:.14,delay:.7});
   gsap.from('.since',{scale:.4,rotate:-40,duration:1.1,ease:'back.out(1.6)',delay:.9});
-  gsap.to('#heroimg',{yPercent:10,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  gsap.set('#heroimg',{scale:1.1});gsap.to('#heroimg',{yPercent:8,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   gsap.to('.hero .tt',{y:-60,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   // números contando
   document.querySelectorAll('.nums b').forEach(function(b){var m=b.textContent.match(/^(\+?)(\d+)(.*)$/);if(!m)return;var o={v:0},fin=+m[2];
@@ -500,7 +500,7 @@ else{
   gsap.from('.equipe img',{scale:1.25,duration:1.6,ease:'power2.out',scrollTrigger:{trigger:'.equipe',start:'top 85%'}});
   gsap.to('.equipe img',{yPercent:-8,ease:'none',scrollTrigger:{trigger:'.equipe',start:'top bottom',end:'bottom top',scrub:true}});
   // vitrine: cards entram em sequência
-  window.cardsIn=function(){ScrollTrigger.batch('.card',{start:'top 94%',once:true,onEnter:function(b){gsap.from(b,{y:60,scale:.94,duration:.8,ease:'power3.out',stagger:.09,clearProps:'transform'})}});ScrollTrigger.refresh()};
+  var cardST=[];window.cardsIn=function(){cardST.forEach(function(t){t.kill()});cardST=ScrollTrigger.batch('.card',{start:'top 94%',once:true,onEnter:function(b){gsap.from(b,{y:60,scale:.94,duration:.8,ease:'power3.out',stagger:.09,clearProps:'transform'})}})};
   cardsIn();
   // liquitanda e contatos
   gsap.from('.liq .big',{scale:.6,rotate:-8,duration:1.2,ease:'back.out(1.5)',scrollTrigger:{trigger:'.liq',start:'top 70%'}});

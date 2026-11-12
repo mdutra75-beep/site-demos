@@ -69,3 +69,13 @@ footer.ft{background:var(--green2);color:#cfe0d8;padding:54px 0 100px}
 .cap .bgi svg{width:100%;height:auto;stroke-width:1.2}
 .cap .fgi svg{width:84px;height:84px;color:var(--gold2);stroke-width:1.6;filter:drop-shadow(0 6px 14px rgba(0,0,0,.25))}
 .cap i{position:absolute;left:14px;bottom:12px;font:800 .64rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+
+/* cabeçalho transparente sobre o vídeo da página inicial */
+.brand .l2{display:none}
+.home-hero header.top:not(.s){background:transparent;backdrop-filter:none;border-color:transparent}
+.home-hero header.top:not(.s) .brand .l1{display:none}
+.home-hero header.top:not(.s) .brand .l2{display:block;height:38px;width:auto}
+.home-hero header.top:not(.s) .brand span{color:#fff;border-color:var(--gold2)}
+.home-hero header.top:not(.s) nav.m a:not(.btn){color:#fff}
+.home-hero header.top:not(.s) .burger{color:#fff}
+@media(max-width:1020px){.home-hero header.top:not(.s) nav.m{background:rgba(15,42,34,.96)}.home-hero header.top:not(.s) nav.m a:not(.btn){color:#fff}}

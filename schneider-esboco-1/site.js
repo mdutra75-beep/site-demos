@@ -1,7 +1,7 @@
 /* Cabeçalho, rodapé, botão do WhatsApp, rolagem suave e barra de progresso (comum às duas páginas) */
 (function(){
 'use strict';
-var PAGE=window.PAGE||'home';
+var PAGE=window.PAGE||'home';if(PAGE==='home')document.body.classList.add('home-hero');
 var H=PAGE==='home'?'':'index.html';
 var IG='<svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.5 6a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>';
 var WA='<svg class="i" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a16 16 0 0 1-6.2-4.1c-1.9-2.1-2.1-3.7-2.1-4.2s.9-1.9 1.5-1.9h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6a8 8 0 0 0 3.8 3.2c.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.3.1.8-.1 1.1Z"/></svg>';
@@ -10,7 +10,7 @@ window.waLink=function(msg){return 'https://wa.me/55'+SITE.whatsapp+'?text='+enc
 
 var head=document.createElement('div');
 head.innerHTML='<div class="prog" id="prog"></div><header class="top" id="hd"><div class="wrap hd">'+
- '<a class="brand" href="'+(PAGE==='home'?'#inicio':'index.html')+'"><img src="logo-dr.png" alt="Dr. Ricardo Schneider"><span>Integrative<br>Health Clinic</span></a>'+
+ '<a class="brand" href="'+(PAGE==='home'?'#inicio':'index.html')+'"><img class="l1" src="logo-dr.png" alt="Dr. Ricardo Schneider"><img class="l2" src="logo-dr-branco.png" alt="" aria-hidden="true"><span>Integrative<br>Health Clinic</span></a>'+
  '<button class="burger" id="bg" aria-label="Abrir menu">☰</button>'+
  '<nav class="m" id="nv">'+
  '<a href="'+H+'#frentes">Especialidades</a><a href="'+H+'#esporte">Medicina esportiva</a><a href="'+H+'#instagram">Instagram</a>'+

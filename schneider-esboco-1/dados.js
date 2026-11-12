@@ -1,6 +1,6 @@
 /* =====================================================================
    DR. RICARDO SCHNEIDER · INTEGRATIVE HEALTH CLINIC — DADOS EDITÁVEIS
-   Telefone, endereço, Instagram, as 3 frentes e a medicina esportiva.
+   Telefone, endereço, Instagram, as 3 especialidades e a medicina esportiva.
    (Os textos das "Dicas de saúde" ficam em dicas-dados.js.)
    Mude só o que está entre aspas. Não apague vírgulas nem chaves.
    ===================================================================== */
@@ -44,13 +44,15 @@ const INSTAGRAM = {
 };
 
 /* ---------------------------------------------------------------------
-   AS 3 FRENTES (conforme a bio do Instagram)
+   AS 3 ESPECIALIDADES (conforme a bio do Instagram)
+   titulo = nome do cartão · tituloSecao = título da seção completa (use *asteriscos* para destacar)
    itens = lista de serviços; um item pode ter link para uma dica (slug).
    --------------------------------------------------------------------- */
 const FRENTES = {
   funcional: {
     titulo: 'Medicina Funcional Integrativa',
-    chamada: 'Olhar completo para o seu corpo: causa, não só sintoma.',
+    tituloSecao: 'Um olhar *completo* para o seu corpo',
+    chamada: 'Entender a causa, não só tratar o sintoma.',
     texto: 'Avaliação individual que junta exames, hábitos, alimentação e hormônios para montar um plano feito para você. Inclui a Nutrologia Clínica.',
     itens: [
       { t: 'Check-up geral e cardiológico', d: 'Avaliação completa da saúde do coração e do corpo.' },
@@ -62,8 +64,9 @@ const FRENTES = {
   },
   esportiva: {
     titulo: 'Medicina Esportiva e do Exercício',
-    chamada: 'Saúde e desempenho para quem treina, do jovem atleta ao adulto ativo.',
-    texto: 'Avaliação do atleta com bioimpedância, biomecânica e orientação de suplementação. Foco especial no futebol de base, de 8 a 13 anos.',
+    tituloSecao: 'Saúde e desempenho para quem *vive o esporte*',
+    chamada: 'Saúde e desempenho para atletas de todas as modalidades.',
+    texto: 'Avaliação do atleta com bioimpedância, biomecânica e orientação de suplementação, com o olhar de quem também é cardiologista e cirurgião cardiovascular.',
     itens: [
       { t: 'Bioimpedância', d: 'Composição corporal: gordura, massa muscular e água.' },
       { t: 'Biomecânica', d: 'Como o corpo se move, onde está a sobrecarga.' },
@@ -73,8 +76,9 @@ const FRENTES = {
   },
   cirurgia: {
     titulo: 'Cirurgia Cardiovascular',
-    chamada: 'Cirurgia do coração com experiência e explicação clara.',
-    texto: 'Cirurgião cardiovascular com residência na Santa Casa de Curitiba. Entenda cada procedimento em linguagem simples.',
+    tituloSecao: 'Cirurgia do coração com *experiência e clareza*',
+    chamada: 'Do diagnóstico ao pós-operatório, cada procedimento explicado em linguagem simples.',
+    texto: 'Cirurgião cardiovascular com residência na Santa Casa de Curitiba e mestrado em Clínica Cirúrgica.',
     itens: [
       { t: 'Revascularização do miocárdio', d: 'A “ponte de safena” e as pontes de mamária.', link: 'revascularizacao-do-miocardio' },
       { t: 'Cirurgia valvar aórtica', d: 'Doenças da valva aórtica e troca valvar.', link: 'cirurgia-valvar-aortica' },
@@ -90,21 +94,20 @@ const FRENTES = {
 };
 
 /* ---------------------------------------------------------------------
-   MEDICINA ESPORTIVA — futebol de base (rascunho: validar com o Dr. Ricardo)
+   MEDICINA ESPORTIVA E DO EXERCÍCIO (rascunho: validar com o Dr. Ricardo)
    --------------------------------------------------------------------- */
 const ESPORTE = {
-  titulo: 'Futebol de base: crescer jogando, com a saúde em dia',
-  texto: 'Jovens jogadores de 8 a 13 anos estão em fase de crescimento, treinam cada vez mais cedo e precisam de um olhar médico que acompanhe essa evolução. O objetivo é cuidar da saúde do atleta, apoiar o desempenho e ajudar a prevenir problemas, junto com a família e a comissão técnica.',
+  texto: 'Quem treina, de verdade, precisa de um olhar médico que una coração, corpo e rotina de treino. Atletas de todas as modalidades, do amador ao competitivo, de qualquer idade, podem contar com avaliação, orientação e acompanhamento para treinar e competir com segurança, evoluir com saúde e prevenir problemas. A formação em Medicina Esportiva e do Exercício se soma à experiência em cardiologia clínico-cirúrgica.',
   pilares: [
-    { t: 'Avaliação cardiológica', d: 'Check-up do coração antes de treinar e competir, com história familiar e exame físico.' },
-    { t: 'Bioimpedância', d: 'Acompanha a composição corporal ao longo do crescimento.' },
-    { t: 'Biomecânica', d: 'Observa postura, corrida e movimento para reduzir sobrecargas.' },
-    { t: 'Alimentação e hidratação', d: 'Orientação prática para a rotina de treino, escola e jogo.' },
-    { t: 'Sono e recuperação', d: 'Descanso certo é parte do treino.' },
-    { t: 'Famílias e comissão técnica', d: 'Conversa clara com pais e treinadores sobre o que observar.' }
+    { t: 'Avaliação cardiológica do atleta', d: 'Check-up do coração antes de treinar e competir, com história clínica, exame físico e exames quando indicados.' },
+    { t: 'Bioimpedância', d: 'Acompanha gordura, massa muscular e hidratação ao longo do treinamento.' },
+    { t: 'Biomecânica', d: 'Observa postura e movimento para reduzir sobrecargas e prevenir lesões.' },
+    { t: 'Suplementação para atletas', d: 'Indicada com critério, a partir de exames e do objetivo de cada atleta.' },
+    { t: 'Alimentação e hidratação', d: 'Orientação prática para a rotina de treino, de prova e de recuperação.' },
+    { t: 'Sono e recuperação', d: 'Carga de treino e descanso em equilíbrio para evoluir com saúde.' }
   ],
-  fotos: ['fotos/esporte-jogo.jpg', 'fotos/esporte-time.jpg', 'fotos/esporte-drible.jpg', 'fotos/esporte-sorriso.jpg', 'fotos/esporte-treino.jpg'],
-  creditoFotos: 'Fotos ilustrativas de banco de imagens livre (Pexels).'
+  fotos: ['fotos/atleta-futebol.jpg', 'fotos/atleta-natacao.jpg', 'fotos/atleta-volei.jpg'],
+  creditoFotos: 'Imagens ilustrativas.'
 };
 
 const CREDENCIAIS = [

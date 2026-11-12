@@ -12,22 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
 <style>
-/* hero */
-.hero{position:relative;padding:150px 0 70px;background:radial-gradient(ellipse at 85% 10%,rgba(226,195,116,.35),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(29,75,60,.16),transparent 55%),var(--cream);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);color:var(--green2)}
-.hero h1 .acc{display:block;color:var(--gold);font-size:.52em;margin-top:14px;line-height:1.15}
-.hero p.lead{font-size:1.18rem;color:var(--mut);max-width:50ch;margin:22px 0 30px}
+/* hero com vídeo */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;background:var(--green2);overflow:hidden}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,28,22,.92) 0%,rgba(9,28,22,.74) 42%,rgba(15,42,34,.35) 100%),linear-gradient(180deg,rgba(9,28,22,.55) 0%,transparent 22%,transparent 70%,rgba(9,28,22,.85) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:140px;padding-bottom:110px}
+.hero .tx{max-width:700px}
+.hero .eyebrow{color:var(--gold2)}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero h1 .acc{display:block;color:var(--gold2);font-size:.5em;margin-top:16px;line-height:1.15}
+.hero p.lead{font-size:1.2rem;color:rgba(255,255,255,.9);max-width:50ch;margin:24px 0 32px}
 .hero .row{display:flex;gap:14px;flex-wrap:wrap}
-.cred{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font-size:.82rem;font-weight:700;color:var(--green)}
-.cred span:before{content:"✦ ";color:var(--gold)}
-.pf{position:relative}
-.pf .ph{position:relative;border-radius:200px 200px 28px 28px;overflow:hidden;aspect-ratio:4/5;background:var(--sand);box-shadow:0 30px 70px rgba(15,42,34,.28);border:8px solid #fff}
-.pf .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.pf .b{position:absolute;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:0 16px 40px rgba(15,42,34,.22);font-size:.8rem;font-weight:800;color:var(--green2);line-height:1.25}
-.pf .b small{display:block;font-weight:600;color:var(--mut);font-size:.72rem}
-.pf .b1{left:-26px;bottom:60px}.pf .b2{right:-14px;top:40px}
-@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:120px}.pf{max-width:420px;margin:0 auto}.pf .b1{left:-8px}.pf .b2{right:-8px}}
+.hero .btn.line{color:#fff}
+.cred{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:34px;font-size:.82rem;font-weight:700;color:rgba(255,255,255,.85)}
+.cred span:before{content:"✦ ";color:var(--gold2)}
+.cue{position:absolute;z-index:2;left:50%;bottom:22px;width:26px;height:42px;border:2px solid rgba(255,255,255,.7);border-radius:14px;transform:translateX(-50%)}
+.cue:after{content:"";position:absolute;left:50%;top:7px;width:4px;height:9px;margin-left:-2px;background:#fff;border-radius:3px;animation:cue 1.7s infinite}
+@keyframes cue{0%{transform:translateY(0);opacity:1}100%{transform:translateY(14px);opacity:0}}
+@media(max-width:860px){.cue{display:none}.hero .wrap{padding-top:120px;padding-bottom:70px}.hero:after{background:linear-gradient(180deg,rgba(9,28,22,.8),rgba(9,28,22,.62) 50%,rgba(9,28,22,.9))}}
+@media(prefers-reduced-motion:reduce){.cue:after{animation:none}}
 
 /* índice das frentes */
 .fr-ind{padding:0 0 30px;background:var(--cream)}
@@ -67,6 +70,7 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 .fr.inv .imgs .s{left:auto;right:-6%}
 .fr .imgs .s img{width:100%;height:100%;object-fit:cover}
 @media(max-width:900px){.fr .wrap,.fr.inv .wrap{grid-template-columns:1fr;direction:ltr;gap:40px}.fr .itens{grid-template-columns:1fr}.fr .imgs .s{left:auto;right:4%}.fr .imgs .m{aspect-ratio:4/3}}
+#funcional .imgs .m{aspect-ratio:3/2}
 #funcional{background:linear-gradient(160deg,var(--green),var(--green2))}
 #cirurgia{background:linear-gradient(160deg,var(--wine),var(--wine2))}
 #cirurgia .itens{grid-template-columns:1fr 1fr}
@@ -96,12 +100,11 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 .pc p{font-size:.9rem;opacity:.85}
 @media(max-width:900px){.es-top{grid-template-columns:1fr}.pil{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.pil{grid-template-columns:1fr}}
-.faixa{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}
-.faixa div{border-radius:18px;overflow:hidden;aspect-ratio:3/4;position:relative}
-.faixa div:nth-child(even){transform:translateY(22px)}
+.faixa{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+.faixa div{border-radius:22px;overflow:hidden;aspect-ratio:16/10;position:relative;box-shadow:0 20px 50px rgba(0,0,0,.3)}
 .faixa img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
 .faixa div:hover img{transform:scale(1.08)}
-@media(max-width:760px){.faixa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:10px}.faixa div{flex:0 0 62%;scroll-snap-align:center;transform:none!important}}
+@media(max-width:760px){.faixa{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:10px}.faixa div{flex:0 0 82%;scroll-snap-align:center}}
 .es-cta{margin-top:56px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;position:relative}
 .es-cta small{opacity:.7;font-size:.78rem}
 
@@ -121,7 +124,6 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 .igp .ico svg{width:18px;height:18px;fill:var(--green2)}
 @media(hover:none){.igp .ov{opacity:1;transform:none}}
 @media(max-width:900px){.igrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:12px}.igp{flex:0 0 64%;scroll-snap-align:center}}
-.insta .nota{margin-top:20px;font-size:.8rem;color:var(--mut)}
 .btn.ig{background:linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7);color:#fff}
 
 /* dicas teaser */
@@ -178,43 +180,41 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 
 <main id="inicio">
 <section class="hero">
+  <img class="poster" src="video/hero-poster.jpg" alt="" aria-hidden="true">
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" aria-hidden="true"><source src="video/hero.mp4" type="video/mp4"></video>
   <div class="wrap">
     <div class="tx">
       <div class="eyebrow">Integrative Health Clinic · Curitiba</div>
       <h1>Dr. Ricardo Schneider<span class="acc">Medicina que cuida do coração e da vida inteira.</span></h1>
-      <p class="lead">Três frentes de atuação em um só lugar: Medicina Funcional Integrativa, Medicina Esportiva e do Exercício e Cirurgia Cardiovascular. Atendimento on-line ou presencial.</p>
+      <p class="lead">Medicina Funcional Integrativa, Medicina Esportiva e do Exercício e Cirurgia Cardiovascular em um só lugar. Atendimento on-line ou presencial.</p>
       <div class="row">
         <a class="btn wa" id="heroWa" target="_blank" rel="noopener" href="#"></a>
-        <a class="btn line" style="color:var(--green)" href="#frentes">Conheça as especialidades</a>
+        <a class="btn line" href="#frentes">Conheça as especialidades</a>
       </div>
       <div class="cred"><span>CRM-PR 17214</span><span>RQE-PR 12237</span><span>Mestre em Clínica Cirúrgica (PUC-PR)</span></div>
     </div>
-    <div class="pf">
-      <div class="ph"><img id="heroImg" src="fotos/dr-consultorio.jpg" alt="Dr. Ricardo Schneider em seu consultório"></div>
-      <div class="b b1">Atendimento<small>on-line ou presencial</small></div>
-      <div class="b b2">Residência na<small>Santa Casa de Curitiba</small></div>
-    </div>
   </div>
+  <div class="cue" aria-hidden="true"></div>
 </section>
 
 <section class="fr-ind" id="frentes">
   <div class="wrap">
-    <a class="fi a" href="#funcional"><span class="n">FRENTE 01</span><h3>Medicina Funcional Integrativa</h3><p>Check-up, nutrologia, emagrecimento e hormônios.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M10 54C8 30 22 10 54 8c2 30-12 46-34 44M10 54 36 28" fill="none" stroke="#fff"/></svg></a>
-    <a class="fi b" href="#esporte"><span class="n">FRENTE 02</span><h3>Medicina Esportiva e do Exercício</h3><p>Atletas de todas as idades, com foco no futebol de base.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M8 24v16M16 18v28M48 18v28M56 24v16M16 32h32" fill="none" stroke="#fff"/></svg></a>
-    <a class="fi c" href="#cirurgia"><span class="n">FRENTE 03</span><h3>Cirurgia Cardiovascular</h3><p>Cirurgia do coração, explicada com clareza.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M32 54C14 40 6 30 6 20a12 12 0 0 1 22-6l4 5 4-5a12 12 0 0 1 22 6c0 10-8 20-26 34Z" fill="none" stroke="#fff"/></svg></a>
+    <a class="fi a" href="#funcional"><span class="n">01</span><h3>Medicina Funcional Integrativa</h3><p>Check-up, nutrologia, emagrecimento e hormônios.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M10 54C8 30 22 10 54 8c2 30-12 46-34 44M10 54 36 28" fill="none" stroke="#fff"/></svg></a>
+    <a class="fi b" href="#esporte"><span class="n">02</span><h3>Medicina Esportiva e do Exercício</h3><p>Atletas de todas as modalidades: avaliação, desempenho e prevenção.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M8 24v16M16 18v28M48 18v28M56 24v16M16 32h32" fill="none" stroke="#fff"/></svg></a>
+    <a class="fi c" href="#cirurgia"><span class="n">03</span><h3>Cirurgia Cardiovascular</h3><p>Cirurgia do coração, explicada com clareza.</p><span class="go">Ver detalhes →</span><svg class="ic" viewBox="0 0 64 64"><path d="M32 54C14 40 6 30 6 20a12 12 0 0 1 22-6l4 5 4-5a12 12 0 0 1 22 6c0 10-8 20-26 34Z" fill="none" stroke="#fff"/></svg></a>
   </div>
 </section>
 
 <section class="fr" id="funcional">
   <div class="wrap">
     <div>
-      <div class="tag"><b>01</b> Frente · Funcional</div>
+      <div class="tag"><b>01</b> Medicina Funcional Integrativa</div>
       <h2 id="f1t"></h2>
       <p class="lead" id="f1c"></p>
       <div class="itens" id="f1i"></div>
       <a class="btn gold" target="_blank" rel="noopener" id="f1w" href="#">Agendar avaliação</a>
     </div>
-    <div class="imgs"><div class="m"><img src="fotos/funcional-pratos.jpg" alt="Pratos de alimentação saudável" loading="lazy"></div><div class="s"><img src="fotos/funcional-pressao.jpg" alt="Aferição de pressão arterial" loading="lazy"></div></div>
+    <div class="imgs"><div class="m"><img src="fotos/funcional-colagem.jpg" alt="Colagem: consulta médica, avaliação corporal, exames e alimentação saudável" loading="lazy"></div></div>
   </div>
 </section>
 
@@ -222,13 +222,12 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
   <div class="wrap">
     <div class="es-top">
       <div>
-        <div class="tag"><b>02</b> Frente · Esportiva</div>
+        <div class="tag"><b>02</b> Medicina Esportiva e do Exercício</div>
         <h2 id="esT"></h2>
         <p id="esX"></p>
-        <div class="idade"><b>8–13</b><span>anos<br>jovens atletas</span></div>
-        <div class="itens" id="f2i" style="display:grid;grid-template-columns:1fr 1fr;gap:12px"></div>
+        <div class="idade"><b>Todas</b><span>as modalidades,<br>todos os níveis</span></div>
       </div>
-      <div class="es-photo"><img id="esImg" src="fotos/esporte-jogo.jpg" alt="Jovens jogadores de futebol em treino" loading="lazy"></div>
+      <div class="es-photo"><img id="esImg" src="fotos/esporte-jogo.jpg" alt="Atletas em competição" loading="lazy"></div>
     </div>
     <div class="pil" id="esP"></div>
     <div class="faixa" id="esF"></div>
@@ -239,7 +238,7 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 <section class="fr inv" id="cirurgia">
   <div class="wrap">
     <div>
-      <div class="tag"><b>03</b> Frente · Cirurgia</div>
+      <div class="tag"><b>03</b> Cirurgia Cardiovascular</div>
       <h2 id="f3t"></h2>
       <p class="lead" id="f3c"></p>
       <div class="itens" id="f3i"></div>
@@ -256,7 +255,6 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
       <a class="btn ig" id="igBtn" target="_blank" rel="noopener" href="#"></a>
     </div>
     <div class="igrid" id="igrid"></div>
-    <p class="nota" id="igNota"></p>
   </div>
 </section>
 
@@ -326,14 +324,13 @@ $('mapa').src='https://maps.google.com/maps?q='+encodeURIComponent(SITE.mapaEmbe
 function itens(f,link){return f.itens.map(function(x){
   var h='<svg class="ic"><use href="#i-ok"/></svg><div><b>'+esc(x.t)+'</b><span>'+esc(x.d)+'</span>'+(x.link?'<em>Ler explicação →</em>':'')+'</div>';
   return x.link?'<a class="it" href="dicas.html#/'+esc(x.link)+'">'+h+'</a>':'<div class="it">'+h+'</div>'}).join('')}
-function titulo(t){var p=t.split(' ');var k=p.pop();return p.join(' ')+' <span class="acc">'+k+'</span>'}
-$('f1t').innerHTML=titulo(FRENTES.funcional.titulo);$('f1c').textContent=FRENTES.funcional.chamada+' '+FRENTES.funcional.texto;$('f1i').innerHTML=itens(FRENTES.funcional);
-$('f3t').innerHTML=titulo(FRENTES.cirurgia.titulo);$('f3c').textContent=FRENTES.cirurgia.chamada+' '+FRENTES.cirurgia.texto;$('f3i').innerHTML=itens(FRENTES.cirurgia);
-$('f2i').innerHTML=itens(FRENTES.esportiva);
+function titulo(t){return esc(t).replace(/\*([^*]+)\*/g,'<span class="acc">$1</span>')}
+$('f1t').innerHTML=titulo(FRENTES.funcional.tituloSecao);$('f1c').textContent=FRENTES.funcional.chamada+' '+FRENTES.funcional.texto;$('f1i').innerHTML=itens(FRENTES.funcional);
+$('f3t').innerHTML=titulo(FRENTES.cirurgia.tituloSecao);$('f3c').textContent=FRENTES.cirurgia.chamada+' '+FRENTES.cirurgia.texto;$('f3i').innerHTML=itens(FRENTES.cirurgia);
 /* esporte */
-$('esT').innerHTML=ESPORTE.titulo.replace(/(crescer jogando)/i,'<span class="acc">$1</span>');$('esX').textContent=ESPORTE.texto;
+$('esT').innerHTML=titulo(FRENTES.esportiva.tituloSecao);$('esX').textContent=ESPORTE.texto;
 $('esP').innerHTML=ESPORTE.pilares.map(function(p,i){return '<div class="pc"><div class="nn">0'+(i+1)+'</div><h3>'+esc(p.t)+'</h3><p>'+esc(p.d)+'</p></div>'}).join('');
-$('esF').innerHTML=ESPORTE.fotos.map(function(f){return '<div><img src="'+esc(f)+'" alt="Jovens jogadores de futebol" loading="lazy"></div>'}).join('');
+$('esF').innerHTML=ESPORTE.fotos.map(function(f){return '<div><img src="'+esc(f)+'" alt="Atletas em ação" loading="lazy"></div>'}).join('');
 $('esC').textContent=ESPORTE.creditoFotos;
 
 /* instagram: 5 últimas */
@@ -341,7 +338,6 @@ $('igBtn').innerHTML=IG_ICON.replace('<svg','<svg class="i"')+'Seguir '+SITE.ins
 function desenhaIG(posts,ao_vivo){
   $('igrid').innerHTML=posts.slice(0,INSTAGRAM.quantidade).map(function(p){
     return '<a class="igp" target="_blank" rel="noopener" href="'+esc(p.link)+'"><img src="'+esc(p.img)+'" alt="'+esc(p.legenda)+'" loading="lazy"><span class="ico">'+IG_ICON+'</span><span class="ov">'+esc(p.legenda)+'</span></a>'}).join('');
-  $('igNota').textContent=ao_vivo?'Atualizado automaticamente a partir do Instagram.':'Prévia com postagens de exemplo. Ao conectar o Instagram (veja dados.js), as 5 últimas aparecem aqui sozinhas.';
 }
 var exemplo=INSTAGRAM.exemplo.map(function(e){return{img:e.img,legenda:e.legenda,link:'https://www.instagram.com/p/'+e.id+'/'}});
 desenhaIG(exemplo,false);
@@ -354,22 +350,29 @@ if(INSTAGRAM.feedUrl){fetch(INSTAGRAM.feedUrl).then(function(r){if(!r.ok)throw 0
 var dest=['hipertensao-como-tratar','colesterol-e-gorduras-o-que-sao','alimentacao-saudavel-low-carb-uma-mudanca-de-paradigmas','revascularizacao-do-miocardio','atividades-fisicas-vida-saudavel','hormonios-implantaveis-o-que-sao-e-quais-as-indicacoes'];
 function art(s){for(var i=0;i<ARTIGOS.length;i++)if(ARTIGOS[i].slug.indexOf(s)===0)return ARTIGOS[i]}
 $('dgrid').innerHTML=dest.map(art).filter(Boolean).map(function(a){return '<a class="dcard" href="dicas.html#/'+a.slug+'">'+capaHTML(a)+'<div class="tx"><h3>'+esc(a.titulo)+'</h3><p>'+esc(a.resumo)+'</p><span class="meta">'+a.min+' min de leitura</span></div></a>'}).join('');
-$('dTodos').textContent='Ver todas as '+ARTIGOS.length+' dicas →';
+$('dTodos').textContent='Veja mais dicas de Saúde.';
 $('cred').innerHTML=CREDENCIAIS.map(function(c){return '<li>'+esc(c)+'</li>'}).join('');
+
+/* vídeo do topo: pausa quando sai da tela ou se o aparelho pede menos movimento */
+(function(){var v=$('heroVideo');if(!v)return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){v.removeAttribute('autoplay');v.pause();return}
+  var p=v.play();if(p&&p.catch)p.catch(function(){});
+  if('IntersectionObserver' in window)new IntersectionObserver(function(e){e[0].isIntersecting?v.play().catch(function(){}):v.pause()},{threshold:.05}).observe(v)})();
 
 /* movimento */
 iniciaMovimento(function(g){
   if(!g)return;
-  g.from('.hero .eyebrow,.hero h1,.hero .lead,.hero .row,.hero .cred',{y:34,duration:.9,ease:'power3.out',stagger:.12,delay:.1});
-  g.from('.pf .ph',{clipPath:'inset(100% 0 0 0 round 200px 200px 28px 28px)',duration:1.3,ease:'power3.out',delay:.2});
-  g.from('.pf .b',{scale:.6,y:20,duration:.8,ease:'back.out(1.8)',stagger:.2,delay:.9});
+  g.from('.hero .eyebrow,.hero h1,.hero .lead,.hero .row,.hero .cred',{y:40,duration:1,ease:'power3.out',stagger:.14,delay:.15,clearProps:'transform'});
+  g.to('.hero video',{scale:1.08,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  g.to('.hero .tx',{y:-60,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   g.from('.fi',{y:60,duration:.9,ease:'power3.out',stagger:.12,clearProps:'transform',scrollTrigger:{trigger:'.fr-ind',start:'top 90%'}});
   ['#funcional','#cirurgia'].forEach(function(s){
     g.from(s+' .tag,'+s+' h2,'+s+' .lead',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:s,start:'top 70%'}});
     g.from(s+' .it',{y:30,duration:.7,ease:'power3.out',stagger:.06,clearProps:'transform',scrollTrigger:{trigger:s+' .itens',start:'top 85%'}});
     g.from(s+' .imgs .m',{clipPath:'inset(0 0 100% 0 round 26px)',duration:1.2,ease:'power3.out',scrollTrigger:{trigger:s+' .imgs',start:'top 80%'}});
+    if(document.querySelector(s+' .imgs .s')){
     g.from(s+' .imgs .s',{y:60,scale:.9,duration:1,ease:'power3.out',scrollTrigger:{trigger:s+' .imgs',start:'top 70%'}});
-    g.to(s+' .imgs .s',{y:-40,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});
+    g.to(s+' .imgs .s',{y:-40,ease:'none',scrollTrigger:{trigger:s,start:'top bottom',end:'bottom top',scrub:true}});}
   });
   g.from('#esporte .es-top>div:first-child>*',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#esporte',start:'top 70%'}});
   g.from('.es-photo',{clipPath:'inset(0 100% 0 0 round 30px)',duration:1.3,ease:'power3.out',scrollTrigger:{trigger:'.es-photo',start:'top 85%'}});

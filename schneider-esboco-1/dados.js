@@ -118,3 +118,15 @@ const CREDENCIAIS = [
   'Pós-graduação em Nutrologia (Redentor).',
   'Pós-graduação em Medicina Funcional Integrativa e em Medicina Esportiva e do Exercício (Academia Brasileira de Medicina Funcional Integrativa).'
 ];
+
+/* ---------------------------------------------------------------------
+   EFEITOS (liga/desliga)
+   textoAcende: títulos e textos grandes começam esmaecidos e vão ganhando
+   a cor definitiva palavra por palavra, conforme a rolagem.
+   Para voltar ao normal, troque true por false.
+   --------------------------------------------------------------------- */
+const EFEITOS = {
+  textoAcende: true,
+  opacidadeInicial: 0.22,
+  seletores: '.fr h2, .fr .lead, #esporte h2, .es-top > div > p, .insta h2, .dc h2, .sob h2, .sob .intro, .ct h2'
+};

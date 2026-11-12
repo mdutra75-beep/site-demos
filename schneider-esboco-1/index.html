@@ -86,9 +86,6 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 .es-top .tag{display:inline-flex;gap:10px;align-items:center;font:800 .76rem var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:7px 16px;border-radius:999px;background:rgba(255,255,255,.12);margin-bottom:18px}
 .es-top .tag b{color:var(--gold2)}
 .es-top p{font-size:1.1rem;opacity:.93;margin:16px 0 20px;max-width:52ch}
-.idade{display:inline-flex;align-items:center;gap:14px;background:var(--gold2);color:#1b2a3a;border-radius:20px;padding:12px 20px;font-weight:800;margin-bottom:26px}
-.idade b{font:800 2.2rem/1 var(--sans)}
-.idade span{font-size:.82rem;line-height:1.2}
 .es-photo{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 30px 70px rgba(0,0,0,.45)}
 .es-photo img{width:100%;height:100%;object-fit:cover}
 .es-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,42,76,.55))}
@@ -225,9 +222,8 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
         <div class="tag"><b>02</b> Medicina Esportiva e do Exercício</div>
         <h2 id="esT"></h2>
         <p id="esX"></p>
-        <div class="idade"><b>Todas</b><span>as modalidades,<br>todos os níveis</span></div>
       </div>
-      <div class="es-photo"><img id="esImg" src="fotos/esporte-jogo.jpg" alt="Atletas em competição" loading="lazy"></div>
+      <div class="es-photo"><img id="esImg" src="fotos/esporte-teste.jpg" alt="Teste cardiopulmonar em atleta" loading="lazy"></div>
     </div>
     <div class="pil" id="esP"></div>
     <div class="faixa" id="esF"></div>
@@ -261,7 +257,7 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
 <section class="dc" id="dicas">
   <div class="wrap">
     <div class="top">
-      <div><div class="eyebrow">Dicas de saúde</div><h2>Informação <span class="acc">clara</span>, em um só lugar</h2><p>Todo o conteúdo do consultório, agora com índice, busca, imagens e leitura fácil.</p></div>
+      <div><div class="eyebrow">Dicas de saúde</div><h2>Informação <span class="acc">clara</span>, em um só lugar</h2></div>
       <form class="busca" action="dicas.html" method="get"><input type="search" name="q" placeholder="Busque: pressão, colesterol, dieta…" aria-label="Buscar nas dicas de saúde"><button class="btn dark" type="submit">Buscar</button></form>
     </div>
     <div class="dgrid" id="dgrid"></div>
@@ -275,7 +271,7 @@ a.it:hover{background:rgba(255,255,255,.18);translate:0 -3px}
     <div>
       <div class="eyebrow">Sobre</div>
       <h2>Quem cuida de <span class="acc">você</span></h2>
-      <p style="color:var(--mut);font-size:1.1rem">Médico com formação em cirurgia cardiovascular e atuação em medicina funcional integrativa, nutrologia e medicina esportiva, para olhar o paciente por inteiro.</p>
+      <p class="intro" style="color:var(--mut);font-size:1.1rem">Médico com formação em cirurgia cardiovascular e atuação em medicina funcional integrativa, nutrologia e medicina esportiva, para olhar o paciente por inteiro.</p>
       <ul id="cred"></ul>
       <a class="btn dark" target="_blank" rel="noopener" id="sobW" href="#">Falar com o Dr. Ricardo</a>
     </div>
@@ -365,6 +361,15 @@ iniciaMovimento(function(g){
   g.from('.hero .eyebrow,.hero h1,.hero .lead,.hero .row,.hero .cred',{y:40,duration:1,ease:'power3.out',stagger:.14,delay:.15,clearProps:'transform'});
   g.to('.hero video',{scale:1.08,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
   g.to('.hero .tx',{y:-60,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* texto grande que "acende" com a rolagem (desligue em dados.js: EFEITOS.textoAcende=false) */
+  if(typeof EFEITOS!=='undefined'&&EFEITOS.textoAcende){
+    function palavras(el){var w=[];(function walk(n){[].slice.call(n.childNodes).forEach(function(c){
+      if(c.nodeType===3){var t=c.textContent;if(!t.trim())return;var f=document.createDocumentFragment();
+        t.split(/(\s+)/).forEach(function(x){if(!x)return;if(/^\s+$/.test(x)){f.appendChild(document.createTextNode(x))}else{var sp=document.createElement('span');sp.className='aw';sp.textContent=x;f.appendChild(sp);w.push(sp)}});
+        n.replaceChild(f,c)}else if(c.nodeType===1&&!c.classList.contains('aw'))walk(c)})})(el);return w}
+    document.querySelectorAll(EFEITOS.seletores).forEach(function(el){var w=palavras(el);if(!w.length)return;
+      g.fromTo(w,{opacity:EFEITOS.opacidadeInicial},{opacity:1,ease:'none',stagger:.12,scrollTrigger:{trigger:el,start:'top 88%',end:'bottom 52%',scrub:true}})})}
   g.from('.fi',{y:60,duration:.9,ease:'power3.out',stagger:.12,clearProps:'transform',scrollTrigger:{trigger:'.fr-ind',start:'top 90%'}});
   ['#funcional','#cirurgia'].forEach(function(s){
     g.from(s+' .tag,'+s+' h2,'+s+' .lead',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:s,start:'top 70%'}});
@@ -377,7 +382,6 @@ iniciaMovimento(function(g){
   g.from('#esporte .es-top>div:first-child>*',{y:34,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#esporte',start:'top 70%'}});
   g.from('.es-photo',{clipPath:'inset(0 100% 0 0 round 30px)',duration:1.3,ease:'power3.out',scrollTrigger:{trigger:'.es-photo',start:'top 85%'}});
   g.fromTo('.es-photo img',{scale:1.2},{scale:1,ease:'none',scrollTrigger:{trigger:'.es-photo',start:'top bottom',end:'bottom top',scrub:true}});
-  g.from('.idade',{scale:.7,rotate:-6,duration:.9,ease:'back.out(1.8)',scrollTrigger:{trigger:'.idade',start:'top 90%'}});
   g.from('.pc',{y:50,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'.pil',start:'top 88%'}});
   g.from('.faixa div',{y:70,duration:.9,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'.faixa',start:'top 92%'}});
   g.from('.igp',{y:60,duration:.8,ease:'power3.out',stagger:.1,clearProps:'transform',scrollTrigger:{trigger:'#igrid',start:'top 90%'}});

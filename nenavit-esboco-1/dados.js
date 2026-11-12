@@ -129,4 +129,18 @@ const HISTORIA = [
     texto: 'Moda feminina, masculina e infantil, calçados, acessórios, brinquedos, papelaria e uniformes. A mesma essência de 1988: atendimento com carinho, qualidade e preço justo.' }
 ];
 
+/* ---------------------------------------------------------------------
+   NOSSOS SETORES (cartões com foto na página inicial)
+   nome = título · foto = arquivo da pasta fotos · categoria = filtro da vitrine
+   que abre ao clicar (Feminino, Masculino, Infantil, Calçados, Fitness, Papelaria)
+   icone = camisa | vestido | crianca | tenis | lapis
+   --------------------------------------------------------------------- */
+const AREAS = [
+  { nome: 'Moda Feminina',      foto: '14.jpg', categoria: 'Feminino',  icone: 'vestido' },
+  { nome: 'Moda Masculina',     foto: '59.jpg', categoria: 'Masculino', icone: 'camisa'  },
+  { nome: 'Moda Infantil',      foto: '53.jpg', categoria: 'Infantil',  icone: 'crianca' },
+  { nome: 'Calçados e Fitness', foto: '45.jpg', categoria: 'Calçados',  icone: 'tenis'   },
+  { nome: 'Brinquedos e Papelaria', foto: '78.jpg', categoria: 'Papelaria', icone: 'lapis' }
+];
+
 const MARCAS = ['Nike', 'Adidas', 'Converse', 'Free Surf', 'Lado Avesso', 'Coca-Cola Jeans', 'Vizzano', 'Macboot', 'Dakota', 'Kiki', 'Milen', 'Kiko Baby', 'Movimento & Companhia'];

@@ -14,6 +14,7 @@
   });
   $$('[data-tel]').forEach(function (a) { a.href = 'tel:' + S.telefoneLink; });
   $$('[data-mapa]').forEach(function (a) { a.href = S.mapa; });
+  $$('[data-rota]').forEach(function (a) { a.href = S.rota; });
   $$('[data-insta]').forEach(function (a) { a.href = S.instagram; });
   $$('[data-mail]').forEach(function (a) {
     var assunto = a.getAttribute('data-mail') === 'trabalhe' ? '?subject=' + encodeURIComponent('Trabalhe conosco') : '';
@@ -40,31 +41,42 @@
     });
   });
 
-  /* ---------- popups dos diferenciais (funcionam com ou sem animação) ---------- */
-  var dlg = $('#dlg'), cards = $$('.card'), atual = 0;
-  function abrir(i) {
-    atual = (i + cards.length) % cards.length;
-    var det = $('.det', cards[atual]);
-    $('#dlg-titulo').textContent = $('h4', det).textContent;
-    var corpo = $('#dlg-corpo'); corpo.innerHTML = '';
-    $$('p, ul', det).forEach(function (n) { corpo.appendChild(n.cloneNode(true)); });
-    if (!dlg.open) dlg.showModal();
+  /* ---------- popups (diferenciais e etapas): funcionam com ou sem animação ---------- */
+  var dlg = $('#dlg'), grupoAtual = [], atual = 0;
+  function abrirPor(id) {
+    var el = document.getElementById(id); if (!el) return;
+    var item = $('[data-abrir="' + id + '"]');
+    var g = item ? item.getAttribute('data-grupo') : 'dif';
+    grupoAtual = $$('[data-abrir][data-grupo="' + g + '"]').map(function (n) { return n.getAttribute('data-abrir'); });
+    atual = Math.max(0, grupoAtual.indexOf(id));
+    mostrar();
   }
-  cards.forEach(function (c, i) { c.addEventListener('click', function () { abrir(i); }); });
+  function mostrar() {
+    var el = document.getElementById(grupoAtual[atual]);
+    $('#dlg-titulo').textContent = $('h4', el).textContent;
+    $('#dlg-rotulo').textContent = el.getAttribute('data-rotulo') || '';
+    var img = $('#dlg-img'); img.src = el.getAttribute('data-img'); img.alt = 'Ilustração de exemplo: ' + $('h4', el).textContent;
+    var corpo = $('#dlg-corpo'); corpo.textContent = '';
+    var av = document.createElement('p'); av.className = 'aviso-ex';
+    var chip = document.createElement('span'); chip.className = 'exemplo-i'; chip.textContent = 'EXEMPLO';
+    av.appendChild(chip); av.appendChild(document.createTextNode(' Texto ilustrativo, será substituído pelo conteúdo da escola.'));
+    corpo.appendChild(av);
+    $$('p, ul', el).forEach(function (n) { corpo.appendChild(n.cloneNode(true)); });
+    var unico = grupoAtual.length < 2;
+    $('#dlg-ant').style.display = $('#dlg-prox').style.display = unico ? 'none' : '';
+    if (!dlg.open) dlg.showModal();
+    corpo.scrollTop = 0;
+  }
+  function passo(d) { atual = (atual + d + grupoAtual.length) % grupoAtual.length; mostrar(); }
+  $$('[data-abrir]').forEach(function (b) { b.addEventListener('click', function () { abrirPor(b.getAttribute('data-abrir')); }); });
   $('#dlg-x').addEventListener('click', function () { dlg.close(); });
-  $('#dlg-ant').addEventListener('click', function () { abrir(atual - 1); });
-  $('#dlg-prox').addEventListener('click', function () { abrir(atual + 1); });
+  $('#dlg-ant').addEventListener('click', function () { passo(-1); });
+  $('#dlg-prox').addEventListener('click', function () { passo(1); });
   dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
   dlg.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') abrir(atual - 1);
-    if (e.key === 'ArrowRight') abrir(atual + 1);
+    if (e.key === 'ArrowLeft') passo(-1);
+    if (e.key === 'ArrowRight') passo(1);
   });
-
-  /* ---------- galeria (setas) ---------- */
-  var gal = $('#galeria');
-  function rolar(dir) { gal.scrollBy({ left: dir * Math.max(280, gal.clientWidth * 0.7), behavior: reduz ? 'auto' : 'smooth' }); }
-  $('#g-ant').addEventListener('click', function () { rolar(-1); });
-  $('#g-prox').addEventListener('click', function () { rolar(1); });
 
   /* ---------- carrossel 3D da equipe ---------- */
   var slides = $$('#car3d .slide3d'), ci = 0, timerC;

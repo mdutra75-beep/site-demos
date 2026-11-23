@@ -3,17 +3,20 @@
 **Identidade (regra: 2 cores base do cliente + 1 destaque)**
 | Papel | Cor | Uso |
 |---|---|---|
-| Base 1 | índigo `#312783` (sombra `#211a5c`) | cabeçalho, etapas, depoimentos, rodapé |
-| Base 2 | azul `#009FE3` | equipe, detalhes, traço do "como começar" |
-| Destaque | amarelo `#FFCF00` | botões principais, selo, etiquetas, números |
+| Base 1 | azul profundo `#0A5C8F` (sombra `#064468`), derivado do azul do site atual | cabeçalho, etapas, depoimentos, rodapé, textos de título |
+| Base 2 | azul céu `#009FE3` (o azul do site atual) | cards, equipe, detalhes, traço do "como começar" |
+| Destaque | amarelo `#FFCF00` | botões principais, selo, etiquetas, "EXEMPLO" |
 | Papel | `#F2F8FD` | seções claras (tom do azul) |
 
-Cores tiradas do logo e do site atual (escolapinhais.com.br). Tipografia: Baloo 2 (títulos) + Nunito (texto). Motivo: os quadrados sobrepostos do logo.
+Em 23/11/2026 o tom arroxeado (índigo `#312783`) foi trocado pelo azul profundo, a pedido: o azul do site novo deve seguir o azul do site atual. O índigo continua só no quadrado do logo (arquivo de imagem).
+Tipografia: Baloo 2 (títulos) + Nunito (texto). Motivo: os quadrados sobrepostos do logo.
 
-**Estrutura (padrão esboço 2):** hero com moldura que abre → manifesto que acende → etapas com imagem fixa que muda → faixa de diferenciais que anda de lado + popup → valores (fundo que muda de claro para índigo) → vida no IEPI (galeria) → equipe em carrossel 3D → como começar (traço que se desenha) → depoimentos → contato + mapa + WhatsApp flutuante.
+**Estrutura:** hero com moldura que abre → manifesto que acende → etapas (botão abre card com informações) → faixa de diferenciais com imagem em cada card + popup → valores (fundo que muda) → **estrutura** (8 espaços) → vida no IEPI (4 blocos com fotos reais do Instagram) → equipe em carrossel 3D (mais fotos) → como começar → depoimentos → contato + mapa com "Como chegar" + WhatsApp flutuante.
 
-**Conteúdo editável:** `dados.js` (contato e links). Textos ficam em HTML (bom para SEO).
+**Conteúdo editável:** `dados.js` (contato, link da rota e do Instagram). Textos ficam em HTML (bom para SEO).
 
-**Origem do conteúdo:** site atual (textos institucionais, diferenciais, depoimentos reais, contatos) e Instagram `@iepiescolapinhais` (fotos, legendas). Fotos de alunos vêm do Instagram da própria escola: confirmar autorização de uso de imagem antes de publicar de verdade.
+**Conteúdo de EXEMPLO (gerado por mim, a trocar pelo da escola):** textos longos dos 11 diferenciais e das 3 etapas (aparecem no popup com o selo "EXEMPLO"), e todas as imagens de `assets/ex/` (22 ilustrações SVG: diferenciais, etapas e estrutura), sempre com o selo "EXEMPLO". Para trocar: substituir o arquivo em `assets/ex/` por uma foto (mesmo nome/ou ajustar o `src`) e remover o `<span class="exemplo">` correspondente. As ilustrações usam ícones Twemoji (licença CC-BY 4.0, créditos: Twitter/Twemoji, https://github.com/twitter/twemoji).
 
-**Pendências / a confirmar com a escola:** descrição dos diferenciais Programa Bilíngue, OPEE e Stand For Evolution (hoje texto genérico); horário de atendimento; logo colorida (só há a versão branca); fotos próprias em alta resolução; nome do domínio final.
+**Origem do conteúdo real:** site atual (textos institucionais, diferenciais, depoimentos, contatos) e Instagram `@iepiescolapinhais` (fotos e legendas). Fotos de alunos vêm do Instagram da própria escola: confirmar autorização de uso de imagem antes de publicar de verdade.
+
+**Pendências / a confirmar com a escola:** descrições dos diferenciais (hoje de exemplo); horário de atendimento; logo colorida (só há a versão branca); fotos próprias em alta resolução (estrutura, equipe, etapas); nome do domínio final.

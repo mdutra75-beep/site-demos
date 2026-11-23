@@ -9,6 +9,7 @@ window.SITE = {
   email: "secretaria@escolapinhais.com.br",
   endereco: "R. Jandaia do Sul, 737 — Emiliano Perneta, Pinhais - PR",
   mapa: "https://www.google.com/maps/search/?api=1&query=R.+Jandaia+do+Sul,+737,+Emiliano+Perneta,+Pinhais+-+PR",
+  rota: "https://www.google.com/maps/dir/?api=1&destination=R.+Jandaia+do+Sul,+737,+Emiliano+Perneta,+Pinhais+-+PR",
   instagram: "https://www.instagram.com/iepiescolapinhais/",
   mensagemMatricula: "Olá! Vim pelo site do IEPI e gostaria de informações sobre matrículas 2027.",
   mensagemVisita: "Olá! Vim pelo site do IEPI e gostaria de agendar uma visita."

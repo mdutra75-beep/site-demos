@@ -55,7 +55,7 @@
     var el = document.getElementById(grupoAtual[atual]);
     $('#dlg-titulo').textContent = $('h4', el).textContent;
     $('#dlg-rotulo').textContent = el.getAttribute('data-rotulo') || '';
-    var img = $('#dlg-img'); img.src = el.getAttribute('data-img'); img.alt = 'Ilustração de exemplo: ' + $('h4', el).textContent;
+    var img = $('#dlg-img'); img.src = el.getAttribute('data-img'); img.alt = 'Foto de exemplo: ' + $('h4', el).textContent;
     var corpo = $('#dlg-corpo'); corpo.textContent = '';
     var av = document.createElement('p'); av.className = 'aviso-ex';
     var chip = document.createElement('span'); chip.className = 'exemplo-i'; chip.textContent = 'EXEMPLO';
@@ -95,6 +95,7 @@
   $('#c-ant').addEventListener('click', function () { vaiC(-1); autoC(); });
   $('#c-prox').addEventListener('click', function () { vaiC(1); autoC(); });
   var car = $('#car3d'), x0 = null;
+  car.style.touchAction = 'pan-y'; /* deixa o dedo arrastar de lado no celular */
   car.addEventListener('pointerdown', function (e) { x0 = e.clientX; });
   car.addEventListener('pointerup', function (e) {
     if (x0 === null) return; var dx = e.clientX - x0; x0 = null;

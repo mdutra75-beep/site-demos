@@ -316,6 +316,10 @@ dialog[open]{display:flex;flex-direction:column;max-height:92vh}
 .dlg-img{aspect-ratio:16/6}
 .dlg-corpo{flex:1;min-height:0;max-height:none;overflow:auto}
 .dlg-pe{padding-block:16px 20px}
+/* popup inteiro rola (roda do mouse e dedo); setas ficam coladas embaixo */
+dialog[open]{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.dlg-corpo{flex:none;overflow:visible;min-height:auto}
+.dlg-pe{position:sticky;bottom:0;background:#fff;box-shadow:0 -12px 18px -14px rgba(10,92,143,.35)}
 .aviso-ex{display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:700;color:#4b4670}
 .exemplo-i{background:var(--amarelo);color:var(--indigo);font-family:var(--titulo);font-weight:800;font-size:.7rem;letter-spacing:.12em;padding:3px 10px;border-radius:99px}
 

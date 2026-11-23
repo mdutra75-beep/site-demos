@@ -15,7 +15,7 @@ Tipografia: Baloo 2 (títulos) + Nunito (texto). Motivo: os quadrados sobreposto
 
 **Conteúdo editável:** `dados.js` (contato, link da rota e do Instagram). Textos ficam em HTML (bom para SEO).
 
-**Conteúdo de EXEMPLO (gerado por mim, a trocar pelo da escola):** textos longos dos 11 diferenciais e das 3 etapas (aparecem no popup com o selo "EXEMPLO"), e todas as imagens de `assets/ex/` (22 ilustrações SVG: diferenciais, etapas e estrutura), sempre com o selo "EXEMPLO". Para trocar: substituir o arquivo em `assets/ex/` por uma foto (mesmo nome/ou ajustar o `src`) e remover o `<span class="exemplo">` correspondente. As ilustrações usam ícones Twemoji (licença CC-BY 4.0, créditos: Twitter/Twemoji, https://github.com/twitter/twemoji).
+**Conteúdo de EXEMPLO (a trocar pelo da escola):** textos longos dos 11 diferenciais e das 3 etapas (aparecem no popup com o selo "EXEMPLO"), e todas as imagens de `assets/ex/` (24/11: fotos de banco de imagens gratuito Unsplash, licença Unsplash, uso comercial permitido; diferenciais, etapas, estrutura, judô e momento cultural), sempre com o selo "EXEMPLO". Para trocar: substituir o arquivo em `assets/ex/` por uma foto da escola (mesmo nome, .jpg) e remover o `<span class="exemplo">` correspondente. As ilustrações SVG anteriores (Twemoji) foram removidas.
 
 **Origem do conteúdo real:** site atual (textos institucionais, diferenciais, depoimentos, contatos) e Instagram `@iepiescolapinhais` (fotos e legendas). Fotos de alunos vêm do Instagram da própria escola: confirmar autorização de uso de imagem antes de publicar de verdade.
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mdutra75-beep.github.io/site-demos/iepi-esboco-1/sitemap.xml

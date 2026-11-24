@@ -22,3 +22,9 @@ Escola de futsal em Curitiba (3 a 17 anos). O site atual (nbfutebol.com.br) é s
 - "No NB": 3 linhas de 8 fotos que andam de lado conforme a página rola (sem prender a rolagem), com moldura recortada em laranja e azul e foto que desliza dentro da moldura; funciona no celular.
 - "Como começar": a bola é a imagem `Downloads\bola.jpg` (recortada em círculo, `assets/bola.png`) e gira rolando pelo caminho: horizontal no computador e vertical no celular.
 - Imagem dos Mini Craques: aguardando o arquivo (a imagem do pedido não chegou). Para usar, salvar em `assets/mini-craques-novo.jpg` já sem as setas e rodar `scratchpad\build_nb.py`.
+
+**Ajustes de 24/11 (noite):**
+- "No NB": cartões com largura proporcional à tela (17% da largura), para as linhas sempre passarem da borda mesmo em tela de 1920 px (antes, em tela grande, as 8 fotos cabiam e nada se movia). Cada linha termina o percurso quando chega ao alto da tela, então todas as fotos passam inteiras pela vista, no computador e no celular.
+- "Além da quadra": as duas fotos agora têm o mesmo tamanho e alinhamento (sem deslocamento nem parallax).
+- "Conquistas": as duas fotos foram trocadas por uma só, `Downloads\nb2.JPG` (Taça Brasil de Futsal, 568x486 px, ampliada 2x: baixa resolução, pedir original), com moldura recortada e a legenda "Taça Brasil de Futsal".
+- Os textos novos do placar (Títulos e Reconhecimento) já estavam no ar; quem viu o texto antigo estava com a página em cache (o GitHub Pages guarda por 10 minutos): atualizar com Ctrl+F5.

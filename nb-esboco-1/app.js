@@ -143,9 +143,10 @@
   var linhas = $$('.fita');
   var alcance = function (f) { return Math.max(0, f.scrollWidth - window.innerWidth); };
   linhas.forEach(function (f, i) {
+    /* cada linha termina o percurso quando está no alto da tela: assim todas as fotos passam inteiras pela vista */
     gsap.fromTo(f, { x: function () { return i % 2 ? -alcance(f) : 0; } }, { x: function () { return i % 2 ? 0 : -alcance(f); }, ease: 'none',
-      scrollTrigger: { trigger: '.fitas', start: 'top bottom', end: 'bottom top', scrub: 0.6, invalidateOnRefresh: true } });
-    gsap.fromTo($$('img', f), { xPercent: -5 }, { xPercent: 5, ease: 'none', scrollTrigger: { trigger: '.fitas', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
+      scrollTrigger: { trigger: f, start: 'top 94%', end: 'top 18%', scrub: 0.5, invalidateOnRefresh: true } });
+    gsap.fromTo($$('img', f), { xPercent: -5 }, { xPercent: 5, ease: 'none', scrollTrigger: { trigger: f, start: 'top 94%', end: 'top 18%', scrub: 0.5 } });
   });
 
   /* a bola de verdade rola pelo caminho dos 3 passos: na horizontal no computador e na vertical no celular */

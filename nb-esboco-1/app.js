@@ -107,18 +107,26 @@
   var sp1 = $('.let span');
   gsap.fromTo(sp1, { x: 0 }, { x: function () { return -Math.max(0, sp1.scrollWidth - window.innerWidth); }, ease: 'none', scrollTrigger: { trigger: '.letreiro', start: 'top bottom', end: 'center 35%', scrub: 0.5, invalidateOnRefresh: true } });
 
+  var mm = gsap.matchMedia();
   /* ---------- programas: linhas da quadra se desenham e a lista entra ---------- */
   var quadra = $('.quadra');
   quadra.style.setProperty('--d', 1);
   gsap.to(quadra, { '--d': 0, ease: 'none', scrollTrigger: { trigger: '.programas', start: 'top 70%', end: 'bottom 60%', scrub: true } });
   gsap.from('.linha', { y: 60, opacity: 0, duration: 0.9, stagger: 0.1, ease: EXPO, scrollTrigger: { trigger: '.lista', start: 'top 85%', once: true } });
+  /* celular: a linha que passa pelo meio da tela acende, a foto gira e sobe devagar */
+  mm.add('(max-width: 980px)', function () {
+    $$('.linha').forEach(function (l) {
+      ScrollTrigger.create({ trigger: l, start: 'top 64%', end: 'bottom 36%', toggleClass: { targets: l, className: 'ativa' } });
+      gsap.fromTo($('.ln-foto', l), { yPercent: 14, rotate: 5 }, { yPercent: -14, rotate: -5, ease: 'none', scrollTrigger: { trigger: l, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+  });
 
   /* ---------- Nilo Biazeto: N e B ganham força, o resto do nome recua ---------- */
   var nl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: '.nilo-nome', start: 'top 85%', end: 'bottom 35%', scrub: 0.6 } });
   nl.fromTo('.rs', { opacity: 1 }, { opacity: 0.12 }, 0)
     .fromTo('.Ln', { x: -60, scale: 0.9 }, { x: 0, scale: 1.06 }, 0)
     .fromTo('.Lb', { x: 60, scale: 0.9 }, { x: 0, scale: 1.06 }, 0);
-  gsap.from('.nilo-foto', { clipPath: 'inset(0 100% 0 0)', duration: 1.2, ease: 'power4.inOut', scrollTrigger: { trigger: '.nilo-corpo', start: 'top 80%', once: true } });
+  gsap.from('.nilo-foto', { x: -80, opacity: 0, filter: 'blur(8px)', duration: 1.1, ease: EXPO, scrollTrigger: { trigger: '.nilo-corpo', start: 'top 80%', once: true } });
   gsap.from('.nilo-tx > *', { y: 40, opacity: 0, filter: 'blur(6px)', duration: 1, stagger: 0.1, ease: EXPO, scrollTrigger: { trigger: '.nilo-tx', start: 'top 82%', once: true } });
   gsap.from('.eq > *', { scale: 0.6, opacity: 0, duration: 0.5, stagger: 0.18, ease: 'back.out(2)', scrollTrigger: { trigger: '.nilo-sel', start: 'top 92%', once: true } });
 
@@ -133,7 +141,6 @@
   gsap.from('.pl-card', { y: 60, opacity: 0, duration: 0.9, stagger: 0.1, ease: EXPO, scrollTrigger: { trigger: '.placar', start: 'top 88%', once: true } });
 
   /* ---------- cuidado e galeria: fotos em velocidades diferentes ---------- */
-  var mm = gsap.matchMedia();
   mm.add('(min-width: 981px)', function () {
     $$('[data-vel]').forEach(function (f) {
       gsap.to(f, { y: parseFloat(f.getAttribute('data-vel')) * 420, ease: 'none', scrollTrigger: { trigger: f.parentNode, start: 'top bottom', end: 'bottom top', scrub: true } });

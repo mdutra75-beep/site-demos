@@ -56,6 +56,14 @@
   });
   abrePainel(0);
 
+  /* ---------- faixas de fotos: rolagem lateral padrão + arrastar com o mouse ---------- */
+  $$('.faixa-pin').forEach(function (pin) {
+    var x0 = 0, s0 = 0, down = false, moveu = false;
+    pin.addEventListener('pointerdown', function (e) { if (e.pointerType !== 'mouse') return; down = true; moveu = false; x0 = e.clientX; s0 = pin.scrollLeft; });
+    window.addEventListener('pointermove', function (e) { if (!down) return; var dx = e.clientX - x0; if (Math.abs(dx) > 4) { moveu = true; pin.classList.add('arrastando'); } if (moveu) pin.scrollLeft = s0 - dx; });
+    window.addEventListener('pointerup', function () { down = false; pin.classList.remove('arrastando'); });
+  });
+
   /* vídeo do topo: alguns navegadores só tocam se mandarmos */
   var hv = $('.hero-bg video');
   if (hv && !reduz) { var pp = hv.play(); if (pp && pp.catch) pp.catch(function () {}); }
@@ -142,20 +150,8 @@
   });
 
   var mm = gsap.matchMedia();
-  /* faixas fixas que andam de lado (Tistu 1 e 3) */
-  mm.add('(min-width: 981px)', function () {
-    $$('.faixa-pin').forEach(function (pin) {
-      var f = $('.faixa', pin), rev = pin.classList.contains('rev');
-      var dist = function () { return Math.max(0, f.scrollWidth - window.innerWidth + 40); };
-      gsap.fromTo(f, { x: function () { return rev ? -dist() : 0; } }, { x: function () { return rev ? 0 : -dist(); }, ease: 'none',
-        scrollTrigger: { trigger: pin, start: 'center center', end: function () { return '+=' + dist(); }, pin: true, scrub: 0.7, anticipatePin: 1, invalidateOnRefresh: true } });
-      $$('.cartao', f).forEach(function (c) {
-        gsap.fromTo($('img', c), { scale: 1.25 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: pin, start: 'center center', end: function () { return '+=' + dist(); }, scrub: true } });
-      });
-    });
-  });
-  mm.add('(max-width: 980px)', function () {
-    gsap.from('.cartao', { x: 60, opacity: 0, duration: 0.8, stagger: 0.08, ease: EXPO, scrollTrigger: { trigger: '.cap1 .faixa-pin', start: 'top 85%', once: true } });
+  $$('.faixa-pin').forEach(function (pin) {
+    gsap.from($$('.cartao', pin), { x: 60, opacity: 0, duration: 0.9, stagger: 0.08, ease: EXPO, scrollTrigger: { trigger: pin, start: 'top 88%', once: true } });
   });
 
   /* Tistu 2: mosaico abre com recorte e baralho empilha */

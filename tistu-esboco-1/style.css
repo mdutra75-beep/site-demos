@@ -159,10 +159,12 @@ h2 em,.lead em,h3 em{font:italic 400 1.08em var(--serifa);letter-spacing:-.01em;
 .chips li{border:2px solid currentColor;border-radius:99px;padding:.25em 1em;font-weight:700;font-size:.9rem}
 .faixa-rot{padding-inline:var(--gut);font:italic 400 clamp(1.6rem,3vw,2.6rem) var(--serifa);margin-bottom:.6em;max-width:1700px;margin-inline:auto}
 .rot-cap{margin-top:.4em}
-.faixa-pin{position:relative;overflow:hidden;padding-bottom:20px}
-.faixa{display:flex;gap:clamp(14px,1.6vw,24px);padding-inline:var(--gut);width:max-content;will-change:transform}
+.faixa-pin{position:relative;overflow-x:auto;overflow-y:hidden;padding-bottom:22px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:currentColor transparent;cursor:grab;-webkit-overflow-scrolling:touch}
+.faixa-pin.arrastando{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.faixa-pin.arrastando img{pointer-events:none}
+.faixa{display:flex;gap:clamp(14px,1.6vw,24px);padding-inline:var(--gut);width:max-content}
 .cartao,.m-card,.carta{position:relative;overflow:hidden;border-radius:28px;background:rgba(0,0,0,.12)}
-.cartao{flex:none;width:clamp(250px,27vw,420px);aspect-ratio:3/4}
+.cartao{flex:none;width:clamp(250px,27vw,420px);aspect-ratio:3/4;scroll-snap-align:start}
 .cartao img,.m-card img,.carta img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
 .cartao:hover img,.m-card:hover img,.carta:hover img{transform:scale(1.06)}
 .cartao::after,.m-card::after,.carta::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,26,56,0) 50%,rgba(0,26,56,.82) 100%);pointer-events:none}
@@ -276,9 +278,8 @@ h2 em,.lead em,h3 em{font:italic 400 1.08em var(--serifa);letter-spacing:-.01em;
   .paineis{grid-template-columns:1fr!important;grid-template-rows:none;height:auto}
   .painel{height:clamp(300px,52vh,420px)}
   .painel .p-d,.painel .btn{opacity:1;transform:none}
-  .faixa-pin{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
-  .faixa-pin::-webkit-scrollbar{display:none}
-  .cartao{scroll-snap-align:start;width:min(72vw,320px)}
+  .faixa-pin{scroll-snap-type:x mandatory;cursor:auto}
+  .cartao{width:min(72vw,320px)}
   .mosaico{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(130px,34vw,200px)}
   .m-card,.m-card.g,.m-card.w,.m-card.q{grid-column:span 2}
   .m-card.h{grid-column:span 1}
@@ -298,6 +299,5 @@ h2 em,.lead em,h3 em{font:italic 400 1.08em var(--serifa);letter-spacing:-.01em;
 }
 @media (prefers-reduced-motion:reduce){
   .hero-bg video{display:none}
-  .faixa-pin{overflow-x:auto}
   *{transition:none!important;animation:none!important}
 }

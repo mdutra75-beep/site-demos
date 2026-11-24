@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Escola CEBEC — Berçário, Educação Infantil e Fundamental I em Curitiba</title>
 <meta name="description" content="Escola CEBEC: há 40 anos em Curitiba (Bom Retiro), com turmas pequenas, Projetos de Aprendizagem, bilíngue, robótica e 5.000 m² de área verde. Matrículas abertas 2027.">
-<meta name="theme-color" content="#25428D">
+<meta name="theme-color" content="#14224F">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Escola CEBEC — Descubra o espaço que toda criança merece">
 <meta property="og:description" content="Berçário, Educação Infantil e Ensino Fundamental I, com projetos, natureza e turmas pequenas. Agende uma visita.">
@@ -13,13 +13,14 @@
 <meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,600&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Familjen+Grotesk:wght@400;500;600;700&family=Caveat+Brush&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"School","name":"Escola CEBEC","url":"https://escolacebec.com.br/","telephone":"+554132537958","email":"contato@escolacebec.com.br","image":"assets/hero.jpg","address":{"@type":"PostalAddress","streetAddress":"Rua Nilo Peçanha, 3500","addressLocality":"Curitiba","addressRegion":"PR","postalCode":"82120-440","addressCountry":"BR"},"sameAs":["https://www.instagram.com/escola.cebec/"]}
 </script>
 </head>
 <body>
+<div class="cursor" aria-hidden="true"></div>
 
 <header class="topo" id="topo-bar">
   <div class="topo-in">
@@ -27,76 +28,69 @@
     <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="#escola">A escola</a>
-      <a href="#niveis">Níveis de ensino</a>
+      <a href="#niveis">Níveis</a>
       <a href="#projetos">Projetos</a>
       <a href="#vida">Vida na CEBEC</a>
       <a href="#alimentacao">Alimentação</a>
       <a href="#matricula">Matrícula</a>
-      <a class="btn btn-borda" data-wa="visita" href="#contato">Agende uma visita</a>
+      <a class="btn btn-ambar mag" data-wa="visita" href="#contato">Agende uma visita</a>
     </nav>
   </div>
 </header>
 
 <main id="inicio">
 
-<!-- HERO: texto à esquerda, vídeo em arco à direita -->
+<!-- HERO: vídeo de fundo, tela cheia -->
 <section class="hero">
-  <div class="hero-txt">
+  <div class="hero-bg">
+    <img src="assets/hero.jpg" alt="">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true"><source src="assets/hero.mp4" type="video/mp4"></video>
+  </div>
+  <div class="hero-in">
     <p class="eyebrow">Berçário · Educação Infantil · Fundamental I</p>
-    <h1>Descubra o espaço que toda criança <em>merece.</em></h1>
+    <h1><span class="ln"><span>Descubra o</span></span><span class="ln"><span>espaço que toda</span></span><span class="ln"><span>criança <em>merece.</em></span></span></h1>
     <p class="hero-sub">Turmas pequenas, Projetos de Aprendizagem e muito contato com a natureza. Há 40 anos cuidando de cada criança no Bom Retiro, em Curitiba.</p>
     <div class="hero-cta">
-      <a class="btn btn-ambar" data-wa="visita" href="#contato">Agende uma visita</a>
-      <a class="btn btn-linha" href="#escola">Conhecer a escola</a>
+      <a class="btn btn-ambar mag" data-wa="visita" href="#contato">Agende uma visita</a>
+      <a class="btn btn-vidro mag" href="#escola">Conhecer a escola</a>
     </div>
-    <ul class="hero-mini" aria-label="Destaques">
-      <li><b>40</b> anos de tradição</li>
-      <li><b>5.000 m²</b> de área verde</li>
-      <li><b>3 a 10</b> anos no bilíngue</li>
-    </ul>
   </div>
-  <div class="hero-video">
-    <div class="arco">
-      <img src="assets/hero.jpg" alt="Crianças da Escola CEBEC em atividade">
-      <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true"><source src="assets/hero.mp4" type="video/mp4"></video>
-    </div>
-    <svg class="selo" viewBox="0 0 200 200" aria-label="Matrículas abertas 2027" role="img">
-      <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
-      <circle cx="100" cy="100" r="98" class="selo-fundo"/>
-      <text class="selo-txt"><textPath href="#circ" startOffset="0">MATRÍCULAS ABERTAS · 2027 · MATRÍCULAS ABERTAS · 2027 ·</textPath></text>
-      <g transform="translate(100 100)"><circle r="40" class="selo-miolo"/><text class="selo-ano" text-anchor="middle" y="9">2027</text></g>
-    </svg>
-  </div>
+  <svg class="selo" viewBox="0 0 200 200" aria-label="Matrículas abertas 2027" role="img">
+    <defs><path id="circ" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
+    <circle cx="100" cy="100" r="98" class="selo-fundo"/>
+    <text class="selo-txt"><textPath href="#circ" startOffset="0" textLength="458" lengthAdjust="spacing">MATRÍCULAS ABERTAS · 2027 · INSCRIÇÕES ·</textPath></text>
+    <g transform="translate(100 100)"><circle r="40" class="selo-miolo"/><text class="selo-ano" text-anchor="middle" y="9">2027</text></g>
+  </svg>
+  <ul class="hero-fatos" aria-label="Destaques">
+    <li><b>40</b> anos de tradição</li>
+    <li><b>5.000 m²</b> de área verde</li>
+    <li><b>3 a 10</b> anos no bilíngue</li>
+  </ul>
 </section>
 
-<!-- faixa que anda -->
-<div class="faixa" aria-hidden="true">
-  <div class="faixa-trilho">
-    <span>Projetos de Aprendizagem</span><i>✦</i><span>Bilíngue</span><i>✦</i><span>Robótica</span><i>✦</i><span>Meio ambiente</span><i>✦</i><span>Educação financeira</span><i>✦</i><span>Turmas pequenas</span><i>✦</i><span>Horta e pomar</span><i>✦</i>
-    <span>Projetos de Aprendizagem</span><i>✦</i><span>Bilíngue</span><i>✦</i><span>Robótica</span><i>✦</i><span>Meio ambiente</span><i>✦</i><span>Educação financeira</span><i>✦</i><span>Turmas pequenas</span><i>✦</i><span>Horta e pomar</span><i>✦</i>
-  </div>
+<!-- letreiros que andam com a rolagem -->
+<div class="letreiros" aria-hidden="true">
+  <div class="let l1"><span>Projetos de Aprendizagem ✦ Bilíngue ✦ Robótica ✦ Meio ambiente ✦ Projetos de Aprendizagem ✦ Bilíngue ✦ Robótica ✦ Meio ambiente ✦</span></div>
+  <div class="let l2"><span>Turmas pequenas ✦ Horta e pomar ✦ Educação financeira ✦ Turmas pequenas ✦ Horta e pomar ✦ Educação financeira ✦ Turmas pequenas ✦</span></div>
 </div>
 
 <!-- A ESCOLA -->
 <section class="escola" id="escola">
-  <div class="escola-txt">
+  <div class="escola-in">
     <p class="eyebrow">A escola</p>
-    <h2>Um currículo que vai <em>além</em> das disciplinas obrigatórias.</h2>
-    <p>A proposta pedagógica da CEBEC são os <b>Projetos de Aprendizagem</b>: os alunos aprendem em grupo, trocam ideias e são encorajados a inovar, criar e construir novos saberes com autonomia.</p>
-    <p>Os diferentes espaços da escola e o convívio com a natureza deixam as crianças curiosas e investigativas. E com turmas pequenas, cada uma é vista no seu ritmo.</p>
-    <a class="link-seta" href="#niveis">Ver os níveis de ensino <span aria-hidden="true">→</span></a>
+    <p class="grande" data-acende>Aqui o currículo vai além das disciplinas obrigatórias: as crianças aprendem em projetos, em grupo, em contato com a natureza e no ritmo de cada uma.</p>
+    <div class="escola-cols">
+      <p>A proposta pedagógica da CEBEC são os <b>Projetos de Aprendizagem</b>. Os alunos trocam ideias, trabalham em equipe e são encorajados a inovar, criar e construir novos saberes com autonomia.</p>
+      <p>Os diferentes espaços da escola deixam as crianças curiosas e investigativas. E com turmas pequenas, cada uma é vista de perto.</p>
+    </div>
   </div>
-  <div class="escola-fotos">
-    <figure class="f1"><img src="assets/roda-historia.jpg" alt="Roda de história com crianças" loading="lazy"></figure>
-    <figure class="f2"><img src="assets/mini-playground.jpg" alt="Alunos brincando no playground da escola" loading="lazy"></figure>
-    <p class="etiqueta">40 anos · Bom Retiro</p>
-  </div>
+  <figure class="foto-a" data-speed="-0.12"><img src="assets/roda-historia.jpg" alt="Roda de história com crianças" loading="lazy"></figure>
+  <figure class="foto-b" data-speed="0.14"><img src="assets/mini-playground.jpg" alt="Alunos brincando no playground da escola" loading="lazy"></figure>
+  <span class="recado" aria-hidden="true">turma pequena,<br>olhar de perto!</span>
 </section>
 
 <!-- NÚMEROS -->
 <section class="numeros" id="numeros" aria-label="A CEBEC em números">
-  <div class="numeros-fundo" aria-hidden="true"></div>
-  <p class="eyebrow">A CEBEC em números</p>
   <ul class="num-grade">
     <li><b data-n="40">40</b><span>anos de tradição</span></li>
     <li><b data-n="5000" data-sep="1">5.000</b><span>m² de área verde</span></li>
@@ -105,55 +99,51 @@
   </ul>
 </section>
 
-<!-- NÍVEIS DE ENSINO (abas) -->
+<!-- NÍVEIS DE ENSINO: cartões que empilham na rolagem -->
 <section class="niveis" id="niveis">
   <div class="niveis-cab">
     <p class="eyebrow">Níveis de ensino</p>
     <h2>Do berçário ao <em>5º ano.</em></h2>
   </div>
-  <div class="abas">
-    <div class="abas-lista" role="tablist" aria-label="Níveis de ensino">
-      <button role="tab" aria-selected="true" aria-controls="p-bercario" id="a-bercario"><i>01</i> Berçário</button>
-      <button role="tab" aria-selected="false" aria-controls="p-infantil" id="a-infantil" tabindex="-1"><i>02</i> Educação Infantil</button>
-      <button role="tab" aria-selected="false" aria-controls="p-fund" id="a-fund" tabindex="-1"><i>03</i> Ensino Fundamental I</button>
-      <button role="tab" aria-selected="false" aria-controls="p-contra" id="a-contra" tabindex="-1"><i>04</i> Contraturno</button>
-    </div>
-    <div class="abas-paineis">
-      <article class="painel" role="tabpanel" id="p-bercario" aria-labelledby="a-bercario">
-        <img src="assets/bercario.jpg" alt="Bebê explorando um instrumento musical" loading="lazy">
-        <div>
-          <h3>Berçário</h3>
-          <p>Acolhida, descobertas e carinho desde os primeiros meses. Os ambientes são pensados para favorecer o desenvolvimento emocional, afetivo, motor e intelectual de cada bebê.</p>
-          <ul class="tags"><li>Ambientes diversificados</li><li>Acolhida e amizade</li><li>Parceria com a família</li></ul>
-        </div>
-      </article>
-      <article class="painel" role="tabpanel" id="p-infantil" aria-labelledby="a-infantil" hidden>
-        <img src="assets/infantil-fantasia.jpg" alt="Crianças da Educação Infantil fantasiadas em apresentação" loading="lazy">
-        <div>
-          <h3>Educação Infantil</h3>
-          <p>Aqui a criança aprende fazendo. Os Projetos de Aprendizagem tornam o conhecimento significativo, e o trabalho em grupo estimula a interação com os colegas, com as pessoas e com o ambiente.</p>
-          <ul class="tags"><li>Projetos de Aprendizagem</li><li>Trabalho cooperativo</li><li>Inglês desde os 3 anos</li></ul>
-        </div>
-      </article>
-      <article class="painel" role="tabpanel" id="p-fund" aria-labelledby="a-fund" hidden>
-        <img src="assets/robotica.jpg" alt="Alunos do Fundamental I montando um projeto de robótica" loading="lazy">
-        <div>
-          <h3>Ensino Fundamental I</h3>
-          <p>Nos anos iniciais, os alunos ampliam as linguagens do currículo de forma reflexiva e investigativa: Língua Portuguesa, Língua Inglesa, Ciências, Geografia, História, Arte, Educação Física, Educação Financeira e Educação Ambiental.</p>
-          <ul class="tags"><li>Robótica e tecnologia</li><li>Educação financeira</li><li>Educação ambiental</li></ul>
-        </div>
-      </article>
-      <article class="painel" role="tabpanel" id="p-contra" aria-labelledby="a-contra" hidden>
-        <img src="assets/animais-grupo.jpg" alt="Crianças com cães durante a Feira dos animais" loading="lazy">
-        <div>
-          <h3>Contraturno e espaços de aprendizagem</h3>
-          <p>Sala de ciências e tecnologia, biblioteca, sala de música, cancha esportiva, espaço com animais, horta, pomar, playground, piscina infantil e brinquedoteca fazem parte do dia a dia.</p>
-          <ul class="tags"><li>Entrada às 7h30 ou 10h (manhã)</li><li>Regular: 13h20 às 17h50</li></ul>
-        </div>
-      </article>
-      <p class="aviso"><span class="ex">EXEMPLO</span> Textos de apoio baseados no site da escola, a serem revisados por ela.</p>
-    </div>
+  <div class="pilha">
+    <article class="nivel c1">
+      <div class="nivel-txt">
+        <span class="nn">01</span>
+        <h3>Berçário</h3>
+        <p>Acolhida, descobertas e carinho desde os primeiros meses. Os ambientes são pensados para favorecer o desenvolvimento emocional, afetivo, motor e intelectual de cada bebê.</p>
+        <ul class="tags"><li>Ambientes diversificados</li><li>Acolhida e amizade</li><li>Parceria com a família</li></ul>
+      </div>
+      <img src="assets/bercario.jpg" alt="Bebê explorando um instrumento musical" loading="lazy">
+    </article>
+    <article class="nivel c2">
+      <div class="nivel-txt">
+        <span class="nn">02</span>
+        <h3>Educação Infantil</h3>
+        <p>Aqui a criança aprende fazendo. Os Projetos de Aprendizagem tornam o conhecimento significativo, e o trabalho em grupo estimula a interação com os colegas, com as pessoas e com o ambiente.</p>
+        <ul class="tags"><li>Projetos de Aprendizagem</li><li>Trabalho cooperativo</li><li>Inglês desde os 3 anos</li></ul>
+      </div>
+      <img src="assets/infantil-fantasia.jpg" alt="Crianças da Educação Infantil fantasiadas em apresentação" loading="lazy">
+    </article>
+    <article class="nivel c3">
+      <div class="nivel-txt">
+        <span class="nn">03</span>
+        <h3>Ensino Fundamental I</h3>
+        <p>Nos anos iniciais, os alunos ampliam as linguagens do currículo de forma reflexiva e investigativa: Português, Inglês, Ciências, Geografia, História, Arte, Educação Física, Educação Financeira e Educação Ambiental.</p>
+        <ul class="tags"><li>Robótica e tecnologia</li><li>Educação financeira</li><li>Educação ambiental</li></ul>
+      </div>
+      <img src="assets/robotica.jpg" alt="Alunos do Fundamental I montando um projeto de robótica" loading="lazy">
+    </article>
+    <article class="nivel c4">
+      <div class="nivel-txt">
+        <span class="nn">04</span>
+        <h3>Contraturno e espaços</h3>
+        <p>Sala de ciências e tecnologia, biblioteca, sala de música, cancha esportiva, espaço com animais, horta, pomar, playground, piscina infantil e brinquedoteca fazem parte do dia a dia.</p>
+        <ul class="tags"><li>Entrada às 7h30 ou 10h (manhã)</li><li>Regular: 13h20 às 17h50</li></ul>
+      </div>
+      <img src="assets/animais-grupo.jpg" alt="Crianças com cães durante a Feira dos animais" loading="lazy">
+    </article>
   </div>
+  <p class="aviso"><span class="ex">EXEMPLO</span> Textos de apoio baseados no site da escola, a serem revisados por ela.</p>
 </section>
 
 <!-- PROJETOS (bento) -->
@@ -168,7 +158,7 @@
     <button class="tile t3" data-abrir="d-robotica" style="--img:url(assets/robotica-2.jpg)"><span class="tl">Tecnologia</span><b>Robótica</b><span class="mais">Saiba mais +</span></button>
     <button class="tile t4" data-abrir="d-ambiente" style="--img:url(assets/animais-grupo.jpg)"><span class="tl verde">Natureza</span><b>Meio ambiente</b><span class="mais">Saiba mais +</span></button>
     <button class="tile t5" data-abrir="d-financeira" style="--img:url(assets/mercadinho.jpg)"><span class="tl">Cidadania</span><b>Educação financeira</b><span class="mais">Saiba mais +</span></button>
-    <button class="tile t6 txt-azul" data-abrir="d-turmas"><span class="tl">Cada criança no seu ritmo</span><b>Turmas pequenas</b><small>Aprendizado individualizado, em ambiente acolhedor.</small><span class="mais">Saiba mais +</span></button>
+    <button class="tile t6 txt-creme" data-abrir="d-turmas"><span class="tl">Cada criança no seu ritmo</span><b>Turmas pequenas</b><small>Aprendizado individualizado, em ambiente acolhedor.</small><span class="mais">Saiba mais +</span></button>
     <button class="tile t7" data-abrir="d-familia" style="--img:url(assets/dia-criancas-mae.jpg)"><span class="tl">Juntos</span><b>Família e escola</b><span class="mais">Saiba mais +</span></button>
     <button class="tile t8" data-abrir="d-alimentacao" style="--img:url(assets/horta.jpg)"><span class="tl verde">Saudável</span><b>Alimentação</b><span class="mais">Saiba mais +</span></button>
   </div>
@@ -203,36 +193,45 @@
   </div>
 </section>
 
-<!-- VIDA NA CEBEC (mural com filtro) -->
+<!-- VIDA NA CEBEC: duas fitas de fotos que andam -->
 <section class="vida" id="vida">
   <div class="vida-cab">
-    <div>
-      <p class="eyebrow">Vida na CEBEC</p>
-      <h2>Festa, bicho, palco e <em>muita brincadeira.</em></h2>
-    </div>
-    <div class="filtros" role="group" aria-label="Filtrar fotos">
-      <button class="on" data-f="todos">Todas</button>
-      <button data-f="junina">Festa junina</button>
-      <button data-f="animais">Feira dos animais</button>
-      <button data-f="festival">Festival</button>
-      <button data-f="criancas">Dia das Crianças</button>
+    <p class="eyebrow">Vida na CEBEC</p>
+    <h2>Festa, bicho, palco e <em>muita brincadeira.</em></h2>
+  </div>
+  <div class="fita f1">
+    <div class="fita-trilho">
+      <figure class="s-arco"><img src="assets/junina-1.jpg" alt="Crianças dançando quadrilha na festa junina" loading="lazy"><figcaption>Festa junina</figcaption></figure>
+      <figure class="s-pilula"><img src="assets/animais-meninas.jpg" alt="Alunas passeando com cães na Feira dos animais" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
+      <figure class="s-quad"><img src="assets/festival-2.jpg" alt="Criança fantasiada no palco do festival" loading="lazy"><figcaption>Festival</figcaption></figure>
+      <figure class="s-arco"><img src="assets/dia-criancas-fantasia.jpg" alt="Crianças fantasiadas no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
+      <figure class="s-pilula"><img src="assets/junina-quadra.jpg" alt="Quadra da escola cheia na festa junina" loading="lazy"><figcaption>Festa junina</figcaption></figure>
+      <figure class="s-quad"><img src="assets/animais-coelho.jpg" alt="Aluno com um coelho" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
+      <figure class="s-arco" aria-hidden="true"><img src="assets/junina-1.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-pilula" aria-hidden="true"><img src="assets/animais-meninas.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-quad" aria-hidden="true"><img src="assets/festival-2.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-arco" aria-hidden="true"><img src="assets/dia-criancas-fantasia.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-pilula" aria-hidden="true"><img src="assets/junina-quadra.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-quad" aria-hidden="true"><img src="assets/animais-coelho.jpg" alt="" loading="lazy"></figure>
     </div>
   </div>
-  <div class="mural" id="mural">
-    <figure data-t="junina"><img src="assets/junina-1.jpg" alt="Crianças dançando quadrilha na festa junina" loading="lazy"><figcaption>Festa junina</figcaption></figure>
-    <figure data-t="animais"><img src="assets/animais-meninas.jpg" alt="Alunas passeando com cães na Feira dos animais" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
-    <figure data-t="festival"><img src="assets/festival-2.jpg" alt="Criança fantasiada no palco do festival" loading="lazy"><figcaption>Festival</figcaption></figure>
-    <figure data-t="criancas"><img src="assets/dia-criancas-fantasia.jpg" alt="Crianças fantasiadas no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
-    <figure data-t="junina"><img src="assets/junina-quadra.jpg" alt="Quadra da escola cheia na festa junina" loading="lazy"><figcaption>Festa junina</figcaption></figure>
-    <figure data-t="animais"><img src="assets/animais-coelho.jpg" alt="Aluno com um coelho" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
-    <figure data-t="festival"><img src="assets/festival-3.jpg" alt="Crianças em apresentação no palco" loading="lazy"><figcaption>Festival</figcaption></figure>
-    <figure data-t="junina"><img src="assets/junina-2.jpg" alt="Casal de crianças vestidos de caipira" loading="lazy"><figcaption>Festa junina</figcaption></figure>
-    <figure data-t="criancas"><img src="assets/dia-criancas-abraco.jpg" alt="Professora abraçada com um coelho de pelúcia no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
-    <figure data-t="animais"><img src="assets/animais-porquinho.jpg" alt="Crianças com porquinhos-da-índia" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
-    <figure data-t="festival"><img src="assets/festival-4.jpg" alt="Alunos fantasiados em cenário do festival" loading="lazy"><figcaption>Festival</figcaption></figure>
-    <figure data-t="criancas"><img src="assets/dia-criancas-mae.jpg" alt="Mãe e filha fantasiadas no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
+  <div class="fita f2">
+    <div class="fita-trilho">
+      <figure class="s-pilula"><img src="assets/festival-3.jpg" alt="Crianças em apresentação no palco" loading="lazy"><figcaption>Festival</figcaption></figure>
+      <figure class="s-quad"><img src="assets/junina-2.jpg" alt="Casal de crianças vestidos de caipira" loading="lazy"><figcaption>Festa junina</figcaption></figure>
+      <figure class="s-arco"><img src="assets/dia-criancas-abraco.jpg" alt="Professora com um coelho de pelúcia no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
+      <figure class="s-pilula"><img src="assets/animais-porquinho.jpg" alt="Crianças com porquinhos-da-índia" loading="lazy"><figcaption>Feira dos animais</figcaption></figure>
+      <figure class="s-quad"><img src="assets/festival-4.jpg" alt="Alunos fantasiados em cenário do festival" loading="lazy"><figcaption>Festival</figcaption></figure>
+      <figure class="s-arco"><img src="assets/dia-criancas-mae.jpg" alt="Mãe e filha fantasiadas no Dia das Crianças" loading="lazy"><figcaption>Dia das Crianças</figcaption></figure>
+      <figure class="s-pilula" aria-hidden="true"><img src="assets/festival-3.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-quad" aria-hidden="true"><img src="assets/junina-2.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-arco" aria-hidden="true"><img src="assets/dia-criancas-abraco.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-pilula" aria-hidden="true"><img src="assets/animais-porquinho.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-quad" aria-hidden="true"><img src="assets/festival-4.jpg" alt="" loading="lazy"></figure>
+      <figure class="s-arco" aria-hidden="true"><img src="assets/dia-criancas-mae.jpg" alt="" loading="lazy"></figure>
+    </div>
   </div>
-  <a class="btn btn-azul vida-ig" data-insta href="https://www.instagram.com/escola.cebec/" target="_blank" rel="noopener">Ver mais no Instagram @escola.cebec</a>
+  <a class="btn btn-ambar vida-ig mag" data-insta href="https://www.instagram.com/escola.cebec/" target="_blank" rel="noopener">Ver mais no Instagram @escola.cebec</a>
 </section>
 
 <!-- ALIMENTAÇÃO -->
@@ -309,8 +308,8 @@
       <li><i aria-hidden="true">✉</i><div><b>E-mail</b><a data-mail href="mailto:contato@escolacebec.com.br"><span data-txt="email">contato@escolacebec.com.br</span></a></div></li>
     </ul>
     <div class="contato-cta">
-      <a class="btn btn-ambar" data-wa="visita" href="#">Agende uma visita</a>
-      <a class="btn btn-linha-clara" data-rota href="#" target="_blank" rel="noopener">Como chegar</a>
+      <a class="btn btn-ambar mag" data-wa="visita" href="#">Agende uma visita</a>
+      <a class="btn btn-vidro mag" data-rota href="#" target="_blank" rel="noopener">Como chegar</a>
     </div>
   </div>
   <div class="mapa">
@@ -343,8 +342,8 @@
 </dialog>
 
 <script src="dados.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script src="app.js"></script>
 </body>

@@ -1,9 +1,9 @@
-/* Colégio Fênix · paleta moderna: Midnight Navy #002941, Coral Orange #FD6E6E (parente do vermelho do logo), Pale Mint #CFE8E1 */
+/* Colégio Fênix · paleta moderna: Midnight Navy #002941, Coral Orange #F05A24 (parente do vermelho do logo), Pale Mint #CFE8E1 */
 :root{
   --indigo:#002941;      /* Midnight Navy da paleta */
   --indigo-fundo:#00182A;/* navy mais escuro */
-  --azul:#E0504F;        /* coral mais fechado (texto e fundos com texto branco) */
-  --amarelo:#FD6E6E;     /* Coral Orange da paleta (destaque) */
+  --azul:#D4401A;        /* laranja mais fechado (texto e fundos com texto branco) */
+  --amarelo:#F05A24;     /* laranja do logo (destaque, no lugar do Coral da paleta) */
   --papel:#CFE8E1;       /* Pale Mint da paleta (seções claras) */
   --menta-claro:#EAF5F2;
   --tinta:#00182A;
@@ -29,7 +29,7 @@ h1,h2,h3{font-family:var(--titulo);line-height:1.08;font-weight:800;letter-spaci
 .escuro .eyebrow::before{background:var(--azul)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:.95em 1.6em;border-radius:999px;font-weight:800;text-decoration:none;font-size:1rem;transition:translate .25s,box-shadow .25s,background .25s;white-space:nowrap}
 .btn:hover{translate:0 -3px}
-.btn-amarelo{background:var(--amarelo);color:var(--indigo);box-shadow:0 8px 22px -10px rgba(253,110,110,.9)}
+.btn-amarelo{background:var(--amarelo);color:var(--indigo);box-shadow:0 8px 22px -10px rgba(240,90,36,.9)}
 .btn-borda{border:2px solid currentColor;color:var(--branco)}
 .btn-indigo{background:var(--indigo);color:#fff}
 :focus-visible{outline:3px solid var(--amarelo);outline-offset:3px}
@@ -58,7 +58,7 @@ h1,h2,h3{font-family:var(--titulo);line-height:1.08;font-weight:800;letter-spaci
 .hero-frame img,.hero-frame video{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
 .hero-frame video{position:absolute;inset:0;display:block}
 @media (prefers-reduced-motion:reduce){.hero-frame video{display:none}}
-.hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,24,42,.92) 0%,rgba(0,41,65,.62) 46%,rgba(253,110,110,.12) 100%)}
+.hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(0,24,42,.92) 0%,rgba(0,41,65,.62) 46%,rgba(240,90,36,.12) 100%)}
 .hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--gut) + 56px) var(--gut) var(--gut);max-width:1440px;margin-inline:auto}
 .hero h1{font-size:clamp(2.4rem,min(7.4vw,12vh),6.4rem);max-width:12ch;margin:.35em 0 .3em}
 .hero h1 em{font-style:normal;color:var(--amarelo)}

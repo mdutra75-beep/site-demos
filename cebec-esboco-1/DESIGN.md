@@ -8,15 +8,11 @@ Escola de Berçário, Educação Infantil e Ensino Fundamental I (Bom Retiro, Cu
 | Base 1 | azul `#25428D` (profundo `#16275A`) | logo e uniforme |
 | Base 2 | âmbar `#F3A927` | logo e uniforme |
 | Destaque | verde-folha `#2F9E6E` | folha do logo, só em detalhes (natureza, alimentação, foco) |
-| Papel | creme `#FFF8EA` | tom quente do âmbar |
+| Apoio | creme `#FFF0C8` (cartões e textos sobre escuro) e azul profundo `#14224F` | tom quente do âmbar |
 
-**Tipografia:** Fraunces (serifa, títulos) + Figtree (textos). IEPI e Fênix usam Baloo 2 + Nunito.
+**Segunda versão (23/11, a pedido do usuário):** a primeira tinha muito fundo claro e cara de site padrão. Agora: seções coloridas de ponta a ponta (azul, âmbar, azul profundo e verde), sem fundo branco; fontes Unbounded (títulos largos) + Familjen Grotesk + Caveat Brush (recados à mão); vídeo do hero de **fundo em tela cheia**, como no Fênix.
 
-**O que muda em relação aos outros dois**
-- Hero em duas colunas: texto à esquerda e o vídeo em **arco** à direita, com selo giratório "Matrículas abertas 2027" (IEPI e Fênix: vídeo de fundo, tela cheia).
-- Cartões de canto reto, borda grossa e **sombra dura** (nos outros: cantos bem arredondados e sombra suave).
-- Níveis de ensino em **abas**; projetos em **grade "bento"** com cartões de tamanhos diferentes; **mural** de fotos com filtro; faixa de palavras que anda; contagem animada nos números; cardápio e perguntas frequentes.
-- Sem seções fixas na rolagem (pin) nem carrossel 3D.
+**Movimento:** títulos do hero sobem de uma máscara; letreiros gigantes que andam em sentidos opostos com a rolagem; frase da escola cujas palavras acendem na rolagem; fotos que flutuam em velocidades diferentes; números que contam; **cartões dos níveis que empilham** e encolhem; cartões de projetos que inclinam com o mouse; **fitas de fotos** que andam sozinhas (param ao passar o mouse); cursor que segue o mouse e botões magnéticos (só com mouse). Quem pede menos movimento vê tudo parado.
 
 **Hero:** `Video hero escolas.mp4` (Downloads, o mesmo do Fênix), recomprimido para `assets/hero.mp4` (sem áudio, ~0,9 MB), com `hero-poster.jpg`/`hero.jpg`. Quem pede menos movimento vê só a foto.
 

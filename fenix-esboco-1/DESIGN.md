@@ -6,7 +6,7 @@ Mesmo padrão do `iepi-esboco-1` (estrutura, movimento, popups, carrossel, víde
 | Papel | Cor | Origem |
 |---|---|---|
 | Base | Midnight Navy `#002941` (sombra `#00182A`) | paleta escolhida |
-| Destaque | Coral Orange `#FD6E6E` (versão mais fechada `#E0504F` para texto e fundos com texto branco) | paleta; parente do vermelho do logo |
+| Destaque | laranja do logo `#F05A24` (versão mais fechada `#D4401A` para texto e fundos com texto branco) | trocou o Coral `#FD6E6E` da paleta a pedido do usuário, para ficar como o laranja do logo |
 | Papel | Pale Mint `#CFE8E1` (seções em `#E3F2EE`) | paleta |
 
 Tipografia: Baloo 2 + Nunito (igual ao IEPI). Logo: `assets/logo.png` (do site atual, fundo transparente).

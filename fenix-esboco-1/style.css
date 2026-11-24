@@ -4,7 +4,8 @@
   --indigo-fundo:#00182A;/* navy mais escuro */
   --azul:#E0504F;        /* coral mais fechado (texto e fundos com texto branco) */
   --amarelo:#FD6E6E;     /* Coral Orange da paleta (destaque) */
-  --papel:#E3F2EE;       /* menta muito clara (seção "papel"); menta da paleta: #CFE8E1 */
+  --papel:#CFE8E1;       /* Pale Mint da paleta (seções claras) */
+  --menta-claro:#EAF5F2;
   --tinta:#00182A;
   --branco:#fff;
   --gut:clamp(20px,5vw,72px);
@@ -91,7 +92,7 @@ h1,h2,h3{font-family:var(--titulo);line-height:1.08;font-weight:800;letter-spaci
 .etapas-cab h2{font-size:clamp(2.1rem,5vw,4rem);max-width:14em;margin-top:.3em}
 .etapas-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,80px);align-items:start}
 .etapas-visual{position:sticky;top:15vh;height:70vh;border-radius:34px;overflow:hidden;background:var(--indigo-fundo)}
-.etapas-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}
+.etapas-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;opacity:0;transition:opacity .6s}
 .etapas-visual img.on,.etapas-visual img:first-child{opacity:1}
 .etapas-visual.js img:first-child:not(.on){opacity:0}
 .etapa{min-height:78vh;display:flex;flex-direction:column;justify-content:center;padding-block:40px}
@@ -125,7 +126,7 @@ h1,h2,h3{font-family:var(--titulo);line-height:1.08;font-weight:800;letter-spaci
 .card .mais::after{content:"→";transition:translate .25s}
 .card:hover .mais::after{translate:5px 0}
 .t-indigo{background:var(--indigo);color:#fff}.t-indigo .mais{color:var(--amarelo)}
-.t-azul{background:var(--azul);color:#fff}.t-azul .mais{color:var(--indigo)}
+.t-azul{background:var(--menta-claro);color:var(--indigo)}.t-azul .mais{color:var(--azul)}
 .t-claro{background:#fff;color:var(--indigo)}.t-claro .mais{color:var(--azul)}
 .t-amarelo{background:var(--amarelo);color:var(--indigo)}.t-amarelo .mais{color:var(--indigo)}
 .det{display:none}
@@ -155,7 +156,7 @@ dialog::backdrop{background:rgba(0,24,42,.62)}
 .valores .txt{max-width:36em;font-size:1.12rem;margin-top:1.6em;font-weight:600}
 
 /* ===== Vida no IEPI (galeria) ===== */
-.vida{padding:clamp(70px,9vw,120px) 0;background:#fff}
+.vida{padding:clamp(70px,9vw,120px) 0;background:var(--menta-claro)}
 .vida-cab{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
 .vida-cab h2{font-size:clamp(2rem,4.6vw,3.6rem);color:var(--indigo);margin-top:.3em;max-width:12em}
 .setas{display:flex;gap:10px}
@@ -174,7 +175,7 @@ dialog::backdrop{background:rgba(0,24,42,.62)}
 .insta-cta p{font-weight:700;color:#456072}
 
 /* ===== Equipe (carrossel 3D) ===== */
-.equipe{background:var(--azul);color:#fff;padding:clamp(70px,9vw,120px) 0;overflow:hidden}
+.equipe{background:var(--indigo);color:#fff;padding:clamp(70px,9vw,120px) 0;overflow:hidden}
 .equipe h2{font-size:clamp(2rem,4.6vw,3.6rem);margin:.3em 0 .4em;max-width:13em}
 .equipe .lead{max-width:34em;font-weight:600;font-size:1.1rem}
 .car3d{position:relative;height:clamp(340px,44vw,520px);margin-top:36px;perspective:1400px}
@@ -246,7 +247,7 @@ dialog::backdrop{background:rgba(0,24,42,.62)}
   .etapas-visual{display:none}
   .etapa{min-height:0;padding-block:30px;border-top:1px solid rgba(255,255,255,.18)}
   .etapa-foto{display:block;border-radius:24px;overflow:hidden;margin-bottom:22px;aspect-ratio:4/3}
-  .etapa-foto img{width:100%;height:100%;object-fit:cover}
+  .etapa-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
   .contato-grid{grid-template-columns:1fr}
   .passos{grid-template-columns:1fr;gap:34px}
   .linha{display:none}
@@ -270,7 +271,7 @@ dialog::backdrop{background:rgba(0,24,42,.62)}
 
 /* ===== Popup: imagem e selos ===== */
 .dlg-img{position:relative;aspect-ratio:16/7;background:var(--papel);overflow:hidden}
-.dlg-img img{width:100%;height:100%;object-fit:cover;display:block}
+.dlg-img img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
 .dlg-corpo{max-height:46vh;overflow:auto}
 .dlg-corpo .para{padding:10px 14px;background:var(--papel);border-radius:12px;font-weight:600}
 .dlg-corpo li{margin:4px 0}

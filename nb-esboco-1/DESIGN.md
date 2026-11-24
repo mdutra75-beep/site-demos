@@ -28,3 +28,5 @@ Escola de futsal em Curitiba (3 a 17 anos). O site atual (nbfutebol.com.br) é s
 - "Além da quadra": as duas fotos agora têm o mesmo tamanho e alinhamento (sem deslocamento nem parallax).
 - "Conquistas": as duas fotos foram trocadas por uma só, `Downloads\nb2.JPG` (Taça Brasil de Futsal, 568x486 px, ampliada 2x: baixa resolução, pedir original), com moldura recortada e a legenda "Taça Brasil de Futsal".
 - Os textos novos do placar (Títulos e Reconhecimento) já estavam no ar; quem viu o texto antigo estava com a página em cache (o GitHub Pages guarda por 10 minutos): atualizar com Ctrl+F5.
+
+**"Escolha seu caminho" no celular (24/11):** a linha que cruza o meio da tela abre a foto em tamanho grande, com o aviso "Clique para saber mais"; tocar abre o popup e a foto volta ao tamanho original; ao rolar, a próxima linha repete o efeito (uma por vez). No computador segue a prévia ao passar o mouse.

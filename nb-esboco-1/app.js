@@ -113,11 +113,13 @@
   quadra.style.setProperty('--d', 1);
   gsap.to(quadra, { '--d': 0, ease: 'none', scrollTrigger: { trigger: '.programas', start: 'top 70%', end: 'bottom 60%', scrub: true } });
   gsap.from('.linha', { y: 60, opacity: 0, duration: 0.9, stagger: 0.1, ease: EXPO, scrollTrigger: { trigger: '.lista', start: 'top 85%', once: true } });
-  /* celular: a linha que passa pelo meio da tela acende, a foto gira e sobe devagar */
+  /* celular: a linha que passa pelo meio da tela abre a foto grande com "Clique para saber mais".
+     Ao clicar, o popup abre e a foto volta ao tamanho original; a próxima linha repete o efeito. */
   mm.add('(max-width: 980px)', function () {
     $$('.linha').forEach(function (l) {
-      ScrollTrigger.create({ trigger: l, start: 'top 64%', end: 'bottom 36%', toggleClass: { targets: l, className: 'ativa' } });
-      gsap.fromTo($('.ln-foto', l), { yPercent: 14, rotate: 5 }, { yPercent: -14, rotate: -5, ease: 'none', scrollTrigger: { trigger: l, start: 'top bottom', end: 'bottom top', scrub: true } });
+      ScrollTrigger.create({ trigger: l, start: 'top 55%', end: 'bottom 55%',
+        onToggle: function (st) { l.classList.toggle('ativa', st.isActive); if (!st.isActive) l.classList.remove('fechada'); } });
+      l.addEventListener('click', function () { l.classList.add('fechada'); });
     });
   });
 

@@ -2,17 +2,16 @@
 
 Mesmo padrão do `iepi-esboco-1` (estrutura, movimento, popups, carrossel, vídeo no hero), com identidade do cliente.
 
-**Identidade (regra: 2 cores base do cliente + 1 destaque)**
+**Identidade (paleta moderna, definida pelo usuário em 23/11; o roxo anterior não combinava com o logo)**
 | Papel | Cor | Origem |
 |---|---|---|
-| Base 1 | roxo noite `#2D1D54` (sombra `#1C1236`) | cor de texto do site atual |
-| Base 2 | vermelho-fênix `#DF3B1F` | logo |
-| Destaque | amarelo `#F5BB32` | logo (quadrado) |
-| Papel | creme `#FFF6E4` | tom quente do amarelo |
+| Base | Midnight Navy `#002941` (sombra `#00182A`) | paleta escolhida |
+| Destaque | Coral Orange `#FD6E6E` (versão mais fechada `#E0504F` para texto e fundos com texto branco) | paleta; parente do vermelho do logo |
+| Papel | Pale Mint `#CFE8E1` (seções em `#E3F2EE`) | paleta |
 
 Tipografia: Baloo 2 + Nunito (igual ao IEPI). Logo: `assets/logo.png` (do site atual, fundo transparente).
 
-**Hero:** vídeo `Fenix.mp4` (Downloads, 10 s) recomprimido para `assets/hero.mp4` (1280 px, sem áudio, ~1,5 MB), com `hero-poster.jpg` e `hero.jpg`. Quem pede menos movimento vê só a foto.
+**Hero:** vídeo `Video hero escolas.mp4` (Downloads, 8 s, o mesmo do CEBEC) recomprimido para `assets/hero.mp4` (sem áudio, ~0,9 MB), com `hero-poster.jpg` e `hero.jpg`. Quem pede menos movimento vê só a foto.
 
 **Origem do conteúdo:** textos do site `colegiofenix.org.br` (home, Ensino Fundamental I e II, Ensino Médio, filosofia) e fotos do site e do Instagram `@colegiofenixcuritiba`.
 - Fotos com prefixo `ig-` vêm do Instagram da escola (algumas são artes de posts, como Fê, Arraiá e Dia da Escola).

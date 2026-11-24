@@ -7,14 +7,14 @@ Escola de futsal em Curitiba (3 a 17 anos). O site atual (nbfutebol.com.br) é s
 
 **Hero:** `NB.mp4` (Downloads), jogo gravado de cima, recomprimido sem áudio (1,5 MB) **e cortado no alto** para esconder o placar e as marcas da transmissão. O vídeo original é de uma transmissão de terceiros (marcas "oda sport / TDF Play"): confirmar autorização de uso.
 
-**Seção Nilo Biazeto (pedido do usuário):** nome gigante em que o **N** (laranja) e o **B** (azul) crescem enquanto o resto do nome some na rolagem, com a explicação de que as letras N e B originaram o NB e a equação N + B = logo. Foto do homenageado ainda NÃO está no site: a imagem enviada no chat não ficou salva em arquivo. Para colocar, salvar como `nb-esboco-1/assets/nilo-biazeto.jpg` (ou em Downloads) e rodar o gerador; até lá aparece um painel tipográfico "Multicampeão nos campos". Os textos usam só o que o usuário informou (homenageado, avô do fundador, N e B do nome, multicampeão nos campos).
+**Seção Nilo Biazeto (pedido do usuário):** nome gigante em que o **N** (laranja) e o **B** (azul) crescem enquanto o resto do nome some na rolagem, com a explicação de que as letras N e B originaram o NB e a equação N + B = logo. O bloco ao lado do texto é o painel tipográfico "Multicampeão nos campos" (decisão do usuário em 24/11: está certo assim, não precisa de foto nova). Se um dia quiser a foto, salvar em `assets/nilo-biazeto.jpg` e rodar o gerador. Os textos usam só o que o usuário informou (homenageado, avô do fundador, N e B do nome, multicampeão nos campos).
 
 **Movimento (GSAP 3.13 + ScrollTrigger + SplitText + MotionPath + Lenis):** título do hero que sobe letra por letra; letreiro que anda com a rolagem; linhas de uma quadra de futsal que se desenham no fundo dos programas; lista de programas com foto que segue o mouse e popup; placar com números que contam; colunas de fotos em velocidades diferentes; uma bola que rola pelo caminho dos 3 passos. Sem faixas fixas laterais (o usuário preferiu rolagem padrão). Quem pede menos movimento vê tudo parado.
 
 **Programas (tirados da página de links e das legendas do Instagram):** Formação, Base, Futlab, Mini Craques, Adote um Craque, Trabalhe aqui. Textos de apoio marcados EXEMPLO. Futlab tem só a frase "Treino individualizado" no material público.
 **Resultados usados:** 3ª melhor equipe do Paraná (geração 2017, 46 equipes) e Base NB entre os 8 melhores do Paraná (67 equipes), ambos de cartazes do Instagram.
 
-**Pendências:** foto do Nilo Biazeto e texto oficial sobre ele · autorização de imagem de crianças e do vídeo da transmissão · unidades, endereços e horários (não aparecem em lugar nenhum) · detalhes do Futlab e do Adote um Craque · mensalidades ficaram de fora · domínio.
+**Pendências:** texto oficial sobre o Nilo Biazeto · autorização de imagem de crianças e do vídeo da transmissão · unidades, endereços e horários (não aparecem em lugar nenhum) · detalhes do Futlab e do Adote um Craque · mensalidades ficaram de fora · domínio.
 
 **Ajustes de 24/11 (tarde):**
 - Título do hero sem máscara (a máscara cortava a cauda do Q e a base das letras) e entrelinha maior nos títulos (o acento do "VOCÊ" encostava na linha de cima).

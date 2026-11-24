@@ -1,6 +1,7 @@
 /* Escola CEBEC · azul e âmbar do logo, verde-folha só onde fala de natureza.
    Seções coloridas de ponta a ponta (sem fundo branco), letras grandes, movimento na rolagem. */
 :root{
+  color-scheme:light;
   --azul:#25428D;
   --noite:#14224F;       /* azul profundo */
   --ambar:#F3A927;
@@ -82,9 +83,9 @@ em{font-style:normal;color:var(--ambar)}
 /* letreiros */
 .letreiros{background:var(--ambar);color:var(--noite);padding:20px 0;overflow:hidden;white-space:nowrap}
 .let{overflow:hidden}
-.let span{display:inline-block;font:900 clamp(2rem,6vw,5rem) var(--display);letter-spacing:-.03em;will-change:transform;padding-right:2rem}
-.let.l1 span{-webkit-text-stroke:2px var(--noite);color:transparent}
-.let.l2 span{color:var(--noite)}
+.let span{display:inline-block;font:700 clamp(2rem,5.2vw,4.8rem)/1.15 var(--sans);text-transform:uppercase;letter-spacing:-.01em;will-change:transform;padding:0 var(--gut)}
+.let.l1 span{color:var(--noite)}
+.let.l2 span{color:var(--azul)}
 
 /* A ESCOLA */
 .escola{position:relative;background:var(--azul);padding:clamp(80px,12vw,170px) var(--gut);overflow:hidden}
@@ -144,29 +145,28 @@ em{font-style:normal;color:var(--ambar)}
 .t2{grid-column:3;grid-row:1}
 .t4{grid-column:3;grid-row:2}
 
-/* VIDA: fitas de fotos */
-.vida{background:var(--noite);padding:clamp(70px,10vw,140px) 0;overflow:hidden}
-.vida-cab{padding-inline:var(--gut);max-width:1500px;margin:0 auto clamp(30px,4vw,56px)}
-.fita{overflow:hidden;margin-bottom:clamp(14px,2vw,26px)}
-.fita-trilho{display:flex;gap:clamp(12px,1.6vw,22px);width:max-content;animation:fita 60s linear infinite}
-.fita.f2 .fita-trilho{animation-direction:reverse;animation-duration:70s}
-.fita:hover .fita-trilho{animation-play-state:paused}
-@keyframes fita{to{transform:translateX(calc(-50% - clamp(6px,.8vw,11px)))}}
-.fita figure{position:relative;flex:none;height:clamp(220px,28vw,380px);overflow:hidden;background:var(--azul)}
-.fita img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.fita figure:hover img{transform:scale(1.07)}
-.s-arco{width:clamp(170px,21vw,290px);border-radius:999px 999px 26px 26px}
-.s-pilula{width:clamp(240px,31vw,430px);border-radius:999px}
-.s-quad{width:clamp(200px,25vw,340px);border-radius:30px}
-.fita figcaption{position:absolute;left:50%;bottom:16px;translate:-50% 0;background:var(--ambar);color:var(--noite);border-radius:99px;font-weight:800;font-size:.78rem;padding:3px 12px;white-space:nowrap}
-.vida-ig{margin:clamp(24px,3vw,40px) var(--gut) 0}
+/* VIDA: fitas de fotos movidas pela rolagem */
+.vida{background:var(--noite);padding:clamp(60px,8vw,110px) 0;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.vida-cab{padding-inline:var(--gut);max-width:1500px;width:100%;margin:0 auto clamp(18px,3vh,40px)}
+.vida-cab h2{font-size:clamp(1.6rem,3.6vw,3.2rem)}
+.fita{overflow-x:auto;scrollbar-width:none;margin-bottom:clamp(10px,1.6vh,20px)}
+.fita::-webkit-scrollbar{display:none}
+.vida.pin .fita{overflow:hidden}
+.fita-trilho{display:flex;gap:clamp(10px,1.4vw,20px);width:max-content;padding-inline:var(--gut);will-change:transform}
+.fita figure{position:relative;flex:none;height:clamp(150px,27vh,300px);overflow:hidden;background:var(--azul)}
+.fita img{width:100%;height:100%;object-fit:cover}
+.s-arco{width:clamp(120px,15vw,210px);border-radius:999px 999px 22px 22px}
+.s-pilula{width:clamp(200px,26vw,360px);border-radius:999px}
+.s-quad{width:clamp(150px,19vw,270px);border-radius:26px}
+.fita figcaption{position:absolute;left:50%;bottom:14px;translate:-50% 0;background:var(--ambar);color:var(--noite);border-radius:99px;font-weight:800;font-size:.76rem;padding:3px 12px;white-space:nowrap}
+.vida-ig{margin:clamp(14px,2vh,28px) var(--gut) 0;align-self:flex-start}
 
 /* ALIMENTAÇÃO */
 .alim{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:center;padding:clamp(70px,10vw,140px) var(--gut);background:var(--verde)}
 .alim .eyebrow{color:var(--amarelo-claro)}
 .alim h2 em{color:var(--amarelo-claro)}
 .alim-txt p{margin-top:1em;max-width:34em}
-.cardapio{background:var(--creme);color:var(--noite);border-radius:30px;padding:clamp(22px,3vw,38px);max-width:560px;justify-self:center;width:100%;rotate:1.5deg;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.cardapio{background:var(--creme);color:var(--noite);border-radius:30px;padding:clamp(22px,3vw,38px);max-width:560px;justify-self:center;width:100%;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
 .cardapio-tit{font:900 1.4rem var(--display);margin-bottom:14px}
 .cardapio-tit small{display:block;font:600 .85rem var(--sans);opacity:.7;margin-top:.3em}
 .cardapio dl div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-top:2px dashed rgba(20,34,79,.3)}
@@ -251,8 +251,10 @@ dialog::backdrop{background:rgba(13,22,54,.78)}
   .topo.menu-aberto{background:var(--noite)}
   .selo{top:78px;right:14px;width:72px}
   .escola-cols{grid-template-columns:1fr}
-  .foto-a{width:34%;top:2%;right:2%}
-  .foto-b{width:28%;right:30%;bottom:1%}
+  .escola{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end}
+  .escola-in{flex:0 0 100%}
+  .foto-a,.foto-b{position:relative;inset:auto;width:calc(50% - 10px);rotate:0deg}
+  .foto-b{border-width:4px}
   .recado{display:none}
   .num-grade{grid-template-columns:1fr 1fr}
   .nivel{grid-template-columns:1fr;top:calc(76px + var(--i,0) * 14px);min-height:0}

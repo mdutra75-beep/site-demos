@@ -111,9 +111,12 @@
   gsap.to('.hero-bg video, .hero-bg img', { yPercent: 8, scale: 1.08, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
   gsap.to('.hero-in', { y: -60, opacity: 0.2, ease: 'none', scrollTrigger: { trigger: '.hero', start: '55% top', end: 'bottom top', scrub: true } });
 
-  /* ---------- letreiros: andam para lados opostos com a rolagem ---------- */
-  gsap.fromTo('.let.l1 span', { x: 0 }, { x: '-35%', ease: 'none', scrollTrigger: { trigger: '.letreiros', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
-  gsap.fromTo('.let.l2 span', { x: '-35%' }, { x: 0, ease: 'none', scrollTrigger: { trigger: '.letreiros', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
+  /* ---------- letreiros: andam em sentidos opostos e mostram o texto inteiro ---------- */
+  $$('.let span').forEach(function (sp, i) {
+    var dist = function () { return Math.max(0, sp.scrollWidth - window.innerWidth); };
+    gsap.fromTo(sp, { x: function () { return i ? -dist() : 0; } }, { x: function () { return i ? 0 : -dist(); }, ease: 'none',
+      scrollTrigger: { trigger: '.letreiros', start: 'top bottom', end: 'center 40%', scrub: 0.5, invalidateOnRefresh: true } });
+  });
 
   /* ---------- a escola: palavras acendem, fotos flutuam ---------- */
   $$('[data-acende]').forEach(function (p) {
@@ -122,9 +125,11 @@
     gsap.set(ws, { opacity: 0.2 });
     gsap.to(ws, { opacity: 1, ease: 'none', stagger: 0.1, scrollTrigger: { trigger: p, start: 'top 80%', end: 'bottom 45%', scrub: 0.4 } });
   });
-  $$('[data-speed]').forEach(function (f) {
-    var v = parseFloat(f.getAttribute('data-speed'));
-    gsap.to(f, { y: v * 400, ease: 'none', scrollTrigger: { trigger: '.escola', start: 'top bottom', end: 'bottom top', scrub: true } });
+  gsap.matchMedia().add('(min-width: 981px)', function () {
+    $$('[data-speed]').forEach(function (f) {
+      var v = parseFloat(f.getAttribute('data-speed'));
+      gsap.to(f, { y: v * 400, ease: 'none', scrollTrigger: { trigger: '.escola', start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
   });
   gsap.from('.recado', { scale: 0.3, opacity: 0, duration: 0.9, ease: 'back.out(2)', scrollTrigger: { trigger: '.recado', start: 'top 95%', once: true } });
 
@@ -148,7 +153,13 @@
 
   /* ---------- projetos, vida, passos, títulos ---------- */
   gsap.from('.tile', { y: 70, opacity: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out', scrollTrigger: { trigger: '.bento', start: 'top 85%', once: true } });
-  gsap.from('.fita figure', { y: 60, opacity: 0, duration: 0.8, stagger: 0.05, ease: 'power3.out', scrollTrigger: { trigger: '.fita.f1', start: 'top 90%', once: true } });
+  var vida = $('.vida'), t1 = $('.fita.f1 .fita-trilho'), t2 = $('.fita.f2 .fita-trilho');
+  vida.classList.add('pin');
+  var d1 = function () { return Math.max(0, t1.scrollWidth - window.innerWidth); };
+  var d2 = function () { return Math.max(0, t2.scrollWidth - window.innerWidth); };
+  var vt = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: vida, start: 'top top', end: function () { return '+=' + Math.round(Math.max(d1(), d2()) * 1.05); }, pin: true, scrub: 0.6, anticipatePin: 1, invalidateOnRefresh: true } });
+  vt.fromTo(t1, { x: 0 }, { x: function () { return -d1(); } }, 0)
+    .fromTo(t2, { x: function () { return -d2(); } }, { x: 0 }, 0);
   gsap.from('.passos li', { y: 60, opacity: 0, duration: 0.8, stagger: 0.14, ease: 'power3.out', scrollTrigger: { trigger: '.passos', start: 'top 88%', once: true } });
   gsap.from('.quadro div', { x: 40, opacity: 0, duration: 0.6, stagger: 0.08, ease: 'power3.out', scrollTrigger: { trigger: '.quadro', start: 'top 85%', once: true } });
   gsap.from('.cardapio', { y: 60, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.cardapio', start: 'top 88%', once: true } });

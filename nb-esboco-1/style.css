@@ -141,6 +141,8 @@ h2 em,.lead em,h3 em{font-style:normal;color:var(--laranja)}
 .pl-card{background:var(--azul);color:var(--branco);padding:clamp(20px,2.4vw,34px);border-bottom:8px solid var(--branco);position:relative;overflow:hidden}
 .pl-card .num{display:block;white-space:nowrap;font:700 clamp(3rem,5.4vw,5.4rem)/.9 var(--titulo);color:var(--laranja);text-transform:uppercase;margin-bottom:.15em}
 .pl-card h3{font-size:clamp(1.3rem,1.8vw,1.7rem);margin-bottom:.5em}
+.pl-card .num.txt{font-size:clamp(1.9rem,2.3vw,2.8rem);line-height:1}
+.pl-card h3 .ex{font-size:.7rem;vertical-align:middle;margin-left:.4em}
 .pl-card p{font-size:.98rem;opacity:.9}
 .cq-fotos{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(12px,1.6vw,22px);max-width:1700px;margin:clamp(14px,2vw,26px) auto 0}
 .cq-fotos figure{overflow:hidden;aspect-ratio:16/10}

@@ -12,7 +12,7 @@ Escola de futsal em Curitiba (3 a 17 anos). O site atual (nbfutebol.com.br) é s
 **Movimento (GSAP 3.13 + ScrollTrigger + SplitText + MotionPath + Lenis):** título do hero que sobe letra por letra; letreiro que anda com a rolagem; linhas de uma quadra de futsal que se desenham no fundo dos programas; lista de programas com foto que segue o mouse e popup; placar com números que contam; colunas de fotos em velocidades diferentes; uma bola que rola pelo caminho dos 3 passos. Sem faixas fixas laterais (o usuário preferiu rolagem padrão). Quem pede menos movimento vê tudo parado.
 
 **Programas (tirados da página de links e das legendas do Instagram):** Formação, Base, Futlab, Mini Craques, Adote um Craque, Trabalhe aqui. Textos de apoio marcados EXEMPLO. Futlab tem só a frase "Treino individualizado" no material público.
-**Resultados usados:** 3ª melhor equipe do Paraná (geração 2017, 46 equipes) e Base NB entre os 8 melhores do Paraná (67 equipes), ambos de cartazes do Instagram.
+**Conquistas (placar):** "Títulos: 12 metropolitanos, 8 paranaenses e 2 Taça Brasil" (informado pelo usuário em 24/11, marcado EXEMPLO na página: confirmar com o NB) e "Reconhecimento: todas as categorias do NB sempre entre as melhores do estado". Os cartões "3 a 17 anos" e "11,8 mil seguidores" seguem do Instagram.
 
 **Pendências:** texto oficial sobre o Nilo Biazeto · autorização de imagem de crianças e do vídeo da transmissão · unidades, endereços e horários (não aparecem em lugar nenhum) · detalhes do Futlab e do Adote um Craque · mensalidades ficaram de fora · domínio.
 

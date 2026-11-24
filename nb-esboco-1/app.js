@@ -93,8 +93,8 @@
   /* ---------- hero: letras sobem inclinadas (espera as fontes) ---------- */
   var tl = gsap.timeline({ defaults: { ease: EXPO }, paused: true });
   if (window.SplitText) {
-    var sp = SplitText.create('.h-gigante span', { type: 'chars', mask: 'chars' });
-    tl.from(sp.chars, { yPercent: 120, skewX: -18, duration: 1.1, stagger: 0.02 });
+    var sp = SplitText.create('.h-gigante span', { type: 'chars' });
+    tl.from(sp.chars, { yPercent: 40, opacity: 0, skewX: -18, filter: 'blur(8px)', duration: 1.1, stagger: 0.02 });
   } else { tl.from('.h-gigante span', { y: 70, opacity: 0, duration: 1, stagger: 0.12 }); }
   tl.from('.hero .eyebrow, .hero-sub, .hero-cta', { y: 24, opacity: 0, filter: 'blur(6px)', duration: 0.9, stagger: 0.1 }, 0.5)
     .from('.hero-fatos li', { y: 24, opacity: 0, duration: 0.8, stagger: 0.1 }, 0.9);
@@ -139,19 +139,26 @@
       gsap.to(f, { y: parseFloat(f.getAttribute('data-vel')) * 420, ease: 'none', scrollTrigger: { trigger: f.parentNode, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
   });
-  mm.add('(min-width: 981px)', function () {
-    gsap.fromTo('.col.c1', { y: 90 }, { y: -90, ease: 'none', scrollTrigger: { trigger: '.colunas', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
-    gsap.fromTo('.col.c2', { y: -50 }, { y: 130, ease: 'none', scrollTrigger: { trigger: '.colunas', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
-    gsap.fromTo('.col.c3', { y: 90 }, { y: -90, ease: 'none', scrollTrigger: { trigger: '.colunas', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
-    /* a bola rola pelo caminho dos 3 passos */
-    if (window.MotionPathPlugin) {
-      gsap.to('.bola-rola', { motionPath: { path: '#rota', align: '#rota', alignOrigin: [0.5, 0.5] }, rotation: 720, ease: 'none',
+  /* "No NB": 3 linhas de fotos que andam de lado com a rolagem da página (vale para celular também) */
+  var linhas = $$('.fita');
+  var alcance = function (f) { return Math.max(0, f.scrollWidth - window.innerWidth); };
+  linhas.forEach(function (f, i) {
+    gsap.fromTo(f, { x: function () { return i % 2 ? -alcance(f) : 0; } }, { x: function () { return i % 2 ? 0 : -alcance(f); }, ease: 'none',
+      scrollTrigger: { trigger: '.fitas', start: 'top bottom', end: 'bottom top', scrub: 0.6, invalidateOnRefresh: true } });
+    gsap.fromTo($$('img', f), { xPercent: -5 }, { xPercent: 5, ease: 'none', scrollTrigger: { trigger: '.fitas', start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
+  });
+
+  /* a bola de verdade rola pelo caminho dos 3 passos: na horizontal no computador e na vertical no celular */
+  if (window.MotionPathPlugin) {
+    mm.add('(min-width: 981px)', function () {
+      gsap.to('.bola-rola', { motionPath: { path: '#rota', align: '#rota', alignOrigin: [0.5, 0.5] }, rotation: 900, ease: 'none',
         scrollTrigger: { trigger: '.trilha', start: 'top 80%', end: 'bottom 55%', scrub: 0.8 } });
-    }
-  });
-  mm.add('(max-width: 980px)', function () {
-    gsap.from('.col figure', { y: 50, opacity: 0, duration: 0.8, stagger: 0.08, ease: EXPO, scrollTrigger: { trigger: '.colunas', start: 'top 85%', once: true } });
-  });
+    });
+    mm.add('(max-width: 980px)', function () {
+      gsap.to('.bola-rola', { motionPath: { path: '#rota-v', align: '#rota-v', alignOrigin: [0.5, 0.5] }, rotation: 1200, ease: 'none',
+        scrollTrigger: { trigger: '.trilha', start: 'top 75%', end: 'bottom 60%', scrub: 0.6, invalidateOnRefresh: true } });
+    });
+  }
   gsap.from('.passos li', { y: 60, opacity: 0, duration: 0.9, stagger: 0.14, ease: EXPO, scrollTrigger: { trigger: '.passos', start: 'top 88%', once: true } });
   gsap.from('.cd-tx > *', { y: 40, opacity: 0, filter: 'blur(6px)', duration: 1, stagger: 0.1, ease: EXPO, scrollTrigger: { trigger: '.cd-tx', start: 'top 82%', once: true } });
 

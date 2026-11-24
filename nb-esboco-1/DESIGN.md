@@ -15,3 +15,10 @@ Escola de futsal em Curitiba (3 a 17 anos). O site atual (nbfutebol.com.br) é s
 **Resultados usados:** 3ª melhor equipe do Paraná (geração 2017, 46 equipes) e Base NB entre os 8 melhores do Paraná (67 equipes), ambos de cartazes do Instagram.
 
 **Pendências:** foto do Nilo Biazeto e texto oficial sobre ele · autorização de imagem de crianças e do vídeo da transmissão · unidades, endereços e horários (não aparecem em lugar nenhum) · detalhes do Futlab e do Adote um Craque · mensalidades ficaram de fora · domínio.
+
+**Ajustes de 24/11 (tarde):**
+- Título do hero sem máscara (a máscara cortava a cauda do Q e a base das letras) e entrelinha maior nos títulos (o acento do "VOCÊ" encostava na linha de cima).
+- Seção Nilo Biazeto movida para logo acima de "Além da quadra" (ordem: Programas, Conquistas, Nilo Biazeto, Cuidado, No NB, Como começar, Contato).
+- "No NB": 3 linhas de 8 fotos que andam de lado conforme a página rola (sem prender a rolagem), com moldura recortada em laranja e azul e foto que desliza dentro da moldura; funciona no celular.
+- "Como começar": a bola é a imagem `Downloads\bola.jpg` (recortada em círculo, `assets/bola.png`) e gira rolando pelo caminho: horizontal no computador e vertical no celular.
+- Imagem dos Mini Craques: aguardando o arquivo (a imagem do pedido não chegou). Para usar, salvar em `assets/mini-craques-novo.jpg` já sem as setas e rodar `scratchpad\build_nb.py`.

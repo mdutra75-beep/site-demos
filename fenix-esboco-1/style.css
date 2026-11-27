@@ -392,3 +392,30 @@ dialog[open]{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scroll
   .plurall{gap:14px;padding-right:18px}
   .plurall img{width:76px;height:76px}
 }
+
+/* ===== Diferenciais no computador: título e cartões sempre inteiros na altura da tela =====
+   A seção fica parada enquanto os cartões andam de lado; o que passar da tela nunca apareceria.
+   Por isso a foto de cada cartão encolhe para sobrar lugar para o texto. */
+@media (min-width:981px){
+  .dif-pin{min-height:0;height:100vh;justify-content:center;padding-block:calc(54px + 2.5vh) 3vh}
+  .dif-cab{flex:none;margin-bottom:clamp(12px,2.6vh,28px)}
+  .dif-cab h2{font-size:clamp(1.6rem,min(4.6vw,6.6vh),3.6rem)}
+  .dif-track{flex:1 1 0;min-height:0;max-height:calc(clamp(250px,24vw,340px) * .75 + 270px)}
+  /* grade compartilhada: a foto ocupa a sobra e fica com a mesma altura em todos os cartões */
+  .dif-pin:not(.solta) .dif-track{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(250px,24vw,340px);grid-template-rows:minmax(90px,1fr) auto auto}
+  .dif-pin:not(.solta) .card{display:grid;grid-row:span 3;grid-template-rows:subgrid;width:auto;min-height:0}
+  .dif-pin:not(.solta) .card .cimg{aspect-ratio:auto;min-height:0}
+  .dif-pin:not(.solta) .card .cimg img{position:absolute;inset:0}
+  .dif-pin:not(.solta) .card .mais{justify-self:start}
+  /* telas muito baixas ou texto grande demais: a seção rola normalmente, com os cartões em linhas */
+  .dif-pin.solta{height:auto;padding-block:90px 60px}
+  .dif-pin.solta .dif-track{flex:none;max-height:none;width:auto;flex-wrap:wrap}
+}
+@media (min-width:981px) and (max-height:800px){
+  .dif-cab h2{max-width:24em}
+  .card{gap:8px;padding-bottom:14px}
+  .card .n{font-size:.8rem;line-height:1.2}
+  .card h3{font-size:clamp(1.15rem,3.4vh,1.7rem);margin:.1em 0 .15em}
+  .card p{font-size:.9rem;line-height:1.4}
+}
+

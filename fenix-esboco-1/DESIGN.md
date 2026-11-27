@@ -27,3 +27,5 @@ Tipografia: Baloo 2 + Nunito (igual ao IEPI). Logo: `assets/logo.png` (do site a
 **27/11/2026 (cliente fechado):** seções "Sistema Anglo" (texto de `/filosofia-do-colegio-fenix/`, com 3 erros de digitação corrigidos) e "Área do Aluno" (texto de `/area-do-aluno/`, login `https://login.plurall.net/`), com itens no menu; o menu vira sanduíche até 1200 px. Formulário no rodapé (Nome, Celular, E-mail obrigatório) copiado do site atual, **ainda sem destino**: aguardando a escola informar como recebe os dados. Site com `color-scheme: only light` e ícone do menu em SVG, para o "escuro forçado" do celular não apagar o sanduíche.
 
 **27/11/2026:** a seção e o item de menu "Filosofia" (frases em carrossel) saíram a pedido do cliente; o conteúdo está em "Sistema Anglo".
+
+**27/11/2026:** corrigido corte dos cartões de Diferenciais em telas baixas (notebook com zoom) ou com título maior: a foto encolhe para o texto caber; se nem assim couber, os cartões aparecem em linhas.

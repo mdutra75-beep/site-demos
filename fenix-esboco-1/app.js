@@ -117,7 +117,7 @@
   slides.forEach(function (s, i) { s.addEventListener('click', function () { if (i !== ci) { ci = i; pintaC(); autoC(); } }); });
 
   /* ---------- movimento (GSAP + ScrollTrigger + Lenis) ---------- */
-  if (reduz || !window.gsap || !window.ScrollTrigger) return;
+  if (reduz || !window.gsap || !window.ScrollTrigger) { $('.dif-pin').classList.add('solta'); return; }
   gsap.registerPlugin(ScrollTrigger);
   var lenis;
   if (window.Lenis) {
@@ -177,7 +177,10 @@
 
   /* diferenciais: faixa fixa que anda de lado (1º e último cartões inteiros nas pontas) */
   mm.add('(min-width: 981px)', function () {
-    var track = $('#dif-track');
+    var track = $('#dif-track'), pin = $('.dif-pin');
+    pin.classList.remove('solta');
+    var cabe = window.innerHeight >= 500 && track.scrollHeight <= track.clientHeight + 1;
+    if (!cabe) { pin.classList.add('solta'); return; }
     var dist = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
     gsap.to(track, { x: function () { return -dist(); }, ease: 'none',
       scrollTrigger: { trigger: '.dif-pin', start: 'top top', end: function () { return '+=' + dist(); }, pin: true, scrub: 0.6, invalidateOnRefresh: true } });

@@ -23,3 +23,6 @@ Tipografia: Baloo 2 + Nunito (igual ao IEPI). Logo: `assets/logo.png` (do site a
 **Decisões:** sem preços (estão no site atual, deixar para a escola decidir); sem seção Estrutura e sem depoimentos (não há dados nem fotos de espaços; trocados por "Gente do Fênix" e "Nossa filosofia"); sem e-mail no contato (o site atual só tem formulário).
 
 **Pendências / a confirmar com a escola:** autorização de uso de imagem dos alunos nas fotos (vêm do Instagram da escola, repositório público); WhatsApp (41) 99149-3453 (aparece nos posts); horário de atendimento; depoimentos reais; fotos de estrutura (quadra, biblioteca, laboratório); detalhes do projeto bilíngue (English Stars); revisão dos textos dos popups; domínio final.
+
+**27/11/2026 (cliente fechado):** seções "Sistema Anglo" (texto de `/filosofia-do-colegio-fenix/`, com 3 erros de digitação corrigidos) e "Área do Aluno" (texto de `/area-do-aluno/`, login `https://login.plurall.net/`), com itens no menu; o menu vira sanduíche até 1200 px. Formulário no rodapé (Nome, Celular, E-mail obrigatório) copiado do site atual, **ainda sem destino**: aguardando a escola informar como recebe os dados. Site com `color-scheme: only light` e ícone do menu em SVG, para o "escuro forçado" do celular não apagar o sanduíche.
+

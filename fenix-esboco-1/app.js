@@ -79,6 +79,16 @@
     if (e.key === 'ArrowRight') passo(1);
   });
 
+  /* ---------- formulário do rodapé: ainda sem destino, não envia nem guarda nada ---------- */
+  $('#form-contato').addEventListener('submit', function (e) {
+    e.preventDefault();
+    $('#form-aviso').hidden = false;
+  });
+  /* abrir um texto do Sistema Anglo muda a altura da página: recalcula as animações */
+  $$('.anglo details').forEach(function (d) {
+    d.addEventListener('toggle', function () { if (window.ScrollTrigger) window.ScrollTrigger.refresh(); });
+  });
+
   /* ---------- carrossel 3D da equipe ---------- */
   var slides = $$('#car3d .slide3d'), ci = 0, timerC;
   function pintaC() {

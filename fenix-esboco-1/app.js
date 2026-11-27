@@ -116,22 +116,6 @@
   car.addEventListener('mouseleave', autoC);
   slides.forEach(function (s, i) { s.addEventListener('click', function () { if (i !== ci) { ci = i; pintaC(); autoC(); } }); });
 
-  /* ---------- depoimentos ---------- */
-  var itens = $$('#depo .depo-item'), di = 0, timerD, dots = $('#dots');
-  itens.forEach(function (_, i) {
-    var b = document.createElement('button'); b.setAttribute('aria-label', 'Depoimento ' + (i + 1));
-    b.addEventListener('click', function () { vaiD(i); autoD(); }); dots.appendChild(b);
-  });
-  function vaiD(i) {
-    di = (i + itens.length) % itens.length;
-    itens.forEach(function (it, k) { it.classList.toggle('on', k === di); });
-    $$('button', dots).forEach(function (b, k) { b.classList.toggle('on', k === di); });
-  }
-  function autoD() { clearInterval(timerD); if (!reduz) timerD = setInterval(function () { vaiD(di + 1); }, 9000); }
-  vaiD(0); autoD();
-  $('#d-ant').addEventListener('click', function () { vaiD(di - 1); autoD(); });
-  $('#d-prox').addEventListener('click', function () { vaiD(di + 1); autoD(); });
-
   /* ---------- movimento (GSAP + ScrollTrigger + Lenis) ---------- */
   if (reduz || !window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);

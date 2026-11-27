@@ -203,21 +203,6 @@ dialog::backdrop{background:rgba(0,24,42,.62)}
 .passo h3{font-size:1.5rem;color:var(--indigo);margin:12px 0 .4em}
 .passo p{font-weight:600;color:#456072}
 
-/* ===== Depoimentos ===== */
-.depo{background:var(--indigo);color:#fff;padding:clamp(70px,9vw,130px) 0;position:relative;overflow:hidden}
-.depo .quadrados{width:clamp(160px,22vw,320px);right:-40px;top:-30px;opacity:.14;rotate:12deg}
-.depo h2{font-size:clamp(2rem,4.6vw,3.6rem);margin:.3em 0 1em}
-.depo-box{position:relative;max-width:900px;min-height:260px}
-.depo-item{display:none}
-.depo-item.on{display:block}
-.depo-item q{display:block;font-family:var(--titulo);font-weight:700;font-size:clamp(1.35rem,2.8vw,2.2rem);line-height:1.25;quotes:"“" "”"}
-.depo-item cite{display:block;margin-top:1.2em;font-style:normal;font-weight:800;color:var(--amarelo)}
-.depo-ctl{display:flex;align-items:center;gap:14px;margin-top:30px}
-.depo-ctl button.s{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.16);font-size:1.2rem}
-.dots{display:flex;gap:9px}
-.dots button{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.4)}
-.dots button.on{background:var(--amarelo);width:30px;border-radius:8px}
-
 /* ===== Contato ===== */
 .contato{background:#fff;padding:clamp(70px,9vw,120px) 0 clamp(50px,6vw,80px)}
 .contato-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,70px);align-items:stretch}
